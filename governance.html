@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="assets/community.css">
 <link rel="stylesheet" href="assets/governance.css">
 </head>
-<body data-page="governance">
+<body data-page="governance" data-tepa-page="governance">
 <header class="obs-header">
   <div class="obs-brand">
     <span class="obs-mark">Te Pā</span>
@@ -143,10 +143,9 @@
   </section>
 </main>
 
-<!-- Shared site footer — content lives in assets/site-footer.js -->
-<div id="site-footer"></div>
-
-<script src="assets/site-footer.js"></script>
+<!-- Shared Te Pā footer — same script drives every site (jsDelivr CDN). -->
+<div id="tepa-site-footer"></div>
+<script src="https://cdn.jsdelivr.net/gh/robertmccallnz/systems-observatory@main/assets/site-footer.js" defer></script>
 
 <script>
 let graphData = null, comparisonData = null;
