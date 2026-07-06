@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Te Pā Governance Comparison",
+    "subtitle": "Current governance state vs rhizome-integrated target across six systems axes",
+    "generated_at": "2026-07-06T00:00:00Z",
+    "kaupapa": "Each axis cites a public reference. Scores are qualitative readings against public evidence, not synthetic metrics.",
+    "scale_note": "0 = absent, 100 = fully realised. Values are working readings that community annotation can revise."
+  },
+  "comparison": [
+    {
+      "axis": "Authority distribution",
+      "current": 42,
+      "target": 81,
+      "interpretation": "Current authority sits mainly with formal governance nodes; the target model distributes bounded response capacity into pathways.",
+      "meadows_focus": "self_organization",
+      "priority": "high",
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Charities Services · governance guidance](https://www.charities.govt.nz/im-a-registered-charity/running-your-charity/)"
+      ]
+    },
+    {
+      "axis": "Information flow",
+      "current": 48,
+      "target": 79,
+      "interpretation": "Feedback exists but does not consistently reach decision nodes in a visible form.",
+      "meadows_focus": "information_flow",
+      "priority": "high",
+      "evidence_refs": [
+        "[Office of the Ombudsman · OIA](https://www.ombudsman.parliament.nz/what-ombudsman-can-help/official-information)",
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+      ]
+    },
+    {
+      "axis": "Delay visibility",
+      "current": 31,
+      "target": 68,
+      "interpretation": "Slowdowns are hidden inside informal process; the target model makes delays legible and therefore governable.",
+      "meadows_focus": "delay",
+      "priority": "high",
+      "evidence_refs": [
+        "[Office of the Ombudsman · OIA response times](https://www.ombudsman.parliament.nz/resources/oia-statistics)"
+      ]
+    },
+    {
+      "axis": "Feedback closure",
+      "current": 39,
+      "target": 84,
+      "interpretation": "The biggest gap is not input but closure — whether people can see what changed after they spoke.",
+      "meadows_focus": "feedback_loop",
+      "priority": "critical",
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Charities Services · engagement guidance](https://www.charities.govt.nz/)"
+      ]
+    },
+    {
+      "axis": "Rule depth",
+      "current": 72,
+      "target": 88,
+      "interpretation": "Rule foundations are already comparatively strong because Māori control is explicit; the task is to preserve this while scaling pathway autonomy.",
+      "meadows_focus": "rule",
+      "priority": "medium",
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Te Mana Raraunga · principles](https://www.temanararaunga.maori.nz/tutohinga)"
+      ]
+    },
+    {
+      "axis": "Self-organisation",
+      "current": 36,
+      "target": 83,
+      "interpretation": "The rhizome target is much stronger on emergent pathway growth and distributed initiative.",
+      "meadows_focus": "self_organization",
+      "priority": "critical",
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)"
+      ]
+    }
+  ]
+}

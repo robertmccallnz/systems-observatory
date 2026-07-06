@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/observatory.css">
 <link rel="stylesheet" href="assets/community.css">
+<link rel="stylesheet" href="assets/governance.css">
 </head>
 <body>
 <header class="obs-header">
@@ -20,6 +21,13 @@
   <h1>Systems Observatory</h1>
   <p class="obs-tag">Twelve leverage points · Aotearoa political economy · <span id="obs-updated">loading…</span></p>
   <p class="obs-kaupapa" id="obs-kaupapa"></p>
+  <nav class="obs-nav" aria-label="Primary">
+    <a href="./index.html" aria-current="page">Observatory</a>
+    <a href="./governance.html">Governance Audit</a>
+    <a href="https://www.te-pa.org" target="_blank" rel="noopener">Te Pā</a>
+    <a href="https://kiwidialectic.substack.com/" target="_blank" rel="noopener">Kiwi Dialectic</a>
+    <a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a>
+  </nav>
 </header>
 
 <main>
@@ -84,7 +92,42 @@
   </section>
 </main>
 
-<footer id="kd-footer-slot"></footer>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-block footer-intro">
+      <h2>Te Pā Systems Observatory</h2>
+      <p>A public systems observatory and governance-audit tool developed as a Te Pā Collective Action Lab artefact, in relation to Te Pā Tūwatawata and The Kiwi Dialectic.</p>
+      <p>This repo is a standalone, forkable research artefact. Te Pā remains the kaupapa and charitable-trust anchor; the observatory remains an open technical and pedagogical tool.</p>
+    </div>
+    <div class="footer-block">
+      <h3>Views</h3>
+      <ul>
+        <li><a href="./index.html">Observatory</a></li>
+        <li><a href="./governance.html">Governance Audit</a></li>
+      </ul>
+    </div>
+    <div class="footer-block">
+      <h3>Ecosystem</h3>
+      <ul>
+        <li><a href="https://www.te-pa.org" target="_blank" rel="noopener">Te Pā</a></li>
+        <li><a href="https://kiwidialectic.substack.com/" target="_blank" rel="noopener">Kiwi Dialectic</a></li>
+        <li><a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a></li>
+      </ul>
+    </div>
+    <div class="footer-block">
+      <h3>Context</h3>
+      <ul>
+        <li><a href="./docs/LEVERAGE_POINTS.md">Leverage points mapping</a></li>
+        <li><a href="./docs/GOVERNANCE_AUDIT.md">Governance audit method</a></li>
+        <li><a href="./reports/governance-audit-report.md">Governance audit report</a></li>
+        <li><a href="https://github.com/robertmccallnz/systems-observatory" target="_blank" rel="noopener">GitHub repository</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <p>Built under the <a href="https://www.kahuiraraunga.io/" target="_blank" rel="noopener">Māori Data Governance Model</a> of Te Kāhui Raraunga. Public, aggregated, non-personal data only.</p>
+  </div>
+</footer>
 
 <script src="assets/observatory.js"></script>
 </body>

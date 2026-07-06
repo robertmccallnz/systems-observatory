@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Governance Audit · Te Pā Systems Observatory</title>
+<meta name="description" content="A reflexive systems audit of Te Pā's own decision-making, feedback loops, decision routes, and intervention depth. Companion view to the Systems Observatory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/observatory.css">
+<link rel="stylesheet" href="assets/community.css">
+<link rel="stylesheet" href="assets/governance.css">
+</head>
+<body>
+<header class="obs-header">
+  <div class="obs-brand">
+    <span class="obs-mark">Te Pā</span>
+    <span class="obs-sub">Collective Action Lab</span>
+  </div>
+  <h1>Governance Audit</h1>
+  <p class="obs-tag">Inward systems audit · <span id="gov-updated">loading…</span></p>
+  <nav class="obs-nav" aria-label="Primary">
+    <a href="./index.html">Observatory</a>
+    <a href="./governance.html" aria-current="page">Governance Audit</a>
+    <a href="https://www.te-pa.org" target="_blank" rel="noopener">Te Pā</a>
+    <a href="https://kiwidialectic.substack.com/" target="_blank" rel="noopener">Kiwi Dialectic</a>
+    <a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a>
+  </nav>
+</header>
+
+<main>
+  <section class="obs-intro">
+    <p>The Governance Audit applies the same systems method as the observatory, turned inward. It maps feedback loops, decision routes, delays, rules, and intervention depth across Te Pā's own governance system, using <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/" target="_blank" rel="noopener">Donella Meadows' twelve leverage points</a>. Every node, loop, and comparison axis cites a public evidence source, following the same provenance rule as the observatory's indicators. Read the findings at the bottom of the page or in the <a href="./reports/governance-audit-report.md">audit report</a>.</p>
+  </section>
+
+  <section class="gov-controls" aria-label="Dashboard controls">
+    <label>Snapshot
+      <select id="snapshotSelect"></select>
+    </label>
+    <label>Decision route
+      <select id="routeSelect"></select>
+    </label>
+    <label>Intervention depth
+      <select id="meadowsSelect"><option value="all">All depths</option></select>
+    </label>
+    <label>Domain
+      <select id="domainFilter"><option value="all">All domains</option></select>
+    </label>
+    <label>Node type
+      <select id="typeFilter"><option value="all">All node types</option></select>
+    </label>
+    <label>Loop type
+      <select id="loopFilter">
+        <option value="all">All loops</option>
+        <option value="reinforcing">Reinforcing</option>
+        <option value="balancing">Balancing</option>
+      </select>
+    </label>
+    <label>Leverage level
+      <select id="levelFilter"><option value="all">All leverage levels</option></select>
+    </label>
+  </section>
+
+  <section class="gov-stats" id="stats" aria-label="Governance stats"></section>
+
+  <section class="gov-section" aria-labelledby="snapshot-heading">
+    <h2 id="snapshot-heading"><span id="snapshotTitle">Snapshot</span></h2>
+    <p class="gov-blurb" id="snapshotBlurb"></p>
+    <p class="gov-status" id="statusText">Loading governance data…</p>
+  </section>
+
+  <section class="gov-grid">
+    <section class="gov-card">
+      <h3>System nodes</h3>
+      <div id="nodes" class="gov-nodes"></div>
+    </section>
+    <section class="gov-card">
+      <h3>Feedback loops</h3>
+      <div id="loops" class="gov-loops"></div>
+    </section>
+  </section>
+
+  <section class="gov-card gov-route">
+    <h3>Decision route</h3>
+    <p class="gov-route-desc" id="routeDesc"></p>
+    <ol id="routePanel"></ol>
+  </section>
+
+  <section class="gov-card">
+    <h3>Meadows interventions</h3>
+    <p class="gov-blurb">Nodes grouped by leverage-point depth. Each entry lists intervention candidates and public evidence.</p>
+    <div id="interventions" class="gov-interventions"></div>
+  </section>
+
+  <section class="gov-card">
+    <h3>Governance comparison</h3>
+    <p class="gov-blurb">Six systems axes. Current governance state vs the rhizome-integrated target. Priority is set by how far each axis sits from its target and how many other axes it blocks.</p>
+    <table class="gov-comparison">
+      <thead>
+        <tr><th>Axis</th><th>Current</th><th>Target</th><th>Interpretation</th></tr>
+      </thead>
+      <tbody id="comparisonRows"></tbody>
+    </table>
+  </section>
+
+  <section class="gov-grid">
+    <section class="gov-card">
+      <h3>Research prompts</h3>
+      <ul id="prompts" class="gov-notes"></ul>
+    </section>
+    <section class="gov-card">
+      <h3>Implementation notes</h3>
+      <ul id="notes" class="gov-notes"></ul>
+    </section>
+  </section>
+
+  <section class="gov-card">
+    <h3>Audit findings</h3>
+    <p>The full plain-language findings and priority interventions live in <a href="./reports/governance-audit-report.md">the governance audit report</a>. The method note is at <a href="./docs/GOVERNANCE_AUDIT.md">docs/GOVERNANCE_AUDIT.md</a>.</p>
+  </section>
+
+  <section class="obs-korero">
+    <h2>Kōrero</h2>
+    <p>Long-form discussion of the audit lives in <a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">GitHub Discussions</a>, embedded below via Giscus.</p>
+    <div class="kd-community">
+      <script src="https://giscus.app/client.js"
+        data-repo="robertmccallnz/systems-observatory"
+        data-repo-id="REPLACE_WITH_REPO_ID"
+        data-category="General"
+        data-category-id="REPLACE_WITH_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-block footer-intro">
+      <h2>Te Pā Systems Observatory</h2>
+      <p>A public systems observatory and governance-audit tool developed as a Te Pā Collective Action Lab artefact, in relation to Te Pā Tūwatawata and The Kiwi Dialectic.</p>
+      <p>This repo is a standalone, forkable research artefact. Te Pā remains the kaupapa and charitable-trust anchor; the observatory remains an open technical and pedagogical tool.</p>
+    </div>
+    <div class="footer-block">
+      <h3>Views</h3>
+      <ul>
+        <li><a href="./index.html">Observatory</a></li>
+        <li><a href="./governance.html">Governance Audit</a></li>
+      </ul>
+    </div>
+    <div class="footer-block">
+      <h3>Ecosystem</h3>
+      <ul>
+        <li><a href="https://www.te-pa.org" target="_blank" rel="noopener">Te Pā</a></li>
+        <li><a href="https://kiwidialectic.substack.com/" target="_blank" rel="noopener">Kiwi Dialectic</a></li>
+        <li><a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a></li>
+      </ul>
+    </div>
+    <div class="footer-block">
+      <h3>Context</h3>
+      <ul>
+        <li><a href="./docs/GOVERNANCE_AUDIT.md">Governance audit method</a></li>
+        <li><a href="./reports/governance-audit-report.md">Governance audit report</a></li>
+        <li><a href="./docs/LEVERAGE_POINTS.md">Leverage points mapping</a></li>
+        <li><a href="https://github.com/robertmccallnz/systems-observatory" target="_blank" rel="noopener">GitHub repository</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <p>Built under the <a href="https://www.kahuiraraunga.io/" target="_blank" rel="noopener">Māori Data Governance Model</a> of Te Kāhui Raraunga. Public, aggregated, non-personal data only.</p>
+  </div>
+</footer>
+
+<script>
+let graphData = null, comparisonData = null;
+const els = {
+  snapshotSelect: document.getElementById('snapshotSelect'),
+  routeSelect: document.getElementById('routeSelect'),
+  meadowsSelect: document.getElementById('meadowsSelect'),
+  domainFilter: document.getElementById('domainFilter'),
+  typeFilter: document.getElementById('typeFilter'),
+  loopFilter: document.getElementById('loopFilter'),
+  levelFilter: document.getElementById('levelFilter'),
+  nodes: document.getElementById('nodes'),
+  loops: document.getElementById('loops'),
+  routePanel: document.getElementById('routePanel'),
+  routeDesc: document.getElementById('routeDesc'),
+  interventions: document.getElementById('interventions'),
+  comparisonRows: document.getElementById('comparisonRows'),
+  prompts: document.getElementById('prompts'),
+  notes: document.getElementById('notes'),
+  stats: document.getElementById('stats'),
+  statusText: document.getElementById('statusText'),
+  snapshotTitle: document.getElementById('snapshotTitle'),
+  snapshotBlurb: document.getElementById('snapshotBlurb'),
+  updated: document.getElementById('gov-updated')
+};
+
+[els.snapshotSelect, els.routeSelect, els.meadowsSelect, els.domainFilter, els.typeFilter, els.loopFilter, els.levelFilter]
+  .forEach(el => el.addEventListener('change', render));
+
+Promise.all([
+  fetch('./data/governance-graph.json').then(r => r.json()),
+  fetch('./data/comparison.json').then(r => r.json())
+]).then(([graph, comparison]) => {
+  graphData = graph;
+  comparisonData = comparison;
+  els.updated.textContent = new Date(graph.meta.generated_at).toISOString().slice(0, 10);
+  init();
+  render();
+  els.statusText.textContent = `Loaded ${graph.nodes.length} nodes, ${graph.edges.length} edges, ${graph.loops.length} loops, and ${graph.decision_routes.length} decision routes.`;
+}).catch(err => {
+  els.statusText.textContent = 'Could not load governance data. Open through the deployed site so relative paths resolve.';
+  console.error(err);
+});
+
+function init() {
+  graphData.snapshots.forEach(s => appendOption(els.snapshotSelect, s.id, s.label));
+  graphData.decision_routes.forEach(r => appendOption(els.routeSelect, r.id, r.label));
+  unique(graphData.nodes.map(n => n.domain)).forEach(v => appendOption(els.domainFilter, v, cap(v)));
+  unique(graphData.nodes.map(n => n.type)).forEach(v => appendOption(els.typeFilter, v, cap(v.replaceAll('_', ' '))));
+  unique(graphData.nodes.map(n => n.meadows)).forEach(v => {
+    appendOption(els.levelFilter, v, cap(v.replaceAll('_', ' ')));
+    appendOption(els.meadowsSelect, v, cap(v.replaceAll('_', ' ')));
+  });
+  els.prompts.innerHTML = graphData.prompts.map(p => `<li>${p}</li>`).join('');
+  els.notes.innerHTML = graphData.notes.map(n => `<li>${n}</li>`).join('');
+}
+
+function render() {
+  if (!graphData || !comparisonData) return;
+  const snapshot = graphData.snapshots.find(s => s.id === els.snapshotSelect.value) || graphData.snapshots[0];
+  els.snapshotTitle.textContent = snapshot.label;
+  els.snapshotBlurb.textContent = snapshot.blurb;
+
+  const filteredNodes = graphData.nodes.filter(n =>
+    (els.domainFilter.value === 'all' || n.domain === els.domainFilter.value) &&
+    (els.typeFilter.value === 'all' || n.type === els.typeFilter.value) &&
+    (els.levelFilter.value === 'all' || n.meadows === els.levelFilter.value)
+  );
+
+  els.nodes.innerHTML = filteredNodes.map(n => {
+    const state = snapshot.id === 'target' ? n.target_state : n.current_state;
+    return `<article class="gov-node">
+      <small>${cap(n.type.replaceAll('_', ' '))} · ${cap(n.domain)}</small>
+      <h4>${n.label}</h4>
+      <p>${n.description}</p>
+      <div class="gov-badges">
+        <span class="gov-badge">State: ${state}</span>
+        <span class="gov-badge">Leverage: ${cap(n.meadows.replaceAll('_', ' '))}</span>
+      </div>
+      <div class="gov-evidence">Evidence: ${renderRefs(n.evidence_refs)}</div>
+    </article>`;
+  }).join('');
+
+  const nodeSet = new Set(filteredNodes.map(n => n.id));
+  const filteredLoops = graphData.loops.filter(l =>
+    (els.loopFilter.value === 'all' || l.loop_type === els.loopFilter.value) &&
+    l.nodes.some(id => nodeSet.has(id))
+  );
+
+  els.loops.innerHTML = filteredLoops.map(l => `<article class="gov-loop gov-loop--${l.loop_type}">
+    <strong>${l.label}</strong>
+    <p>${l.story}</p>
+    <div class="gov-badges">${l.nodes.map(id => `<span class="gov-badge">${findNode(id).label}</span>`).join('')}</div>
+    <div class="gov-evidence">Evidence: ${renderRefs(l.evidence_refs)}</div>
+  </article>`).join('');
+
+  const route = graphData.decision_routes.find(r => r.id === els.routeSelect.value) || graphData.decision_routes[0];
+  els.routeDesc.textContent = route.description;
+  els.routePanel.innerHTML = route.steps.map(step => `<li class="gov-route-step">
+    <strong>${findNode(step.node).label}</strong>
+    <div>${step.action}</div>
+    <div class="gov-evidence">Evidence: ${renderRefs(step.evidence_refs)}</div>
+  </li>`).join('');
+
+  const depth = els.meadowsSelect.value;
+  const interventionNodes = graphData.nodes.filter(n => depth === 'all' || n.meadows === depth);
+  els.interventions.innerHTML = interventionNodes.map(n => `<div class="gov-intervention">
+    <strong>${n.label}</strong>
+    <div class="gov-evidence">Depth: ${cap(n.meadows.replaceAll('_', ' '))} · Evidence: ${renderRefs(n.evidence_refs)}</div>
+    <ul>${(n.intervention_candidates || []).map(i => `<li>${i}</li>`).join('')}</ul>
+  </div>`).join('');
+
+  els.comparisonRows.innerHTML = comparisonData.comparison.map(c => `<tr>
+    <td>
+      <strong>${c.axis}</strong>
+      <div class="gov-axis-meta">Focus: ${cap(c.meadows_focus.replaceAll('_', ' '))} · Priority: ${c.priority}</div>
+    </td>
+    <td><div class="gov-bar"><div class="gov-bar-fill" style="width:${c.current}%"></div></div><div class="gov-bar-val">${c.current}</div></td>
+    <td><div class="gov-bar"><div class="gov-bar-fill gov-bar-fill--target" style="width:${c.target}%"></div></div><div class="gov-bar-val">${c.target}</div></td>
+    <td>${c.interpretation}<div class="gov-evidence">Evidence: ${renderRefs(c.evidence_refs)}</div></td>
+  </tr>`).join('');
+
+  const targetHighs = graphData.nodes.filter(n => n.target_state === 'high').length;
+  const currentHighs = graphData.nodes.filter(n => n.current_state === 'high').length;
+  els.stats.innerHTML = `
+    <div class="gov-stat"><span>Nodes</span><strong>${filteredNodes.length}</strong></div>
+    <div class="gov-stat"><span>Edges</span><strong>${graphData.edges.length}</strong></div>
+    <div class="gov-stat"><span>Loops</span><strong>${filteredLoops.length}</strong></div>
+    <div class="gov-stat"><span>Routes</span><strong>${graphData.decision_routes.length}</strong></div>
+    <div class="gov-stat"><span>Current highs</span><strong>${currentHighs}</strong></div>
+    <div class="gov-stat"><span>Target highs</span><strong>${targetHighs}</strong></div>`;
+}
+
+function renderRefs(refs) {
+  if (!refs || !refs.length) return '<em>none</em>';
+  return refs.map(r => {
+    const m = r.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (m) return `<a href="${m[2]}" target="_blank" rel="noopener">${m[1]}</a>`;
+    return r;
+  }).join(' · ');
+}
+function appendOption(el, val, text) { el.insertAdjacentHTML('beforeend', `<option value="${val}">${text}</option>`); }
+function unique(arr) { return [...new Set(arr)]; }
+function findNode(id) { return graphData.nodes.find(n => n.id === id) || { label: id }; }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+</script>
+</body>
+</html>

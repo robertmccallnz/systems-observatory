@@ -1,18 +1,60 @@
 # Te Pā Systems Observatory
 
-A living dashboard of Donella Meadows' [12 leverage points](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/), mapped to Aotearoa NZ political-economy indicators, with a community annotation archive.
+A two-part systems platform, built as a **Te Pā Collective Action Lab** artefact:
 
-A **Te Pā Collective Action Lab** artefact — sibling to Thinkers Mapper, Kōrero, and the Kiwi Dialectic hub.
+1. **[Observatory](./index.html)** — a living dashboard of Donella Meadows' [12 leverage points](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/), mapped to Aotearoa NZ political-economy indicators.
+2. **[Governance Audit](./governance.html)** — a reflexive systems audit of Te Pā's own decision-making, feedback loops, decision routes, and pathway growth, using the same Meadows lens turned inward.
 
-## What it does
+Sibling to Thinkers Mapper, Kōrero, and the Kiwi Dialectic hub.
 
+## Two views, one method
+
+- The **Observatory** watches the *wider* system — Aotearoa institutions and indicators.
+- The **Governance Audit** watches the *inner* system — how Te Pā itself decides, delays, closes loops, and lets pathways emerge.
+
+Both views use the same twelve leverage points, the same repo, the same footer, and the same [Kōrero](https://github.com/robertmccallnz/systems-observatory/discussions) comment layer.
+
+## What each view does
+
+### Observatory (`index.html`)
 - **Twelve panels** — one per Meadows tier (12 shallowest → 1 deepest).
 - **Live indicators** — public NZ government sources (RBNZ, Stats NZ, Treasury, MSD, Waitangi Tribunal, Ombudsman).
 - **Anomaly surfacing** — rolling z-score against a 24-period baseline; deviations flagged as paradigm-challenging.
 - **Community annotation** — users rank interventions by leverage tier; entries written to the public HF dataset `te-pa/systems-observatory-annotations`.
-- **Kōrero comments** — Giscus + GitHub Discussions, matching your existing sites.
 
-## Three components
+### Governance Audit (`governance.html`)
+- **Governance graph** — nodes, edges, feedback loops, and decision routes for Te Pā's own governance system, each with `evidence_refs` pointing to public sources.
+- **Meadows interventions** — nodes grouped by leverage-point depth with intervention candidates.
+- **Comparison** — six systems axes (authority distribution, information flow, delay visibility, feedback closure, rule depth, self-organisation) scored qualitatively for current vs rhizome-integrated target.
+- **Audit findings** — priority interventions and Meadows reading in [`reports/governance-audit-report.md`](./reports/governance-audit-report.md).
+
+## Repo structure
+
+```
+systems-observatory/
+├── index.html                    # Observatory dashboard
+├── governance.html               # Governance Audit dashboard
+├── data/
+│   ├── indicators.json           # Twelve NZ indicators (observatory)
+│   ├── governance-graph.json     # Te Pā governance graph (audit)
+│   └── comparison.json           # Six systems axes (audit)
+├── docs/
+│   ├── LEVERAGE_POINTS.md        # Meadows × Aotearoa indicators mapping
+│   └── GOVERNANCE_AUDIT.md       # Method note for the audit
+├── reports/
+│   └── governance-audit-report.md  # Plain-language audit findings
+├── assets/
+│   ├── observatory.{css,js}      # Observatory dashboard
+│   ├── community.{css,js}        # Kōrero styling
+│   └── governance.css            # Governance Audit dashboard
+├── scripts/
+│   ├── fetch_indicators.py       # Weekly indicator refresh
+│   └── init_dataset.py           # HF dataset bootstrap
+├── space/                        # HF Gradio Space for anomaly detection
+└── .github/workflows/refresh.yml # Weekly cron
+```
+
+## Three components (observatory pipeline)
 
 ```
 ┌──────────────────────────┐    reads    ┌────────────────────┐
@@ -36,6 +78,12 @@ A **Te Pā Collective Action Lab** artefact — sibling to Thinkers Mapper, Kōr
 └──────────────────────────┘
 ```
 
+## Provenance rule
+
+Every observatory indicator cites its public NZ government source. Every governance-graph node, loop, decision-route step, and comparison axis cites a public evidence reference — repo files, GitHub Discussions threads, published government pages, or published Māori data governance documents. If a claim cannot yet be publicly cited, the node is intentionally omitted rather than filled with a private reference.
+
+This is the same rule both views apply: public, aggregated, non-personal.
+
 ## Deploy (one-time)
 
 **1. Push this folder to GitHub**
@@ -48,13 +96,13 @@ gh repo create robertmccallnz/systems-observatory --public --source=. --push
 
 **2. Turn on GitHub Pages**
 
-Settings → Pages → Source: `Deploy from a branch`, branch `main`, folder `/`. The site becomes live at `https://robertmccall.github.io/systems-observatory/`.
+Settings → Pages → Source: `Deploy from a branch`, branch `main`, folder `/`. The site becomes live at `https://robertmccallnz.github.io/systems-observatory/`.
 
-To use `observatory.te-pa.org`: Settings → Pages → Custom domain → `observatory.te-pa.org`, then add a `CNAME` DNS record pointing to `robertmccall.github.io`.
+To use `observatory.te-pa.org`: Settings → Pages → Custom domain → `observatory.te-pa.org`, then add a `CNAME` DNS record pointing to `robertmccallnz.github.io`.
 
 **3. Wire Kōrero (Giscus)**
 
-In your existing Giscus config, get the repo-id and General category-id, then replace the two `REPLACE_WITH_…` placeholders in `index.html` (identical pattern to your other sites — you already have `assets/community.css` and `assets/community.js` conventions).
+In your existing Giscus config, get the repo-id and General category-id, then replace the two `REPLACE_WITH_…` placeholders in `index.html` and `governance.html`.
 
 **4. Create the HF Dataset**
 
@@ -82,6 +130,6 @@ Sign up at [portal.apis.stats.govt.nz](https://portal.apis.stats.govt.nz/), subs
 
 ## Kaupapa
 
-Built under the [Māori Data Governance Model](https://www.kahuiraraunga.io/) of Te Kāhui Raraunga. Public, aggregated, non-personal data only. Every indicator cites its source; every annotation is public and forkable. Te reo Māori terminology is used deliberately as a paradigm-shifting act at leverage point #2.
+Built under the [Māori Data Governance Model](https://www.kahuiraraunga.io/) of Te Kāhui Raraunga. Public, aggregated, non-personal data only. Every indicator cites its source; every annotation is public and forkable; every governance node cites public evidence. Te reo Māori terminology is used deliberately as a paradigm-shifting act at leverage point #2.
 
-See [`docs/LEVERAGE_POINTS.md`](docs/LEVERAGE_POINTS.md) for the full mapping.
+See [`docs/LEVERAGE_POINTS.md`](docs/LEVERAGE_POINTS.md) for the observatory mapping and [`docs/GOVERNANCE_AUDIT.md`](docs/GOVERNANCE_AUDIT.md) for the audit method.

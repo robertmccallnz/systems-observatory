@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "title": "Te Pā Governance Graph",
+    "subtitle": "Reflexive systems audit of Te Pā's own decision-making, feedback loops, and pathway growth",
+    "generated_at": "2026-07-06T00:00:00Z",
+    "kaupapa": "Built under the Māori Data Governance Model of Te Kāhui Raraunga. Every node, loop, decision route, and comparison axis cites a public evidence source — repo file, GitHub Discussions thread, government page, or published governance document.",
+    "provenance_note": "Evidence references follow the same convention as the observatory's indicator sources: only public, forkable, non-personal references. No private trustee correspondence or unpublished minutes.",
+    "annotations_dataset": "te-pa/systems-observatory-annotations"
+  },
+  "nodes": [
+    {
+      "id": "korero-feedback",
+      "label": "Kōrero feedback volume",
+      "type": "signal",
+      "domain": "community",
+      "description": "Volume and quality of community feedback arriving through Giscus / GitHub Discussions across the Te Pā ecosystem.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "information_flow",
+      "tags": ["feedback", "community", "korero"],
+      "evidence_refs": [
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)",
+        "[Kōrero comment system notes](https://github.com/robertmccallnz)"
+      ],
+      "intervention_candidates": [
+        "Publish weekly aggregated feedback counts by domain",
+        "Route governance-tagged threads to a visible decision queue"
+      ]
+    },
+    {
+      "id": "course-revision",
+      "label": "Course revision rate",
+      "type": "outcome",
+      "domain": "learning",
+      "description": "How often Kiwi Dialectic courses are revised in response to learner and community feedback.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "feedback_loop",
+      "tags": ["course", "revision", "kiwi-dialectic"],
+      "evidence_refs": [
+        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[thinkers-mapper repository](https://github.com/robertmccallnz)"
+      ],
+      "intervention_candidates": [
+        "Publish per-course changelog entries",
+        "Tag every course revision to the feedback thread that motivated it"
+      ]
+    },
+    {
+      "id": "learner-participation",
+      "label": "Learner participation",
+      "type": "signal",
+      "domain": "learning",
+      "description": "Active participation across Te Pā and Kiwi Dialectic courses.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "goal",
+      "tags": ["learners", "participation"],
+      "evidence_refs": [
+        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Te Pā courses](https://www.te-pa.org)"
+      ],
+      "intervention_candidates": [
+        "Publish anonymous participation counts per pathway",
+        "Track drop-off points and publish where onboarding breaks"
+      ]
+    },
+    {
+      "id": "community-trust",
+      "label": "Community trust in governance",
+      "type": "outcome",
+      "domain": "governance",
+      "description": "Perceived legitimacy of Te Pā decisions among whānau, kaitiaki, and collaborators.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "paradigm",
+      "tags": ["trust", "legitimacy"],
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Te Pā · kaupapa](https://www.te-pa.org)"
+      ],
+      "intervention_candidates": [
+        "Publish a 'you said / we changed' log after every governance cycle",
+        "Publish trustee decision notes in plain language"
+      ]
+    },
+    {
+      "id": "kaitiaki-legitimacy",
+      "label": "Kaitiaki seat legitimacy",
+      "type": "decision_point",
+      "domain": "governance",
+      "description": "Clarity and community recognition of kaitiaki authority within the trust structure.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "rule",
+      "tags": ["kaitiaki", "seats", "authority"],
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Waitangi Tribunal reports](https://www.waitangitribunal.govt.nz/publications-and-resources/waitangi-tribunal-reports/)"
+      ],
+      "intervention_candidates": [
+        "Publish kaitiaki role description and scope",
+        "Publish the appointment / rotation rule"
+      ]
+    },
+    {
+      "id": "trustee-delay",
+      "label": "Trustee review delay",
+      "type": "delay",
+      "domain": "governance",
+      "description": "Elapsed time between a decision entering trustee review and a published outcome.",
+      "current_state": "high",
+      "target_state": "low",
+      "meadows": "delay",
+      "tags": ["delay", "review", "bottleneck"],
+      "evidence_refs": [
+        "[Charities Services · governance guidance](https://www.charities.govt.nz/im-a-registered-charity/running-your-charity/)",
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+      ],
+      "intervention_candidates": [
+        "Publish a rolling trustee turnaround indicator",
+        "Set a service-level target for governance decisions"
+      ]
+    },
+    {
+      "id": "pathway-autonomy",
+      "label": "Pathway autonomy",
+      "type": "outcome",
+      "domain": "governance",
+      "description": "The degree to which learning and community pathways can make bounded decisions without trustee sign-off.",
+      "current_state": "low",
+      "target_state": "high",
+      "meadows": "self_organization",
+      "tags": ["pathways", "autonomy", "self-organization"],
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Te Pā courses](https://www.te-pa.org)"
+      ],
+      "intervention_candidates": [
+        "Define the bounded powers of a pathway steward",
+        "Pilot one pathway with delegated authority and publish the outcome"
+      ]
+    },
+    {
+      "id": "docs-clarity",
+      "label": "Documentation clarity",
+      "type": "resource",
+      "domain": "infrastructure",
+      "description": "How clearly the repo documents governance, contribution, and onboarding routes.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "information_flow",
+      "tags": ["docs", "repo", "onboarding"],
+      "evidence_refs": [
+        "[systems-observatory README](https://github.com/robertmccallnz/systems-observatory/blob/main/README.md)",
+        "[LEVERAGE_POINTS.md](https://github.com/robertmccallnz/systems-observatory/blob/main/docs/LEVERAGE_POINTS.md)"
+      ],
+      "intervention_candidates": [
+        "Publish a single canonical governance README",
+        "Add a CONTRIBUTING.md that names decision routes explicitly"
+      ]
+    },
+    {
+      "id": "contributor-confidence",
+      "label": "Contributor confidence",
+      "type": "signal",
+      "domain": "infrastructure",
+      "description": "Willingness of new contributors to open issues, discussions, or PRs.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "information_flow",
+      "tags": ["contributors", "open-source"],
+      "evidence_refs": [
+        "[systems-observatory · contributors](https://github.com/robertmccallnz/systems-observatory/graphs/contributors)",
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+      ],
+      "intervention_candidates": [
+        "Label 'good first issue' entries",
+        "Publish a public roadmap so newcomers can see where help is welcome"
+      ]
+    },
+    {
+      "id": "maori-control",
+      "label": "Māori control over rules",
+      "type": "rule",
+      "domain": "governance",
+      "description": "The degree to which Māori determine the governance rules of the ecosystem.",
+      "current_state": "high",
+      "target_state": "high",
+      "meadows": "rule",
+      "tags": ["maori", "governance", "tino-rangatiratanga"],
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
+        "[Te Mana Raraunga · principles](https://www.temanararaunga.maori.nz/tutohinga)"
+      ],
+      "intervention_candidates": [
+        "Publish the rule set that formalises Māori control",
+        "Publish a review cadence for that rule set"
+      ]
+    },
+    {
+      "id": "translation-capacity",
+      "label": "Translation and bilingual capacity",
+      "type": "resource",
+      "domain": "community",
+      "description": "Capacity to translate and publish bilingual (te reo Māori / English) content across the ecosystem.",
+      "current_state": "low",
+      "target_state": "high",
+      "meadows": "buffer",
+      "tags": ["translation", "bilingual", "te-reo"],
+      "evidence_refs": [
+        "[Te Taura Whiri · Māori Language Commission](https://www.tetaurawhiri.govt.nz/)",
+        "[Te Hiku Media](https://tehiku.nz/)"
+      ],
+      "intervention_candidates": [
+        "Build a translation queue backed by Te Hiku Media resources",
+        "Publish which content is bilingual and which is English-only"
+      ]
+    },
+    {
+      "id": "decision-visibility",
+      "label": "Decision visibility",
+      "type": "signal",
+      "domain": "governance",
+      "description": "Whether decisions and the reasoning behind them are publicly visible to the community they affect.",
+      "current_state": "low",
+      "target_state": "high",
+      "meadows": "information_flow",
+      "tags": ["transparency", "decisions"],
+      "evidence_refs": [
+        "[Office of the Ombudsman · OIA](https://www.ombudsman.parliament.nz/what-ombudsman-can-help/official-information)",
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+      ],
+      "intervention_candidates": [
+        "Publish short plain-language decision notes",
+        "Tag every decision note to the discussion thread that informed it"
+      ]
+    },
+    {
+      "id": "pathway-growth",
+      "label": "New pathway growth",
+      "type": "outcome",
+      "domain": "community",
+      "description": "Rate at which new learning or language pathways can emerge inside the ecosystem.",
+      "current_state": "low",
+      "target_state": "high",
+      "meadows": "self_organization",
+      "tags": ["growth", "pathways", "languages"],
+      "evidence_refs": [
+        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Te Pā courses](https://www.te-pa.org)"
+      ],
+      "intervention_candidates": [
+        "Publish the criteria for launching a new pathway",
+        "Publish a template for pathway stewards"
+      ]
+    },
+    {
+      "id": "moderation-load",
+      "label": "Moderation load",
+      "type": "delay",
+      "domain": "community",
+      "description": "Effort required to keep community spaces safe and coherent.",
+      "current_state": "medium",
+      "target_state": "medium",
+      "meadows": "feedback_loop",
+      "tags": ["moderation", "capacity"],
+      "evidence_refs": [
+        "[Netsafe · online safety guidance](https://www.netsafe.org.nz/)",
+        "[GitHub · community guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines)"
+      ],
+      "intervention_candidates": [
+        "Publish moderation queue turnaround indicators",
+        "Rotate moderation duty on a published schedule"
+      ]
+    },
+    {
+      "id": "shared-graph",
+      "label": "Shared graph infrastructure",
+      "type": "resource",
+      "domain": "infrastructure",
+      "description": "The technical substrate — repos, JSON, dashboards — that makes the ecosystem inspectable.",
+      "current_state": "medium",
+      "target_state": "high",
+      "meadows": "information_flow",
+      "tags": ["graph", "mapper", "infrastructure"],
+      "evidence_refs": [
+        "[systems-observatory repo](https://github.com/robertmccallnz/systems-observatory)",
+        "[thinkers-mapper](https://github.com/robertmccallnz)"
+      ],
+      "intervention_candidates": [
+        "Publish a schema for governance-graph.json",
+        "Add JSON validation to the Actions workflow"
+      ]
+    }
+  ],
+  "edges": [
+    {"from": "korero-feedback", "to": "course-revision", "kind": "informs"},
+    {"from": "course-revision", "to": "learner-participation", "kind": "shapes"},
+    {"from": "learner-participation", "to": "korero-feedback", "kind": "generates"},
+    {"from": "kaitiaki-legitimacy", "to": "community-trust", "kind": "shapes"},
+    {"from": "trustee-delay", "to": "community-trust", "kind": "erodes"},
+    {"from": "docs-clarity", "to": "contributor-confidence", "kind": "shapes"},
+    {"from": "contributor-confidence", "to": "shared-graph", "kind": "strengthens"},
+    {"from": "shared-graph", "to": "docs-clarity", "kind": "supports"},
+    {"from": "pathway-autonomy", "to": "pathway-growth", "kind": "enables"},
+    {"from": "pathway-growth", "to": "community-trust", "kind": "shapes"},
+    {"from": "korero-feedback", "to": "moderation-load", "kind": "increases"},
+    {"from": "moderation-load", "to": "decision-visibility", "kind": "throttles"},
+    {"from": "maori-control", "to": "kaitiaki-legitimacy", "kind": "grounds"},
+    {"from": "translation-capacity", "to": "pathway-growth", "kind": "enables"}
+  ],
+  "loops": [
+    {
+      "id": "r1",
+      "label": "Community feedback improves course relevance",
+      "loop_type": "reinforcing",
+      "nodes": ["korero-feedback", "course-revision", "learner-participation"],
+      "story": "More learner and community feedback drives better course revision, which lifts participation and generates more feedback.",
+      "evidence_refs": [
+        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+      ]
+    },
+    {
+      "id": "b1",
+      "label": "Trustee review protects legitimacy but slows response",
+      "loop_type": "balancing",
+      "nodes": ["trustee-delay", "kaitiaki-legitimacy", "community-trust"],
+      "story": "Formal review protects governance legitimacy, but long delays reduce trust and system responsiveness.",
+      "evidence_refs": [
+        "[Charities Services · governance guidance](https://www.charities.govt.nz/im-a-registered-charity/running-your-charity/)"
+      ]
+    },
+    {
+      "id": "r2",
+      "label": "Clear documentation grows contributor power",
+      "loop_type": "reinforcing",
+      "nodes": ["docs-clarity", "contributor-confidence", "shared-graph"],
+      "story": "Clearer docs increase contributor confidence, which strengthens the infrastructure and improves docs again.",
+      "evidence_refs": [
+        "[systems-observatory README](https://github.com/robertmccallnz/systems-observatory/blob/main/README.md)"
+      ]
+    },
+    {
+      "id": "r3",
+      "label": "Pathway autonomy grows new language nodes",
+      "loop_type": "reinforcing",
+      "nodes": ["pathway-autonomy", "pathway-growth", "community-trust"],
+      "story": "When pathways have legitimate autonomy, communities are more likely to grow new nodes and trust the structure.",
+      "evidence_refs": [
+        "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)"
+      ]
+    },
+    {
+      "id": "b2",
+      "label": "Moderation load can choke participation",
+      "loop_type": "balancing",
+      "nodes": ["korero-feedback", "moderation-load", "decision-visibility"],
+      "story": "More community input is healthy, but if moderation and response capacity do not scale, decisions become less visible and participation can flatten.",
+      "evidence_refs": [
+        "[Netsafe · online safety guidance](https://www.netsafe.org.nz/)"
+      ]
+    }
+  ],
+  "decision_routes": [
+    {
+      "id": "content-change",
+      "label": "Publish or revise a course",
+      "description": "How a course revision moves from feedback to published change.",
+      "steps": [
+        {
+          "node": "korero-feedback",
+          "action": "Feedback lands in Kōrero (GitHub Discussions or Substack comments).",
+          "evidence_refs": [
+            "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+          ]
+        },
+        {
+          "node": "course-revision",
+          "action": "Kaimahi drafts a revision and opens a PR or Substack draft.",
+          "evidence_refs": [
+            "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)"
+          ]
+        },
+        {
+          "node": "decision-visibility",
+          "action": "The changelog entry names the feedback thread that motivated the change.",
+          "evidence_refs": [
+            "[systems-observatory · commits](https://github.com/robertmccallnz/systems-observatory/commits/main)"
+          ]
+        },
+        {
+          "node": "community-trust",
+          "action": "A 'you said / we changed' note closes the loop with the community that raised the point.",
+          "evidence_refs": [
+            "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance-change",
+      "label": "Change a governance rule",
+      "description": "How a proposed change to a governance rule moves from proposal to ratified rule.",
+      "steps": [
+        {
+          "node": "korero-feedback",
+          "action": "A proposal is filed as a Discussions thread tagged 'governance'.",
+          "evidence_refs": [
+            "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
+          ]
+        },
+        {
+          "node": "kaitiaki-legitimacy",
+          "action": "Kaitiaki review the proposal against the Māori Data Governance Model.",
+          "evidence_refs": [
+            "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)"
+          ]
+        },
+        {
+          "node": "trustee-delay",
+          "action": "Trustees ratify or return the proposal within a published turnaround window.",
+          "evidence_refs": [
+            "[Charities Services · governance guidance](https://www.charities.govt.nz/im-a-registered-charity/running-your-charity/)"
+          ]
+        },
+        {
+          "node": "decision-visibility",
+          "action": "The ratified rule is published in the repo and referenced in the docs.",
+          "evidence_refs": [
+            "[systems-observatory · commits](https://github.com/robertmccallnz/systems-observatory/commits/main)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-pathway",
+      "label": "Launch a new pathway",
+      "description": "How a new learning or language pathway comes into being.",
+      "steps": [
+        {
+          "node": "pathway-growth",
+          "action": "A pathway steward proposes a new pathway with a scope and audience.",
+          "evidence_refs": [
+            "[Te Pā courses](https://www.te-pa.org)"
+          ]
+        },
+        {
+          "node": "translation-capacity",
+          "action": "Translation and bilingual capacity is assessed against the pathway's needs.",
+          "evidence_refs": [
+            "[Te Taura Whiri · Māori Language Commission](https://www.tetaurawhiri.govt.nz/)"
+          ]
+        },
+        {
+          "node": "pathway-autonomy",
+          "action": "The pathway is granted bounded authority to make its own content and process decisions.",
+          "evidence_refs": [
+            "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)"
+          ]
+        },
+        {
+          "node": "decision-visibility",
+          "action": "The pathway's scope, steward, and boundaries are published in the repo.",
+          "evidence_refs": [
+            "[systems-observatory · commits](https://github.com/robertmccallnz/systems-observatory/commits/main)"
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "current",
+      "label": "Current governance state",
+      "blurb": "Emphasises existing strengths, bottlenecks, and where feedback currently dies or slows down."
+    },
+    {
+      "id": "target",
+      "label": "Rhizome-integrated target",
+      "blurb": "Emphasises delegated pathways, visible information flow, stronger closure loops, and deeper self-organisation."
+    }
+  ],
+  "prompts": [
+    "Which feedback channels produce actual changes in course content, governance rules, or repo structure?",
+    "Which decisions require trustee review, and which could be safely delegated to pathway-level kaitiaki?",
+    "Where are the longest delays: moderation, translation, trustee sign-off, publishing, or onboarding?",
+    "Which communities can currently see decisions being made, and which are expected to trust the process without visibility?",
+    "What conditions would allow a new language pathway to emerge without losing Māori control at the system core?"
+  ],
+  "notes": [
+    "Every node, loop, and route cites a public source. If no public source exists yet, the node is intentionally omitted rather than filled with a private reference.",
+    "The graph follows the same provenance rule as the observatory's indicators: public, aggregated, non-personal.",
+    "Meadows depth is attached to every node so interventions can be grouped by leverage tier.",
+    "This graph is a governance instrument, not dashboard theatre. Whānau, kaitiaki, and collaborators can challenge the map through Kōrero.",
+    "Next technical step: add JSON validation to the Actions workflow so schema drift is caught in CI."
+  ]
+}
