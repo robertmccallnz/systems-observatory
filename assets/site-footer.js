@@ -31,10 +31,10 @@
     '}',
     '.tepa-footer *{box-sizing:border-box;}',
     '.tepa-footer .tepa-grid{',
-    '  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:1.5rem;',
+    '  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:1.5rem;',
     '}',
-    '@media(max-width:1080px){.tepa-footer .tepa-grid{grid-template-columns:1fr 1fr 1fr;}}',
-    '@media(max-width:720px){.tepa-footer .tepa-grid{grid-template-columns:1fr 1fr;}}',
+    '@media(max-width:1180px){.tepa-footer .tepa-grid{grid-template-columns:1.4fr 1fr 1fr;}}',
+    '@media(max-width:820px){.tepa-footer .tepa-grid{grid-template-columns:1fr 1fr;}}',
     '@media(max-width:520px){.tepa-footer .tepa-grid{grid-template-columns:1fr;}}',
     '.tepa-footer .tepa-block h2{',
     '  font-family:"Bebas Neue","Inter",sans-serif;font-size:1.6rem;',
@@ -86,16 +86,24 @@
     { key: 'korero',                label: 'Kōrero (Discussions)',     href: 'https://github.com/robertmccallnz/systems-observatory/discussions' }
   ];
 
+  var READ_WATCH = [
+    { label: 'Substack',  href: 'https://www.kiwidialectic.com/' },
+    { label: 'Facebook',  href: 'https://www.facebook.com/kiwidialectic/' },
+    { label: 'Bluesky',   href: 'https://bsky.app/profile/robertmccallnz.bsky.social' },
+    { label: 'Kōrero (Discussions)', href: 'https://github.com/robertmccallnz/systems-observatory/discussions' }
+  ];
+
   var CONTEXT_LINKS = [
-    { label: 'Leverage points mapping',   href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/LEVERAGE_POINTS.md' },
-    { label: 'Governance audit method',   href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/GOVERNANCE_AUDIT.md' },
-    { label: 'Governance audit report',   href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/reports/governance-audit-report.md' },
-    { label: 'Embed guide',               href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/EMBED.md' },
-    { label: 'GitHub org',                href: 'https://github.com/robertmccallnz' }
+    { label: 'Leverage points mapping', href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/LEVERAGE_POINTS.md' },
+    { label: 'Governance audit method', href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/GOVERNANCE_AUDIT.md' },
+    { label: 'Governance audit report', href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/reports/governance-audit-report.md' },
+    { label: 'Embed guide',             href: 'https://github.com/robertmccallnz/systems-observatory/blob/main/docs/EMBED.md' },
+    { label: 'GitHub org',              href: 'https://github.com/robertmccallnz' }
   ];
 
   var DEFAULT_SUPPORT = [
     { label: 'Koha via Ko-fi',        href: 'https://ko-fi.com/thekiwidialectic' },
+    { label: 'Pou Tohu — badges',     href: 'https://robertmccallnz.github.io/kiwidialecticcalendar-/badges/' },
     { label: 'Subscribe on Substack', href: 'https://www.kiwidialectic.com/subscribe' }
   ];
 
@@ -177,7 +185,7 @@
       '    </div>' +
            block('Ecosystem', ECOSYSTEM.slice(0, 7), page) +
            block('Also in the network', ECOSYSTEM.slice(7), page) +
-           block('Context', CONTEXT_LINKS, null) +
+           block('Read & Watch', READ_WATCH, null) +
            block('Support', support, null) +
       '  </div>' +
       '  <div class="tepa-meta">' +
