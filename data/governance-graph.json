@@ -38,7 +38,7 @@
       "meadows": "feedback_loop",
       "tags": ["course", "revision", "kiwi-dialectic"],
       "evidence_refs": [
-        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Kiwi Dialectic Substack](https://thekiwidialectic.substack.com/)",
         "[thinkers-mapper repository](https://github.com/robertmccallnz)"
       ],
       "intervention_candidates": [
@@ -57,7 +57,7 @@
       "meadows": "goal",
       "tags": ["learners", "participation"],
       "evidence_refs": [
-        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Kiwi Dialectic Substack](https://thekiwidialectic.substack.com/)",
         "[Te Pā courses](https://www.te-pa.org)"
       ],
       "intervention_candidates": [
@@ -96,7 +96,7 @@
       "tags": ["kaitiaki", "seats", "authority"],
       "evidence_refs": [
         "[Māori Data Governance Model · Te Kāhui Raraunga](https://www.kahuiraraunga.io/)",
-        "[Waitangi Tribunal reports](https://www.waitangitribunal.govt.nz/publications-and-resources/waitangi-tribunal-reports/)"
+        "[Waitangi Tribunal reports](https://www.waitangitribunal.govt.nz/en/publications/tribunal-reports)"
       ],
       "intervention_candidates": [
         "Publish kaitiaki role description and scope",
@@ -247,7 +247,7 @@
       "meadows": "self_organization",
       "tags": ["growth", "pathways", "languages"],
       "evidence_refs": [
-        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Kiwi Dialectic Substack](https://thekiwidialectic.substack.com/)",
         "[Te Pā courses](https://www.te-pa.org)"
       ],
       "intervention_candidates": [
@@ -318,7 +318,7 @@
       "nodes": ["korero-feedback", "course-revision", "learner-participation"],
       "story": "More learner and community feedback drives better course revision, which lifts participation and generates more feedback.",
       "evidence_refs": [
-        "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)",
+        "[Kiwi Dialectic Substack](https://thekiwidialectic.substack.com/)",
         "[GitHub Discussions · systems-observatory](https://github.com/robertmccallnz/systems-observatory/discussions)"
       ]
     },
@@ -380,7 +380,7 @@
           "node": "course-revision",
           "action": "Kaimahi drafts a revision and opens a PR or Substack draft.",
           "evidence_refs": [
-            "[Kiwi Dialectic Substack](https://kiwidialectic.substack.com/)"
+            "[Kiwi Dialectic Substack](https://thekiwidialectic.substack.com/)"
           ]
         },
         {
