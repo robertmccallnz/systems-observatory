@@ -74,6 +74,7 @@
     { key: 'te-pa',                 label: 'Te Pā',                    href: 'https://te-pa.org/' },
     { key: 'observatory',           label: 'Systems Observatory',      href: 'https://robertmccallnz.github.io/systems-observatory/' },
     { key: 'governance',            label: 'Governance Audit',         href: 'https://robertmccallnz.github.io/systems-observatory/governance.html' },
+    { key: 'leverage-points',       label: 'Twelve Leverage Points',   href: 'https://robertmccallnz.github.io/leverage-points-course/' },
     { key: 'ai-warrior',            label: 'AI Warrior',               href: 'https://robertmccallnz.github.io/ai-warrior/' },
     { key: 'ai-warrior-te-pa',      label: 'AI Warrior × Te Pā',       href: 'https://robertmccallnz.github.io/ai-warrior-te-pa/' },
     { key: 'ai-literacy-families',  label: 'AI Literacy for Families', href: 'https://robertmccallnz.github.io/ai-literacy-for-families/' },
@@ -158,6 +159,7 @@
       else if (p.indexOf('six-thinkers') !== -1) page = 'six-thinkers';
       else if (p.indexOf('cooperative-aotearoa') !== -1) page = 'cooperative-aotearoa';
       else if (p.indexOf('thinkers-mapper') !== -1) page = 'thinkers-mapper';
+      else if (p.indexOf('leverage-points-course') !== -1) page = 'leverage-points';
       else if (p.indexOf('kd-dialogues') !== -1) page = 'kd-dialogues';
       else if (p.indexOf('kiwidialecticcalendar') !== -1) page = 'calendar';
     }

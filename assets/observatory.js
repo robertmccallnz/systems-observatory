@@ -46,6 +46,8 @@
     const anomalyLine = hasAnomaly
       ? `<div><span class="obs-flag">◆ anomaly</span> <span style="color:#d7261e;font-size:12px;">${lp.anomaly.message}</span></div>`
       : "";
+    const moduleSlug = `module-${String(lp.id).padStart(2, "0")}.html`;
+    const courseLink = `<a class="obs-learn" href="https://robertmccallnz.github.io/leverage-points-course/modules/${moduleSlug}" target="_blank" rel="noopener">Learn this tier →</a>`;
     return `<article class="obs-card${hasAnomaly ? " has-anomaly" : ""}" data-lp="${lp.id}">
       <div class="obs-card-tier"><span>${lp.tier}</span><span class="lp-number">${lp.id}</span></div>
       <h3>${lp.name}</h3>
@@ -54,6 +56,7 @@
       ${sparkline(lp.series, lp.anomaly && lp.anomaly.at)}
       ${anomalyLine}
       <div class="obs-source">Source: <a href="${lp.source_url}" target="_blank" rel="noopener">${lp.source_name}</a></div>
+      <div class="obs-course-link">${courseLink}</div>
     </article>`;
   }
 
