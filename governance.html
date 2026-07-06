@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="assets/community.css">
 <link rel="stylesheet" href="assets/governance.css">
 </head>
-<body>
+<body data-page="governance">
 <header class="obs-header">
   <div class="obs-brand">
     <span class="obs-mark">Te Pā</span>
@@ -143,42 +143,10 @@
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-block footer-intro">
-      <h2>Te Pā Systems Observatory</h2>
-      <p>A public systems observatory and governance-audit tool developed as a Te Pā Collective Action Lab artefact, in relation to Te Pā Tūwatawata and The Kiwi Dialectic.</p>
-      <p>This repo is a standalone, forkable research artefact. Te Pā remains the kaupapa and charitable-trust anchor; the observatory remains an open technical and pedagogical tool.</p>
-    </div>
-    <div class="footer-block">
-      <h3>Views</h3>
-      <ul>
-        <li><a href="./index.html">Observatory</a></li>
-        <li><a href="./governance.html">Governance Audit</a></li>
-      </ul>
-    </div>
-    <div class="footer-block">
-      <h3>Ecosystem</h3>
-      <ul>
-        <li><a href="https://www.te-pa.org" target="_blank" rel="noopener">Te Pā</a></li>
-        <li><a href="https://thekiwidialectic.substack.com/" target="_blank" rel="noopener">Kiwi Dialectic</a></li>
-        <li><a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a></li>
-      </ul>
-    </div>
-    <div class="footer-block">
-      <h3>Context</h3>
-      <ul>
-        <li><a href="./docs/GOVERNANCE_AUDIT.md">Governance audit method</a></li>
-        <li><a href="./reports/governance-audit-report.md">Governance audit report</a></li>
-        <li><a href="./docs/LEVERAGE_POINTS.md">Leverage points mapping</a></li>
-        <li><a href="https://github.com/robertmccallnz/systems-observatory" target="_blank" rel="noopener">GitHub repository</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-meta">
-    <p>Built under the <a href="https://www.kahuiraraunga.io/" target="_blank" rel="noopener">Māori Data Governance Model</a> of Te Kāhui Raraunga. Public, aggregated, non-personal data only.</p>
-  </div>
-</footer>
+<!-- Shared site footer — content lives in assets/site-footer.js -->
+<div id="site-footer"></div>
+
+<script src="assets/site-footer.js"></script>
 
 <script>
 let graphData = null, comparisonData = null;
