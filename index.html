@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Te Pā Systems Observatory · 12 Leverage Points · Aotearoa</title>
+<meta name="description" content="A living dashboard of Meadows' 12 leverage points, mapped to Aotearoa NZ political-economy indicators. A Te Pā Collective Action Lab artefact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/observatory.css">
+<link rel="stylesheet" href="assets/community.css">
+</head>
+<body>
+<header class="obs-header">
+  <div class="obs-brand">
+    <span class="obs-mark">Te Pā</span>
+    <span class="obs-sub">Collective Action Lab</span>
+  </div>
+  <h1>Systems Observatory</h1>
+  <p class="obs-tag">Twelve leverage points · Aotearoa political economy · <span id="obs-updated">loading…</span></p>
+  <p class="obs-kaupapa" id="obs-kaupapa"></p>
+</header>
+
+<main>
+  <section class="obs-intro">
+    <p>This observatory watches twelve places where a system can be intervened in — from surface-level parameters down to the paradigm it arises from — using <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/" target="_blank" rel="noopener">Donella Meadows' 1999 framework</a>. Each panel maps a Meadows tier to a public Aotearoa indicator. Panels flagged <span class="obs-flag">◆ anomaly</span> show a paradigm-challenging deviation against their own 24-period baseline. Add your reading in the <a href="#annotate">community annotation</a> section — every entry is written to a public, forkable archive.</p>
+  </section>
+
+  <section id="grid" class="obs-grid" aria-label="Twelve leverage points"></section>
+
+  <section id="annotate" class="obs-annotate">
+    <h2>Community Annotation · Rank an intervention</h2>
+    <p>Which leverage tier would most effectively address a current pattern you're watching? Submissions are appended to the public dataset <a id="ds-link" href="#" target="_blank" rel="noopener">te-pa/systems-observatory-annotations</a> as a transparent, whakapapa-cited archive.</p>
+    <form id="annotate-form" class="obs-form">
+      <label>Your handle (any name or pseudonym)
+        <input name="handle" required maxlength="80" placeholder="e.g. Kaimahi.Ōtākou">
+      </label>
+      <label>Which leverage point are you annotating?
+        <select name="leverage_point" required></select>
+      </label>
+      <label>Intervention you propose (one sentence)
+        <input name="intervention" required maxlength="240" placeholder="e.g. Ring-fence Reserve Bank remit to full employment + Te Tiriti">
+      </label>
+      <label>Effectiveness rank (1 = surface tweak · 5 = paradigm shift)
+        <input type="range" name="rank" min="1" max="5" value="3" oninput="this.nextElementSibling.value=this.value">
+        <output>3</output>
+      </label>
+      <label>Whakapapa · cite a prior intervention that operated at this tier
+        <textarea name="whakapapa" rows="2" maxlength="500" placeholder="e.g. 1938 Social Security Act — reshaped rules (tier 5)"></textarea>
+      </label>
+      <label>Reasoning
+        <textarea name="reasoning" rows="3" maxlength="1200" required placeholder="Why does this tier matter more than shallower ones for this pattern?"></textarea>
+      </label>
+      <button type="submit">Add to the archive</button>
+      <p class="obs-form-status" id="form-status" aria-live="polite"></p>
+    </form>
+    <details class="obs-details">
+      <summary>How submissions become the archive</summary>
+      <p>Your submission is POSTed to the Gradio Space endpoint, which appends a row to the Hugging Face dataset. The dataset is public and forkable; anyone can audit, mirror, or analyse it. No email, IP, or identifier is stored — only the fields above and a UTC timestamp. This follows the <a href="https://www.kahuiraraunga.io/" target="_blank" rel="noopener">Māori Data Governance Model</a>: public, aggregated, non-personal.</p>
+    </details>
+  </section>
+
+  <section class="obs-korero">
+    <h2>Kōrero</h2>
+    <p>Long-form discussion lives in <a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">GitHub Discussions</a>, embedded below via Giscus (Kōrero).</p>
+    <div class="kd-community">
+      <script src="https://giscus.app/client.js"
+        data-repo="robertmccallnz/systems-observatory"
+        data-repo-id="REPLACE_WITH_REPO_ID"
+        data-category="General"
+        data-category-id="REPLACE_WITH_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+  </section>
+</main>
+
+<footer id="kd-footer-slot"></footer>
+
+<script src="assets/observatory.js"></script>
+</body>
+</html>

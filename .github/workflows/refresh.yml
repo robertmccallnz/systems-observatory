@@ -1,0 +1,29 @@
+name: Refresh indicators
+on:
+  schedule:
+    # Weekly, Sunday 20:00 UTC = Monday 08:00 NZST
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch live indicators
+        env:
+          STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
+        run: python scripts/fetch_indicators.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "te-pa-observatory-bot"
+          git config user.email "bot@te-pa.org"
+          git add data/indicators.json
+          git diff --cached --quiet || git commit -m "chore: refresh indicators $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

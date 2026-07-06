@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "title": "Te Pā Systems Observatory",
+    "subtitle": "12 leverage points · Aotearoa NZ political economy",
+    "generated_at": "2026-07-06T00:00:00Z",
+    "source_note": "All series are cached from public NZ government sources. See docs/LEVERAGE_POINTS.md.",
+    "kaupapa": "Built under the Māori Data Governance Model of Te Kāhui Raraunga. Public, aggregated, non-personal data only.",
+    "annotations_dataset": "te-pa/systems-observatory-annotations",
+    "anomaly_space": "te-pa/systems-observatory-anomaly"
+  },
+  "leverage_points": [
+    {
+      "id": 12,
+      "tier": "Constants & Parameters",
+      "name": "Official Cash Rate",
+      "unit": "%",
+      "source_name": "RBNZ · FMA · Global-Rates cross-check",
+      "source_url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions",
+      "paradigm_question": "Whose cost of living moves when the number moves?",
+      "series": [
+        {
+          "period": "2020-03",
+          "value": 0.25
+        },
+        {
+          "period": "2021-10",
+          "value": 0.5
+        },
+        {
+          "period": "2021-11",
+          "value": 0.75
+        },
+        {
+          "period": "2022-02",
+          "value": 1.0
+        },
+        {
+          "period": "2022-04",
+          "value": 1.5
+        },
+        {
+          "period": "2022-05",
+          "value": 2.0
+        },
+        {
+          "period": "2022-07",
+          "value": 2.5
+        },
+        {
+          "period": "2022-08",
+          "value": 3.0
+        },
+        {
+          "period": "2022-10",
+          "value": 3.5
+        },
+        {
+          "period": "2022-11",
+          "value": 4.25
+        },
+        {
+          "period": "2023-02",
+          "value": 4.75
+        },
+        {
+          "period": "2023-04",
+          "value": 5.25
+        },
+        {
+          "period": "2023-05",
+          "value": 5.5
+        },
+        {
+          "period": "2024-08",
+          "value": 5.25
+        },
+        {
+          "period": "2024-10",
+          "value": 4.75
+        },
+        {
+          "period": "2024-11",
+          "value": 4.25
+        },
+        {
+          "period": "2025-02",
+          "value": 3.75
+        },
+        {
+          "period": "2025-04",
+          "value": 3.5
+        },
+        {
+          "period": "2025-05",
+          "value": 3.25
+        },
+        {
+          "period": "2025-08",
+          "value": 3.0
+        },
+        {
+          "period": "2025-10",
+          "value": 2.5
+        },
+        {
+          "period": "2025-11",
+          "value": 2.25
+        },
+        {
+          "period": "2026-02",
+          "value": 2.25
+        },
+        {
+          "period": "2026-04",
+          "value": 2.25
+        },
+        {
+          "period": "2026-05",
+          "value": 2.25
+        }
+      ],
+      "latest": 2.25,
+      "anomaly": null
+    },
+    {
+      "id": 11,
+      "tier": "Buffers & Stocks",
+      "name": "New dwelling consents (monthly, seasonally adjusted)",
+      "unit": "consents",
+      "source_name": "Stats NZ — Building consents issued",
+      "source_url": "https://www.stats.govt.nz/indicators/building-consents-issued",
+      "paradigm_question": "Are our buffers thick enough to survive a shock, or optimised for extraction?",
+      "series": [],
+      "notes": "Wired via GH Actions when STATSNZ_API_KEY is set (Aotearoa Data Explorer, SDMX 2.1).",
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 10,
+      "tier": "Material Stocks & Flows",
+      "name": "Greenhouse-gas emissions, gross (annual)",
+      "unit": "kt CO₂-e",
+      "source_name": "Stats NZ — Environmental-Economic Accounts",
+      "source_url": "https://www.stats.govt.nz/indicators/greenhouse-gas-emissions-industry-and-household",
+      "paradigm_question": "Does the physical economy match ecological limits?",
+      "series": [],
+      "notes": "Annual release; fetcher pulls the latest table when ADE key present.",
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 9,
+      "tier": "Delays",
+      "name": "OIA responses within statutory timeframe (%)",
+      "unit": "%",
+      "source_name": "Public Service Commission — OIA statistics",
+      "source_url": "https://www.publicservice.govt.nz/research-and-data/oia-statistics",
+      "paradigm_question": "Does the state react at the speed the system actually moves?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 8,
+      "tier": "Negative Feedback Loops",
+      "name": "Trade union membership rate",
+      "unit": "%",
+      "source_name": "Stats NZ HLFS · MBIE registered unions",
+      "source_url": "https://www.mbie.govt.nz/business-and-employment/employment-and-skills/employment-relations/registered-unions/",
+      "paradigm_question": "Can workers correct their own conditions, or has the loop been cut?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 7,
+      "tier": "Positive Feedback Loops",
+      "name": "Household net worth — top 1% share",
+      "unit": "%",
+      "source_name": "Stats NZ — Household Economic Survey",
+      "source_url": "https://www.stats.govt.nz/information-releases/household-net-worth-statistics-year-ended-june-2021",
+      "paradigm_question": "Which snowballs faster — capital compounding, or wages?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 6,
+      "tier": "Information Flows",
+      "name": "OIA complaints upheld by Ombudsman (annual)",
+      "unit": "complaints",
+      "source_name": "Office of the Ombudsman",
+      "source_url": "https://www.ombudsman.parliament.nz/resources/",
+      "paradigm_question": "Who gets to know what, and when?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 5,
+      "tier": "Rules",
+      "name": "People receiving Jobseeker Support",
+      "unit": "recipients",
+      "source_name": "MSD — Monthly Benefits Update",
+      "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/monthly-reporting/",
+      "paradigm_question": "Whose behaviour do the rules discipline?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 4,
+      "tier": "Self-Organisation",
+      "name": "Active iwi / hapū co-governance arrangements",
+      "unit": "arrangements",
+      "source_name": "Te Puni Kōkiri via data.govt.nz",
+      "source_url": "https://catalogue.data.govt.nz/organization/te-puni-kokiri",
+      "paradigm_question": "Who is allowed to redesign the system from inside?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 3,
+      "tier": "Goals",
+      "name": "Wellbeing-Budget priority spend ÷ GDP-growth spend",
+      "unit": "ratio",
+      "source_name": "The Treasury — Wellbeing Budget",
+      "source_url": "https://www.treasury.govt.nz/publications/wellbeing-budget",
+      "paradigm_question": "What is the system actually optimising for?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 2,
+      "tier": "Paradigms",
+      "name": "Hansard framing ratio: \"growth\" ÷ (\"wellbeing\" + \"tino rangatiratanga\")",
+      "unit": "ratio",
+      "source_name": "NZ Parliament — Hansard",
+      "source_url": "https://www.parliament.nz/en/pb/hansard-debates/rhr/",
+      "paradigm_question": "What is thinkable in this political culture?",
+      "series": [],
+      "notes": "Computed by the Gradio Space via Hansard full-text search; refreshed weekly.",
+      "latest": null,
+      "anomaly": null
+    },
+    {
+      "id": 1,
+      "tier": "Transcending Paradigms",
+      "name": "Waitangi Tribunal reports released (annual)",
+      "unit": "reports",
+      "source_name": "Waitangi Tribunal",
+      "source_url": "https://waitangitribunal.govt.nz/",
+      "paradigm_question": "Can the system see beyond itself?",
+      "series": [],
+      "latest": null,
+      "anomaly": null
+    }
+  ]
+}

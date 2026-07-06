@@ -1,0 +1,4 @@
+/* Kōrero (Giscus) container — mirrors the convention used across Te Pā /
+   Kiwi Dialectic sites. The parent site's shared community.css can replace this. */
+.kd-community { margin: 24px 0; max-width: 900px; }
+.kd-community iframe { color-scheme: dark; }
