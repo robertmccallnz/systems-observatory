@@ -126,8 +126,8 @@ inlined; all URLs are absolute. Safe to paste into any HTML editor.
     <div>
       <h3 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;color:#7a7268;margin:0 0 0.75rem;font-weight:600;">Ecosystem</h3>
       <ul style="list-style:none;margin:0;padding:0;">
-        <li style="margin-bottom:0.5rem;"><a href="https://www.te-pa.org" target="_blank" rel="noopener" style="color:#e8a83a;text-decoration:none;">Te Pā</a></li>
-        <li style="margin-bottom:0.5rem;"><a href="https://thekiwidialectic.substack.com/" target="_blank" rel="noopener" style="color:#e8a83a;text-decoration:none;">Kiwi Dialectic</a></li>
+        <li style="margin-bottom:0.5rem;"><a href="https://te-pa.org" target="_blank" rel="noopener" style="color:#e8a83a;text-decoration:none;">Te Pā</a></li>
+        <li style="margin-bottom:0.5rem;"><a href="https://www.kiwidialectic.com/" target="_blank" rel="noopener" style="color:#e8a83a;text-decoration:none;">Kiwi Dialectic</a></li>
         <li><a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener" style="color:#e8a83a;text-decoration:none;">Kōrero</a></li>
       </ul>
     </div>
