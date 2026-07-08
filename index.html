@@ -11,8 +11,10 @@
 <link rel="stylesheet" href="assets/observatory.css">
 <link rel="stylesheet" href="assets/community.css">
 <link rel="stylesheet" href="assets/governance.css">
+<link rel="stylesheet" href="assets/news-feed.css">
 </head>
 <body data-page="index" data-tepa-page="observatory">
+
 <header class="obs-header">
   <div class="obs-brand">
     <span class="obs-mark">Te Pā</span>
@@ -29,11 +31,125 @@
     <a href="https://www.kiwidialectic.com/" target="_blank" rel="noopener">Kiwi Dialectic</a>
     <a href="https://github.com/robertmccallnz/systems-observatory/discussions" target="_blank" rel="noopener">Kōrero</a>
   </nav>
+
+  <!-- ── Social links bar ── -->
+  <div class="obs-social" aria-label="Follow Te Pā on social media">
+    <a href="https://x.com/robertmccallnz" target="_blank" rel="noopener noreferrer" class="obs-social-link" aria-label="X / Twitter">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      <span>@robertmccallnz</span>
+    </a>
+    <a href="https://github.com/robertmccallnz" target="_blank" rel="noopener noreferrer" class="obs-social-link" aria-label="GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      <span>robertmccallnz</span>
+    </a>
+    <a href="https://substack.com/@robertmccallnz" target="_blank" rel="noopener noreferrer" class="obs-social-link" aria-label="Substack">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      <span>Newsletter</span>
+    </a>
+    <a href="https://www.kiwidialectic.com/" target="_blank" rel="noopener noreferrer" class="obs-social-link" aria-label="Kiwi Dialectic">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4-4 4 4"/></svg>
+      <span>Kiwi Dialectic</span>
+    </a>
+    <button class="obs-share-btn" id="obs-share-btn" aria-label="Share this Observatory">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      <span>Share</span>
+    </button>
+  </div>
 </header>
 
 <main>
   <section class="obs-intro">
     <p>This observatory watches twelve places where a system can be intervened in — from surface-level parameters down to the paradigm it arises from — using <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/" target="_blank" rel="noopener">Donella Meadows' 1999 framework</a>. Each panel maps a Meadows tier to a public Aotearoa indicator. Panels flagged <span class="obs-flag">◆ anomaly</span> show a paradigm-challenging deviation against their own 24-period baseline. Add your reading in the <a href="#annotate">community annotation</a> section — every entry is written to a public, forkable archive.</p>
+  </section>
+
+  <!-- ── News Impact Feed ── -->
+  <section id="news-impact" class="obs-news-impact" aria-labelledby="news-impact-heading">
+    <div class="obs-news-header">
+      <h2 id="news-impact-heading">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a4 4 0 0 1-4 4z"/><line x1="10" y1="7" x2="16" y2="7"/><line x1="10" y1="11" x2="16" y2="11"/><line x1="10" y1="15" x2="13" y2="15"/></svg>
+        News Events → Leverage Point Impact
+      </h2>
+      <p class="obs-news-sub">Recent events mapped to the Meadows tier they most destabilise or reinforce. Community-curated.</p>
+      <div class="obs-news-controls">
+        <button class="obs-news-filter-btn active" data-filter="all">All tiers</button>
+        <button class="obs-news-filter-btn" data-filter="paradigm">Paradigm</button>
+        <button class="obs-news-filter-btn" data-filter="structure">Structure</button>
+        <button class="obs-news-filter-btn" data-filter="rules">Rules</button>
+        <button class="obs-news-filter-btn" data-filter="parameters">Parameters</button>
+        <button class="obs-news-add-btn" id="obs-news-add-btn" aria-expanded="false" aria-controls="news-submit-panel">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add event
+        </button>
+      </div>
+    </div>
+
+    <!-- News event submission form -->
+    <div class="obs-news-submit" id="news-submit-panel" hidden aria-live="polite">
+      <form id="news-event-form" class="obs-news-form">
+        <div class="obs-news-form-row">
+          <label>Headline or short summary
+            <input name="headline" required maxlength="160" placeholder="e.g. Reserve Bank raises OCR by 50bps amid wage growth">
+          </label>
+          <label>Source URL
+            <input name="url" type="url" placeholder="https://…">
+          </label>
+        </div>
+        <div class="obs-news-form-row">
+          <label>Leverage tier affected
+            <select name="tier" required>
+              <option value="">— pick tier —</option>
+              <option value="12-parameters">12 · Numbers / parameters</option>
+              <option value="11-buffers">11 · Buffers &amp; stocks</option>
+              <option value="10-flows">10 · Flow rates</option>
+              <option value="9-feedback">9 · Feedback delays</option>
+              <option value="8-neg-loops">8 · Negative feedback loops</option>
+              <option value="7-pos-loops">7 · Positive feedback loops</option>
+              <option value="6-info">6 · Information flows</option>
+              <option value="5-rules">5 · Rules of the system</option>
+              <option value="4-self-org">4 · Self-organisation</option>
+              <option value="3-goals">3 · Goals of the system</option>
+              <option value="2-paradigm">2 · Paradigm / mindset</option>
+              <option value="1-transcend">1 · Transcending paradigms</option>
+            </select>
+          </label>
+          <label>Impact direction
+            <select name="impact" required>
+              <option value="">— pick —</option>
+              <option value="stress">🔴 Stresses / destabilises</option>
+              <option value="reinforce">🟢 Reinforces / stabilises</option>
+              <option value="ambiguous">🟡 Ambiguous / watch</option>
+            </select>
+          </label>
+        </div>
+        <label>Why does this event touch that tier? (one sentence)
+          <textarea name="reasoning" rows="2" maxlength="400" required placeholder="e.g. Raises the numeric OCR parameter — a tier 12 adjustment — while signalling no structural change to the remit (tier 5)."></textarea>
+        </label>
+        <div class="obs-news-form-actions">
+          <button type="submit" class="obs-news-submit-btn">Map to Observatory</button>
+          <button type="button" class="obs-news-cancel-btn" id="obs-news-cancel">Cancel</button>
+        </div>
+        <p class="obs-news-status" id="news-form-status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- News feed list -->
+    <ul class="obs-news-list" id="obs-news-list" aria-label="News events mapped to leverage tiers">
+      <li class="obs-news-item obs-news-skeleton" aria-hidden="true"><span class="skel skel-badge"></span><span class="skel skel-text"></span><span class="skel skel-meta"></span></li>
+      <li class="obs-news-item obs-news-skeleton" aria-hidden="true"><span class="skel skel-badge"></span><span class="skel skel-text"></span><span class="skel skel-meta"></span></li>
+      <li class="obs-news-item obs-news-skeleton" aria-hidden="true"><span class="skel skel-badge"></span><span class="skel skel-text"></span><span class="skel skel-meta"></span></li>
+    </ul>
+
+    <!-- RSS sources panel -->
+    <details class="obs-news-sources">
+      <summary>Feed sources &amp; how mapping works</summary>
+      <p>The observatory pulls headline JSON from a curated set of RSS-to-JSON proxies (RNZ, The Spinoff, StatsNZ releases). Each headline is pattern-matched against a keyword map that assigns a provisional Meadows tier — e.g. "OCR", "interest rate" → tier 12; "Treaty", "constitution" → tier 2–3; "tax reform", "employment law" → tier 5. Community members can correct or override the automatic mapping using the <em>Add event</em> form above. All mappings are stored in <code>data/news-events.json</code> in the public repo.</p>
+      <ul class="obs-news-source-list">
+        <li><a href="https://www.rnz.co.nz/rss/news.xml" target="_blank" rel="noopener">RNZ News RSS</a></li>
+        <li><a href="https://thespinoff.co.nz/feed" target="_blank" rel="noopener">The Spinoff</a></li>
+        <li><a href="https://www.stats.govt.nz/feed/" target="_blank" rel="noopener">Stats NZ releases</a></li>
+        <li><a href="https://www.treasury.govt.nz/news-and-events/rss.xml" target="_blank" rel="noopener">The Treasury</a></li>
+      </ul>
+    </details>
   </section>
 
   <section id="grid" class="obs-grid" aria-label="Twelve leverage points"></section>
@@ -93,9 +209,9 @@
   </section>
 </main>
 
-<!-- Shared Te Pā footer — same script drives every site (jsDelivr CDN). -->
 <div id="tepa-site-footer"></div>
 <script src="https://cdn.jsdelivr.net/gh/robertmccallnz/systems-observatory@main/assets/site-footer.js" defer></script>
 <script src="assets/observatory.js"></script>
+<script src="assets/news-feed.js" defer></script>
 </body>
 </html>

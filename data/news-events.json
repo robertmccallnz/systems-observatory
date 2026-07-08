@@ -1,0 +1,11 @@
+[
+  {
+    "headline": "Example: add your own curated news events here",
+    "url": null,
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Replace this file with real events mapped to leverage tiers. The news-feed.js script reads this file on every page load.",
+    "date": "2026-07-08",
+    "source": "community"
+  }
+]
