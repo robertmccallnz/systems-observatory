@@ -2,11 +2,17 @@
   "meta": {
     "title": "Te Pā Systems Observatory",
     "subtitle": "12 leverage points · Aotearoa NZ political economy",
-    "generated_at": "2026-07-06T00:00:00Z",
+    "generated_at": "2026-07-12T21:02:04.190466+00:00",
     "source_note": "All series are cached from public NZ government sources. See docs/LEVERAGE_POINTS.md.",
     "kaupapa": "Built under the Māori Data Governance Model of Te Kāhui Raraunga. Public, aggregated, non-personal data only.",
     "annotations_dataset": "te-pa/systems-observatory-annotations",
-    "anomaly_space": "te-pa/systems-observatory-anomaly"
+    "anomaly_space": "te-pa/systems-observatory-anomaly",
+    "fetch_status": [
+      "LP12 ok — 25 points, latest=2.25, anomaly=no",
+      "LP11 ok — 0 points, latest=None, anomaly=no",
+      "LP6 ok — 0 points, latest=None, anomaly=no",
+      "LP1 ok — 0 points, latest=None, anomaly=no"
+    ]
   },
   "leverage_points": [
     {
