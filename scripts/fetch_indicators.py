@@ -23,9 +23,8 @@ BROWSER_UA = (
   "Chrome/126.0.0.0 Safari/537.36"
 )
 TIMEOUT = 90
-
 MONTHS = ["january", "february", "march", "april", "may", "june",
-          "july", "august", "september", "october", "november", "december"]
+  "july", "august", "september", "october", "november", "december"]
 MONTH_MAP = {name.capitalize(): i + 1 for i, name in enumerate(MONTHS)}
 
 
@@ -120,11 +119,10 @@ def fetch_lp4_cogovernance():
   return []
 
 
-# ---------- LP5: People receiving Jobseeker Support (monthly, MSD) ----------
-# MSD publishes monthly benefit fact sheets. We probe FRED as a labour proxy fallback.
+# ---------- LP5: Jobseeker proxy (FRED NZ unemployment rate, quarterly) ----------
 def fetch_lp5_jobseeker():
   try:
-    series = _fred_csv("LRHUTTTTNZQ156S")  # NZ unemployment rate, quarterly (proxy)
+    series = _fred_csv("LRHUTTTTNZQ156S")
     print(f"[LP5] FRED unemployment-rate proxy: {len(series)} points", flush=True)
     return series[-40:]
   except Exception as e:
@@ -156,18 +154,31 @@ def fetch_lp9_oia_timeliness():
   return []
 
 
-# ---------- LP10: Greenhouse-gas emissions, gross (annual) ----------
-# FRED hosts OECD emissions for NZ under EMISSCO2NZA (or similar). Try a known series.
+# ---------- LP10: Greenhouse-gas emissions, gross (annual, OWID CSV) ----------
 def fetch_lp10_emissions():
-  for sid in ("EMISSCO2TOTVNZA", "EMISSCO2TOTVNZA648NRUG"):
+  url = ("https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv"
+         "?v=1&csvType=full&useColumnShortNames=true")
+  try:
+    text = _get(url).decode("utf-8", errors="replace")
+  except Exception as e:
+    print(f"[LP10] OWID fetch error: {e}", flush=True)
+    return []
+  reader = csv.DictReader(io.StringIO(text))
+  series = []
+  for row in reader:
+    if row.get("Entity", "").strip() != "New Zealand":
+      continue
+    y = row.get("Year", "").strip()
+    v = row.get("emissions_total", "").strip()
+    if not y or not v:
+      continue
     try:
-      series = _fred_csv(sid)
-      if series:
-        print(f"[LP10] FRED {sid}: {len(series)} points", flush=True)
-        return series[-40:]
-    except Exception as e:
-      print(f"[LP10] FRED {sid} error: {e}", flush=True)
-  return []
+      series.append({"period": f"{int(y):04d}", "value": float(v)})
+    except ValueError:
+      continue
+  series.sort(key=lambda x: x["period"])
+  print(f"[LP10] OWID New Zealand CO2: {len(series)} points", flush=True)
+  return series[-60:]
 
 
 # ---------- LP11: New dwelling consents (monthly, Stats NZ) ----------
