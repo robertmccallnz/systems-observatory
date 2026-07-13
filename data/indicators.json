@@ -136,10 +136,493 @@
       "source_name": "Stats NZ — Building consents issued",
       "source_url": "https://www.stats.govt.nz/indicators/building-consents-issued",
       "paradigm_question": "Are our buffers thick enough to survive a shock, or optimised for extraction?",
-      "series": [],
+      "series": [
+        {
+          "period": "2016-06",
+          "value": 3266.0
+        },
+        {
+          "period": "2016-07",
+          "value": 3300.0
+        },
+        {
+          "period": "2016-08",
+          "value": 3318.0
+        },
+        {
+          "period": "2016-09",
+          "value": 3083.0
+        },
+        {
+          "period": "2016-10",
+          "value": 3046.0
+        },
+        {
+          "period": "2016-11",
+          "value": 3544.0
+        },
+        {
+          "period": "2016-12",
+          "value": 2671.0
+        },
+        {
+          "period": "2017-01",
+          "value": 2108.0
+        },
+        {
+          "period": "2017-02",
+          "value": 2850.0
+        },
+        {
+          "period": "2017-03",
+          "value": 3360.0
+        },
+        {
+          "period": "2017-04",
+          "value": 2522.0
+        },
+        {
+          "period": "2017-05",
+          "value": 3433.0
+        },
+        {
+          "period": "2017-06",
+          "value": 3116.0
+        },
+        {
+          "period": "2017-07",
+          "value": 3317.0
+        },
+        {
+          "period": "2017-08",
+          "value": 3736.0
+        },
+        {
+          "period": "2017-09",
+          "value": 3244.0
+        },
+        {
+          "period": "2017-10",
+          "value": 3071.0
+        },
+        {
+          "period": "2017-11",
+          "value": 3803.0
+        },
+        {
+          "period": "2017-12",
+          "value": 2590.0
+        },
+        {
+          "period": "2018-01",
+          "value": 2314.0
+        },
+        {
+          "period": "2018-02",
+          "value": 2825.0
+        },
+        {
+          "period": "2018-03",
+          "value": 3450.0
+        },
+        {
+          "period": "2018-04",
+          "value": 3223.0
+        },
+        {
+          "period": "2018-05",
+          "value": 4069.0
+        },
+        {
+          "period": "2018-06",
+          "value": 3273.0
+        },
+        {
+          "period": "2018-07",
+          "value": 3245.0
+        },
+        {
+          "period": "2018-08",
+          "value": 3594.0
+        },
+        {
+          "period": "2018-09",
+          "value": 3058.0
+        },
+        {
+          "period": "2018-10",
+          "value": 3460.0
+        },
+        {
+          "period": "2018-11",
+          "value": 3739.0
+        },
+        {
+          "period": "2018-12",
+          "value": 2837.0
+        },
+        {
+          "period": "2019-01",
+          "value": 2883.0
+        },
+        {
+          "period": "2019-02",
+          "value": 3561.0
+        },
+        {
+          "period": "2019-03",
+          "value": 3683.0
+        },
+        {
+          "period": "2019-04",
+          "value": 3114.0
+        },
+        {
+          "period": "2019-05",
+          "value": 4307.0
+        },
+        {
+          "period": "2019-06",
+          "value": 3419.0
+        },
+        {
+          "period": "2019-07",
+          "value": 4007.0
+        },
+        {
+          "period": "2019-08",
+          "value": 3801.0
+        },
+        {
+          "period": "2019-09",
+          "value": 3869.0
+        },
+        {
+          "period": "2019-10",
+          "value": 3957.0
+        },
+        {
+          "period": "2019-11",
+          "value": 3743.0
+        },
+        {
+          "period": "2019-12",
+          "value": 3419.0
+        },
+        {
+          "period": "2020-01",
+          "value": 2970.0
+        },
+        {
+          "period": "2020-02",
+          "value": 3737.0
+        },
+        {
+          "period": "2020-03",
+          "value": 3339.0
+        },
+        {
+          "period": "2020-04",
+          "value": 2515.0
+        },
+        {
+          "period": "2020-05",
+          "value": 3984.0
+        },
+        {
+          "period": "2020-06",
+          "value": 3968.0
+        },
+        {
+          "period": "2020-07",
+          "value": 3844.0
+        },
+        {
+          "period": "2020-08",
+          "value": 3560.0
+        },
+        {
+          "period": "2020-09",
+          "value": 4037.0
+        },
+        {
+          "period": "2020-10",
+          "value": 4098.0
+        },
+        {
+          "period": "2020-11",
+          "value": 4374.0
+        },
+        {
+          "period": "2020-12",
+          "value": 4176.0
+        },
+        {
+          "period": "2021-01",
+          "value": 3352.0
+        },
+        {
+          "period": "2021-02",
+          "value": 3517.0
+        },
+        {
+          "period": "2021-03",
+          "value": 4741.0
+        },
+        {
+          "period": "2021-04",
+          "value": 4425.0
+        },
+        {
+          "period": "2021-05",
+          "value": 4728.0
+        },
+        {
+          "period": "2021-06",
+          "value": 4806.0
+        },
+        {
+          "period": "2021-07",
+          "value": 4698.0
+        },
+        {
+          "period": "2021-08",
+          "value": 4971.0
+        },
+        {
+          "period": "2021-09",
+          "value": 4982.0
+        },
+        {
+          "period": "2021-10",
+          "value": 4459.0
+        },
+        {
+          "period": "2021-11",
+          "value": 5196.0
+        },
+        {
+          "period": "2021-12",
+          "value": 4551.0
+        },
+        {
+          "period": "2022-01",
+          "value": 3132.0
+        },
+        {
+          "period": "2022-02",
+          "value": 4625.0
+        },
+        {
+          "period": "2022-03",
+          "value": 5804.0
+        },
+        {
+          "period": "2022-04",
+          "value": 4104.0
+        },
+        {
+          "period": "2022-05",
+          "value": 5000.0
+        },
+        {
+          "period": "2022-06",
+          "value": 4447.0
+        },
+        {
+          "period": "2022-07",
+          "value": 4477.0
+        },
+        {
+          "period": "2022-08",
+          "value": 5009.0
+        },
+        {
+          "period": "2022-09",
+          "value": 4951.0
+        },
+        {
+          "period": "2022-10",
+          "value": 3912.0
+        },
+        {
+          "period": "2022-11",
+          "value": 5020.0
+        },
+        {
+          "period": "2022-12",
+          "value": 3790.0
+        },
+        {
+          "period": "2023-01",
+          "value": 3016.0
+        },
+        {
+          "period": "2023-02",
+          "value": 3263.0
+        },
+        {
+          "period": "2023-03",
+          "value": 4323.0
+        },
+        {
+          "period": "2023-04",
+          "value": 3039.0
+        },
+        {
+          "period": "2023-05",
+          "value": 4106.0
+        },
+        {
+          "period": "2023-06",
+          "value": 3706.0
+        },
+        {
+          "period": "2023-07",
+          "value": 3332.0
+        },
+        {
+          "period": "2023-08",
+          "value": 3513.0
+        },
+        {
+          "period": "2023-09",
+          "value": 3186.0
+        },
+        {
+          "period": "2023-10",
+          "value": 3372.0
+        },
+        {
+          "period": "2023-11",
+          "value": 3292.0
+        },
+        {
+          "period": "2023-12",
+          "value": 2722.0
+        },
+        {
+          "period": "2024-01",
+          "value": 2209.0
+        },
+        {
+          "period": "2024-02",
+          "value": 3086.0
+        },
+        {
+          "period": "2024-03",
+          "value": 3206.0
+        },
+        {
+          "period": "2024-04",
+          "value": 3187.0
+        },
+        {
+          "period": "2024-05",
+          "value": 3545.0
+        },
+        {
+          "period": "2024-06",
+          "value": 2430.0
+        },
+        {
+          "period": "2024-07",
+          "value": 3668.0
+        },
+        {
+          "period": "2024-08",
+          "value": 3193.0
+        },
+        {
+          "period": "2024-09",
+          "value": 3236.0
+        },
+        {
+          "period": "2024-10",
+          "value": 3147.0
+        },
+        {
+          "period": "2024-11",
+          "value": 3395.0
+        },
+        {
+          "period": "2024-12",
+          "value": 2704.0
+        },
+        {
+          "period": "2025-01",
+          "value": 2423.0
+        },
+        {
+          "period": "2025-02",
+          "value": 2829.0
+        },
+        {
+          "period": "2025-03",
+          "value": 3683.0
+        },
+        {
+          "period": "2025-04",
+          "value": 2704.0
+        },
+        {
+          "period": "2025-05",
+          "value": 3495.0
+        },
+        {
+          "period": "2025-06",
+          "value": 2888.0
+        },
+        {
+          "period": "2025-07",
+          "value": 3541.0
+        },
+        {
+          "period": "2025-08",
+          "value": 3376.0
+        },
+        {
+          "period": "2025-09",
+          "value": 4094.0
+        },
+        {
+          "period": "2025-10",
+          "value": 3818.0
+        },
+        {
+          "period": "2025-11",
+          "value": 3848.0
+        },
+        {
+          "period": "2025-12",
+          "value": 3390.0
+        },
+        {
+          "period": "2026-01",
+          "value": 2791.0
+        },
+        {
+          "period": "2026-02",
+          "value": 3438.0
+        },
+        {
+          "period": "2026-03",
+          "value": 4042.0
+        },
+        {
+          "period": "2026-04",
+          "value": 4000.0
+        },
+        {
+          "period": "2026-05",
+          "value": 4168.0
+        }
+      ],
       "notes": "Wired via GH Actions when STATSNZ_API_KEY is set (Aotearoa Data Explorer, SDMX 2.1).",
       "latest": null,
-      "anomaly": null
+      "anomaly": false,
+      "latest_value": 4168.0,
+      "updated_at": "2026-07-13T03:04:51.777762+00:00"
     },
     {
       "id": 10,
