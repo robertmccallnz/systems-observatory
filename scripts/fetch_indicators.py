@@ -169,7 +169,7 @@ def fetch_lp10_emissions():
     if row.get("Entity", "").strip() != "New Zealand":
       continue
     y = row.get("Year", "").strip()
-    v = row.get("emissions_total", "").strip()
+    v = (list(row.values())[3] if len(row) >= 4 else "").strip()
     if not y or not v:
       continue
     try:
