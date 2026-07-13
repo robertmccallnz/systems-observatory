@@ -76,7 +76,7 @@ def _finalise(series):
 
 def _fred_csv(series_id):
   url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
-  text = _get(url).decode("utf-8", errors="replace")
+  text = _get_browser(url).decode("utf-8", errors="replace"); print(f"[LP10] first line: {text.splitlines()[0][:200] if text else 'EMPTY'}", flush=True)
   rows = list(csv.reader(io.StringIO(text)))
   out = []
   for row in rows[1:]:
@@ -159,7 +159,7 @@ def fetch_lp10_emissions():
   url = ("https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv"
          "?v=1&csvType=full&useColumnShortNames=true")
   try:
-    text = _get(url).decode("utf-8", errors="replace")
+    text = _get_browser(url).decode("utf-8", errors="replace"); print(f"[LP10] first line: {text.splitlines()[0][:200] if text else 'EMPTY'}", flush=True)
   except Exception as e:
     print(f"[LP10] OWID fetch error: {e}", flush=True)
     return []
