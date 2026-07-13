@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Te Pa Systems Observatory - indicator fetcher."""
+"""Te Pa Systems Observatory - indicator fetcher (with LP11 diagnostics)."""
 from __future__ import annotations
 
 import csv
@@ -103,88 +103,70 @@ def _find_latest_consents_release_url():
 
 def fetch_dwelling_consents():
     release_url = _find_latest_consents_release_url()
+    print(f"[LP11] release_url={release_url}", flush=True)
     if not release_url:
         return []
     try:
         html = _get(release_url).decode("utf-8", errors="replace")
-    except Exception:
+    except Exception as e:
+        print(f"[LP11] release fetch error: {e}", flush=True)
         return []
     zm = re.search(r'https?://[^"\'\s<>]+building-consents-issued[^"\'\s<>]*?\.zip', html, re.I)
     if zm:
         zip_url = zm.group(0)
     else:
-        rm = re.search(r'(/assets/[^"\'\s<>]+building-consents-issued[^"\'\s<>]*?\.zip)', html, re.I)
+        rm = re.search(r'(/[^"\'\s<>]*building-consents-issued[^"\'\s<>]*?\.zip)', html, re.I)
         if not rm:
+            print("[LP11] no zip URL found on release page", flush=True)
+            # Print first 400 chars of any csv/zip mentions for debugging
+            for m2 in re.finditer(r'[^"\'\s<>]{0,80}\.zip', html)[:5]:
+                print(f"[LP11] zip-like: {m2.group(0)}", flush=True)
             return []
         zip_url = "https://www.stats.govt.nz" + rm.group(1)
+    print(f"[LP11] zip_url={zip_url}", flush=True)
     try:
         zip_bytes = _get(zip_url)
         zf = zipfile.ZipFile(io.BytesIO(zip_bytes))
-    except Exception:
+    except Exception as e:
+        print(f"[LP11] zip fetch/open error: {e}", flush=True)
         return []
+    names = zf.namelist()
+    print(f"[LP11] zip contains {len(names)} files", flush=True)
+    for n in names[:30]:
+        print(f"[LP11]   {n}", flush=True)
     target = None
-    for name in zf.namelist():
+    for name in names:
         low = name.lower()
         if low.endswith(".csv") and "institutional" in low and "monthly" in low:
             target = name
             break
     if target is None:
-        for name in zf.namelist():
+        for name in names:
             if name.lower().endswith(".csv") and "monthly" in name.lower():
                 target = name
                 break
     if target is None:
-        for name in zf.namelist():
+        for name in names:
             if name.lower().endswith(".csv"):
                 target = name
                 break
+    print(f"[LP11] target={target}", flush=True)
     if target is None:
         return []
     try:
         text = zf.read(target).decode("utf-8", errors="replace")
-    except Exception:
+    except Exception as e:
+        print(f"[LP11] csv read error: {e}", flush=True)
         return []
     rows = list(csv.reader(io.StringIO(text)))
-    if len(rows) < 2:
-        return []
-    header = rows[0]
-    period_idx = 0
-    for i, cell in enumerate(rows[1]):
-        if re.match(r"^\d{4}[-/]\d{2}", (cell or "").strip()):
-            period_idx = i
-            break
-    value_idx = None
-    for i, h in enumerate(header):
-        hl = (h or "").lower()
-        if "total" in hl and ("dwelling" in hl or "unit" in hl):
-            value_idx = i
-            break
-    if value_idx is None:
-        for i in range(len(rows[1]) - 1, -1, -1):
-            try:
-                float((rows[1][i] or "").replace(",", ""))
-                value_idx = i
-                break
-            except (ValueError, IndexError):
-                continue
-    if value_idx is None:
-        return []
-    out = []
-    for row in rows[1:]:
-        if len(row) <= max(period_idx, value_idx):
-            continue
-        pm = re.match(r"^(\d{4})[-/]?(\d{2})", (row[period_idx] or "").strip())
-        if not pm:
-            continue
-        try:
-            v = float((row[value_idx] or "").replace(",", ""))
-        except ValueError:
-            continue
-        out.append({"period": f"{pm.group(1)}-{pm.group(2)}", "value": v})
-    seen = {}
-    for p in out:
-        seen[p["period"]] = p
-    return sorted(seen.values(), key=lambda x: x["period"])[-120:]
+    print(f"[LP11] csv has {len(rows)} rows", flush=True)
+    if rows:
+        print(f"[LP11] header: {rows[0]}", flush=True)
+    if len(rows) >= 2:
+        print(f"[LP11] row1: {rows[1]}", flush=True)
+    if len(rows) >= 3:
+        print(f"[LP11] row2: {rows[2]}", flush=True)
+    return []
 
 
 def fetch_ombudsman_oia():
