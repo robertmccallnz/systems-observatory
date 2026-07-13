@@ -53,7 +53,7 @@ def _finalise(series):
 
 def _find_latest_consents_release_url():
     try:
-        html = _get("https://www.stats.govt.nz/topics/building").decode("utf-8", errors="replace")
+        html = _get("https://www.stats.govt.nz/information-releases").decode("utf-8", errors="replace")
     except Exception as e:
         print(f"[LP11] topic fetch error: {e}", flush=True)
         return None, None
