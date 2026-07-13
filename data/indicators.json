@@ -508,7 +508,7 @@
       "latest": 2.25,
       "anomaly": false,
       "latest_value": 4.33,
-      "updated_at": "2026-07-13T05:25:21.912733+00:00"
+      "updated_at": "2026-07-13T05:28:46.113587+00:00"
     },
     {
       "id": 11,
@@ -1004,7 +1004,7 @@
       "latest": null,
       "anomaly": false,
       "latest_value": 4168.0,
-      "updated_at": "2026-07-13T05:25:21.912733+00:00"
+      "updated_at": "2026-07-13T05:28:46.113587+00:00"
     },
     {
       "id": 10,
@@ -1240,7 +1240,7 @@
       "latest": null,
       "anomaly": false,
       "latest_value": 5.3,
-      "updated_at": "2026-07-13T05:25:21.912733+00:00"
+      "updated_at": "2026-07-13T05:28:46.113587+00:00"
     },
     {
       "id": 4,
