@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "indicators.json"
 
 ADE_BASE = "https://api.stats.govt.nz/opendata/v2"
-ADE_KEY = "".join(c for c in os.environ.get("ADE_API_KEY","") if 33 <= ord(c) <= 126)TIMEOUT = 90
+ADE_KEY = "".join(c for c in os.environ.get("ADE_API_KEY","") if 33 <= ord(c) <= 126)
+TIMEOUT = 90
 print(f"[ADE] key_present={bool(ADE_KEY)} key_len={len(ADE_KEY)}", flush=True)
 
 
