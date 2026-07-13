@@ -155,35 +155,41 @@ def fetch_dwelling_consents():
   return series[-120:]
 
 
-# LP12 - OCR: global-rates.com uses MM-DD-YYYY | X.XX %
-OCR_ROW = re.compile(r"(\d{2})-(\d{2})-(\d{4})\D{1,80}?(\d+\.\d{2})\s*%")
+# LP12 - OCR: use FRED's monthly NZ interbank call rate (IRSTCI01NZM156N)
+# as a monthly proxy for the OCR. FRED provides a stable public CSV endpoint.
+FRED_CSV = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IRSTCI01NZM156N"
 
 
 def fetch_ocr():
-  url = "https://www.global-rates.com/en/interest-rates/central-banks/23/new-zealand-official-cash-rate/"
   try:
-    html = _get_browser(url).decode("utf-8", errors="replace")
+    text = _get(FRED_CSV).decode("utf-8", errors="replace")
   except Exception as e:
-    print(f"[LP12] fetch error: {e}", flush=True)
+    print(f"[LP12] FRED fetch error: {e}", flush=True)
     return []
-  seen = set()
+  reader = csv.reader(io.StringIO(text))
+  rows = list(reader)
+  if not rows:
+    print("[LP12] FRED empty response", flush=True)
+    return []
+  header = rows[0]
+  print(f"[LP12] FRED header={header}", flush=True)
   series = []
-  for m in OCR_ROW.finditer(html):
-    mo, dy, yr, rate = m.group(1), m.group(2), m.group(3), m.group(4)
+  for row in rows[1:]:
+    if len(row) < 2:
+      continue
+    d, v = row[0].strip(), row[1].strip()
+    if not d or v in ("", "."):
+      continue
     try:
-      d = date(int(yr), int(mo), int(dy))
-      r = float(rate)
+      dt = datetime.strptime(d, "%Y-%m-%d").date()
+      val = float(v)
     except Exception:
       continue
-    if r < 0 or r > 20:
+    if val < 0 or val > 30:
       continue
-    key = d.isoformat()
-    if key in seen:
-      continue
-    seen.add(key)
-    series.append({"period": key, "value": r})
+    series.append({"period": f"{dt.year:04d}-{dt.month:02d}", "value": val})
   series.sort(key=lambda x: x["period"])
-  print(f"[LP12] parsed {len(series)} OCR decisions", flush=True)
+  print(f"[LP12] parsed {len(series)} FRED monthly points", flush=True)
   return series[-120:]
 
 
