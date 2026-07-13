@@ -508,7 +508,7 @@
       "latest": 2.25,
       "anomaly": false,
       "latest_value": 4.33,
-      "updated_at": "2026-07-13T03:40:46.322906+00:00"
+      "updated_at": "2026-07-13T03:45:36.884805+00:00"
     },
     {
       "id": 11,
@@ -1004,7 +1004,7 @@
       "latest": null,
       "anomaly": false,
       "latest_value": 4168.0,
-      "updated_at": "2026-07-13T03:40:46.322906+00:00"
+      "updated_at": "2026-07-13T03:45:36.884805+00:00"
     },
     {
       "id": 10,
@@ -1075,9 +1075,172 @@
       "source_name": "MSD — Monthly Benefits Update",
       "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/monthly-reporting/",
       "paradigm_question": "Whose behaviour do the rules discipline?",
-      "series": [],
+      "series": [
+        {
+          "period": "2016-04",
+          "value": 5.1
+        },
+        {
+          "period": "2016-07",
+          "value": 5.0
+        },
+        {
+          "period": "2016-10",
+          "value": 5.3
+        },
+        {
+          "period": "2017-01",
+          "value": 4.9
+        },
+        {
+          "period": "2017-04",
+          "value": 4.9
+        },
+        {
+          "period": "2017-07",
+          "value": 4.7
+        },
+        {
+          "period": "2017-10",
+          "value": 4.5
+        },
+        {
+          "period": "2018-01",
+          "value": 4.4
+        },
+        {
+          "period": "2018-04",
+          "value": 4.6
+        },
+        {
+          "period": "2018-07",
+          "value": 4.0
+        },
+        {
+          "period": "2018-10",
+          "value": 4.3
+        },
+        {
+          "period": "2019-01",
+          "value": 4.2
+        },
+        {
+          "period": "2019-04",
+          "value": 4.1
+        },
+        {
+          "period": "2019-07",
+          "value": 4.1
+        },
+        {
+          "period": "2019-10",
+          "value": 4.1
+        },
+        {
+          "period": "2020-01",
+          "value": 4.2
+        },
+        {
+          "period": "2020-04",
+          "value": 4.1
+        },
+        {
+          "period": "2020-07",
+          "value": 5.2
+        },
+        {
+          "period": "2020-10",
+          "value": 4.9
+        },
+        {
+          "period": "2021-01",
+          "value": 4.6
+        },
+        {
+          "period": "2021-04",
+          "value": 4.0
+        },
+        {
+          "period": "2021-07",
+          "value": 3.3
+        },
+        {
+          "period": "2021-10",
+          "value": 3.2
+        },
+        {
+          "period": "2022-01",
+          "value": 3.3
+        },
+        {
+          "period": "2022-04",
+          "value": 3.3
+        },
+        {
+          "period": "2022-07",
+          "value": 3.3
+        },
+        {
+          "period": "2022-10",
+          "value": 3.4
+        },
+        {
+          "period": "2023-01",
+          "value": 3.5
+        },
+        {
+          "period": "2023-04",
+          "value": 3.7
+        },
+        {
+          "period": "2023-07",
+          "value": 3.9
+        },
+        {
+          "period": "2023-10",
+          "value": 4.0
+        },
+        {
+          "period": "2024-01",
+          "value": 4.4
+        },
+        {
+          "period": "2024-04",
+          "value": 4.7
+        },
+        {
+          "period": "2024-07",
+          "value": 4.9
+        },
+        {
+          "period": "2024-10",
+          "value": 5.1
+        },
+        {
+          "period": "2025-01",
+          "value": 5.1
+        },
+        {
+          "period": "2025-04",
+          "value": 5.2
+        },
+        {
+          "period": "2025-07",
+          "value": 5.3
+        },
+        {
+          "period": "2025-10",
+          "value": 5.4
+        },
+        {
+          "period": "2026-01",
+          "value": 5.3
+        }
+      ],
       "latest": null,
-      "anomaly": null
+      "anomaly": false,
+      "latest_value": 5.3,
+      "updated_at": "2026-07-13T03:45:36.884805+00:00"
     },
     {
       "id": 4,
