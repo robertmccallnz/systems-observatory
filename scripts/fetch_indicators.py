@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Te Pa Systems Observatory - indicator fetcher (LP11+LP12)."""
+"""Te Pa Systems Observatory - indicator fetcher (all 12 LPs wired)."""
 from __future__ import annotations
 
 import csv
@@ -75,6 +75,102 @@ def _finalise(series):
   return latest, anomaly
 
 
+def _fred_csv(series_id):
+  url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
+  text = _get(url).decode("utf-8", errors="replace")
+  rows = list(csv.reader(io.StringIO(text)))
+  out = []
+  for row in rows[1:]:
+    if len(row) < 2:
+      continue
+    d, v = row[0].strip(), row[1].strip()
+    if not d or v in ("", "."):
+      continue
+    try:
+      dt = datetime.strptime(d, "%Y-%m-%d").date()
+      val = float(v)
+    except Exception:
+      continue
+    out.append({"period": dt.isoformat()[:7], "value": val})
+  out.sort(key=lambda x: x["period"])
+  return out
+
+
+# ---------- LP1: Waitangi Tribunal reports released (annual) ----------
+def fetch_lp1_waitangi():
+  print("[LP1] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP2: Hansard framing ratio ----------
+def fetch_lp2_hansard():
+  print("[LP2] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP3: Wellbeing budget ratio ----------
+def fetch_lp3_wellbeing_budget():
+  print("[LP3] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP4: Iwi/hapu co-governance arrangements ----------
+def fetch_lp4_cogovernance():
+  print("[LP4] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP5: People receiving Jobseeker Support (monthly, MSD) ----------
+# MSD publishes monthly benefit fact sheets. We probe FRED as a labour proxy fallback.
+def fetch_lp5_jobseeker():
+  try:
+    series = _fred_csv("LRHUTTTTNZQ156S")  # NZ unemployment rate, quarterly (proxy)
+    print(f"[LP5] FRED unemployment-rate proxy: {len(series)} points", flush=True)
+    return series[-40:]
+  except Exception as e:
+    print(f"[LP5] fetch error: {e}", flush=True)
+    return []
+
+
+# ---------- LP6: OIA complaints upheld by Ombudsman (annual) ----------
+def fetch_lp6_ombudsman():
+  print("[LP6] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP7: Household net worth - top 1% share (annual) ----------
+def fetch_lp7_wealth():
+  print("[LP7] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP8: Trade union membership rate ----------
+def fetch_lp8_union():
+  print("[LP8] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP9: OIA responses within statutory timeframe (%) ----------
+def fetch_lp9_oia_timeliness():
+  print("[LP9] no automated fetcher yet - keeping last known value", flush=True)
+  return []
+
+
+# ---------- LP10: Greenhouse-gas emissions, gross (annual) ----------
+# FRED hosts OECD emissions for NZ under EMISSCO2NZA (or similar). Try a known series.
+def fetch_lp10_emissions():
+  for sid in ("EMISSCO2TOTVNZA", "EMISSCO2TOTVNZA648NRUG"):
+    try:
+      series = _fred_csv(sid)
+      if series:
+        print(f"[LP10] FRED {sid}: {len(series)} points", flush=True)
+        return series[-40:]
+    except Exception as e:
+      print(f"[LP10] FRED {sid} error: {e}", flush=True)
+  return []
+
+
+# ---------- LP11: New dwelling consents (monthly, Stats NZ) ----------
 def _find_latest_consents_zip():
   today = date.today()
   y, m = today.year, today.month
@@ -102,7 +198,7 @@ def _find_latest_consents_zip():
   return None, None
 
 
-def fetch_dwelling_consents():
+def fetch_lp11_consents():
   release_url, zip_url = _find_latest_consents_zip()
   print(f"[LP11] release_url={release_url}", flush=True)
   if not release_url:
@@ -155,53 +251,31 @@ def fetch_dwelling_consents():
   return series[-120:]
 
 
-# LP12 - OCR: use FRED's monthly NZ interbank call rate (IRSTCI01NZM156N)
-# as a monthly proxy for the OCR. FRED provides a stable public CSV endpoint.
-FRED_CSV = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IRSTCI01NZM156N"
-
-
-def fetch_ocr():
+# ---------- LP12: OCR (monthly proxy via FRED interbank rate) ----------
+def fetch_lp12_ocr():
   try:
-    text = _get(FRED_CSV).decode("utf-8", errors="replace")
+    series = _fred_csv("IRSTCI01NZM156N")
+    print(f"[LP12] FRED IRSTCI01NZM156N: {len(series)} points", flush=True)
+    return series[-120:]
   except Exception as e:
     print(f"[LP12] FRED fetch error: {e}", flush=True)
     return []
-  reader = csv.reader(io.StringIO(text))
-  rows = list(reader)
-  if not rows:
-    print("[LP12] FRED empty response", flush=True)
-    return []
-  header = rows[0]
-  print(f"[LP12] FRED header={header}", flush=True)
-  series = []
-  for row in rows[1:]:
-    if len(row) < 2:
-      continue
-    d, v = row[0].strip(), row[1].strip()
-    if not d or v in ("", "."):
-      continue
-    try:
-      dt = datetime.strptime(d, "%Y-%m-%d").date()
-      val = float(v)
-    except Exception:
-      continue
-    if val < 0 or val > 30:
-      continue
-    series.append({"period": f"{dt.year:04d}-{dt.month:02d}", "value": val})
-  series.sort(key=lambda x: x["period"])
-  print(f"[LP12] parsed {len(series)} FRED monthly points", flush=True)
-  return series[-120:]
 
 
-def fetch_ombudsman_oia():
-  return []
-
-
-def fetch_waitangi_tribunal():
-  return []
-
-
-FETCHERS = {12: fetch_ocr, 11: fetch_dwelling_consents, 6: fetch_ombudsman_oia, 5: fetch_waitangi_tribunal}
+FETCHERS = {
+  1: fetch_lp1_waitangi,
+  2: fetch_lp2_hansard,
+  3: fetch_lp3_wellbeing_budget,
+  4: fetch_lp4_cogovernance,
+  5: fetch_lp5_jobseeker,
+  6: fetch_lp6_ombudsman,
+  7: fetch_lp7_wealth,
+  8: fetch_lp8_union,
+  9: fetch_lp9_oia_timeliness,
+  10: fetch_lp10_emissions,
+  11: fetch_lp11_consents,
+  12: fetch_lp12_ocr,
+}
 
 
 def main():
@@ -211,6 +285,7 @@ def main():
     num = lp.get("id")
     fetcher = FETCHERS.get(num)
     if not fetcher:
+      print(f"[LP{num}] no fetcher registered", flush=True)
       continue
     try:
       series = fetcher()
