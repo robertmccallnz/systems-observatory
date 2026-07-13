@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Te Pa Systems Observatory - indicator fetcher (with LP11 diagnostics)."""
+"""Te Pa Systems Observatory - indicator fetcher (LP11+LP12)."""
 from __future__ import annotations
 
 import csv
 import io
 import json
 import math
+import re
 import statistics
-import urllib.error
 import urllib.request
 import zipfile
 from datetime import date, datetime, timezone
@@ -20,6 +20,7 @@ TIMEOUT = 90
 
 MONTHS = ["january", "february", "march", "april", "may", "june",
          "july", "august", "september", "october", "november", "december"]
+MONTH_MAP = {name.capitalize(): i + 1 for i, name in enumerate(MONTHS)}
 
 
 def _get(url):
@@ -133,8 +134,34 @@ def fetch_dwelling_consents():
     return series[-120:]
 
 
+OCR_PATTERN = re.compile(r"(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})[^0-9]{1,200}?(\d+(?:\.\d+)?)")
+
+
 def fetch_ocr():
-    return []
+    try:
+        html = _get("https://www.rbnz.govt.nz/monetary-policy/monetary-policy-decisions").decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"[LP12] fetch error: {e}", flush=True)
+        return []
+    seen = set()
+    series = []
+    for m in OCR_PATTERN.finditer(html):
+        day, mon, year, rate = m.group(1), m.group(2), m.group(3), m.group(4)
+        try:
+            d = date(int(year), MONTH_MAP[mon], int(day))
+            r = float(rate)
+        except Exception:
+            continue
+        if r > 20 or r < 0:
+            continue
+        key = d.isoformat()
+        if key in seen:
+            continue
+        seen.add(key)
+        series.append({"period": key, "value": r})
+    series.sort(key=lambda x: x["period"])
+    print(f"[LP12] parsed {len(series)} OCR decisions", flush=True)
+    return series[-120:]
 
 
 def fetch_ombudsman_oia():
