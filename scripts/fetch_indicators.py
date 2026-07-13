@@ -142,7 +142,7 @@ def main():
     doc = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc).isoformat()
     for lp in doc.get("leverage_points", []):
-        num = lp.get("number")
+        num = lp.get("id")
         fetcher = FETCHERS.get(num)
         if not fetcher:
             continue
