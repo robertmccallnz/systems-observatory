@@ -89,7 +89,7 @@ def _find_latest_consents_release_url():
         url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{MONTHS[m-1]}-{y}/"
         zurl = f"https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/Building-consents-issued-{MONTHS[m-1].capitalize()}-{y}/Download-data/building-consents-issued-{MONTHS[m-1]}-{y}.zip"
         try:
-            req = urllib.request.Request(zurl, method="HEAD", headers={"User-Agent": UA})
+            req = urllib.request.Request(zurl, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 if r.status == 200:
                     return url
