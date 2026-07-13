@@ -92,37 +92,20 @@ def _find_latest_consents_release_url():
             req = urllib.request.Request(zurl, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 if r.status == 200:
-                    return url
+                    return url, zurl
         except Exception:
             pass
         m -= 1
         if m == 0:
             m = 12
             y -= 1
-    return None
+    return None, None
 
 def fetch_dwelling_consents():
-    release_url = _find_latest_consents_release_url()
+    release_url, zip_url = _find_latest_consents_release_url()
     print(f"[LP11] release_url={release_url}", flush=True)
     if not release_url:
         return []
-    try:
-        html = _get(release_url).decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"[LP11] release fetch error: {e}", flush=True)
-        return []
-    zm = re.search(r'https?://[^"\'\s<>]+building-consents-issued[^"\'\s<>]*?\.zip', html, re.I)
-    if zm:
-        zip_url = zm.group(0)
-    else:
-        rm = re.search(r'(/[^"\'\s<>]*building-consents-issued[^"\'\s<>]*?\.zip)', html, re.I)
-        if not rm:
-            print("[LP11] no zip URL found on release page", flush=True)
-            # Print first 400 chars of any csv/zip mentions for debugging
-            for m2 in re.finditer(r'[^"\'\s<>]{0,80}\.zip', html)[:5]:
-                print(f"[LP11] zip-like: {m2.group(0)}", flush=True)
-            return []
-        zip_url = "https://www.stats.govt.nz" + rm.group(1)
     print(f"[LP11] zip_url={zip_url}", flush=True)
     try:
         zip_bytes = _get(zip_url)
