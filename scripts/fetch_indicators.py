@@ -49,29 +49,6 @@ def _ade_csv(resource_id, key="all", start=None, agency="STATSNZ", version="1.0"
   print(f"[ADE] {resource_id}: {len(rows)} raw rows", flush=True)
   return rows
 
-def _rbnz_ocr_csv():
-    url = "https://www.rbnz.govt.nz/-/media/project/sites/rbnz/files/statistics/tables/b2/hb2-monthly.csv"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-            body = r.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"[RBNZ] OCR fetch error: {e}", flush=True)
-        return []
-    rows = []
-    for line in body.splitlines():
-        parts = [p.strip() for p in line.split(",")]
-        if len(parts) < 2:
-            continue
-        period, value = parts[0], parts[1]
-        try:
-            v = float(value)
-        except ValueError:
-            continue
-        rows.append({"TIME_PERIOD": period, "OBS_VALUE": v})
-    print(f"[RBNZ] OCR parsed {len(rows)} rows", flush=True)
-    return rows
-
 
 def _rows_to_series(rows, period_col="TIME_PERIOD", value_col="OBS_VALUE", filter_fn=None):
   series = []
@@ -171,8 +148,8 @@ def fetch_lp11_consents():
 
 
 def fetch_lp12_ocr():
-      rows = _rbnz_ocr_csv()
-    return _rows_to_series(rows)[-120:]
+  print("[LP12] no ADE dataflow (RBNZ series) - keeping last known value", flush=True)
+  return []
 
 
 FETCHERS = {
