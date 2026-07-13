@@ -47,59 +47,29 @@ def _finalise(series):
         return None, None
     latest = values[-1]
     z = _rolling_zscore(values)
-    anomaly = None
-    if z is not None and abs(z) >= 2.5:
-        anomaly = {"z_score": z, "direction": "high" if z > 0 else "low",
-                   "at": series[-1].get("period"),
-                   "message": f"|z|={abs(z):.2f} vs prior 24-period baseline."}
+    anomaly = z is not None and abs(z) >= 2
     return latest, anomaly
 
 
-def fetch_ocr():
-    url = "https://www.rbnz.govt.nz/-/media/ReserveBank/Files/Statistics/tables/b2/hb2-daily.csv"
-    try:
-        raw = _get(url).decode("utf-8", errors="replace")
-    except Exception:
-        return []
-    out = []
-    for line in raw.splitlines():
-        parts = [p.strip() for p in line.split(",")]
-        if len(parts) < 2:
-            continue
-        if not re.match(r"^\d{4}-\d{2}-\d{2}$", parts[0]):
-            continue
-        try:
-            v = float(parts[1])
-        except ValueError:
-            continue
-        out.append({"period": parts[0], "value": v})
-    seen = {}
-    for p in out:
-        seen[p["period"][:7]] = p
-    return sorted(seen.values(), key=lambda x: x["period"])[-120:]
-
-
-MONTHS = ["january","february","march","april","may","june","july","august","september","october","november","december"]
-
-
 def _find_latest_consents_release_url():
-    today = date.today()
-    y, m = today.year, today.month
-    for _ in range(24):
-        url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{MONTHS[m-1]}-{y}/"
-        zurl = f"https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/Building-consents-issued-{MONTHS[m-1].capitalize()}-{y}/Download-data/building-consents-issued-{MONTHS[m-1]}-{y}.zip"
-        try:
-            req = urllib.request.Request(zurl, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-                if r.status == 200:
-                    return url, zurl
-        except Exception:
-            pass
-        m -= 1
-        if m == 0:
-            m = 12
-            y -= 1
-    return None, None
+    try:
+        html = _get("https://www.stats.govt.nz/topics/building-consents").decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"[LP11] topic fetch error: {e}", flush=True)
+        return None, None
+    m = re.search(r"/information-releases/building-consents-issued-[a-z]+-\d{4}/?", html)
+    if not m:
+        return None, None
+    slug = m.group(0).rstrip("/").split("/")[-1]
+    release_url = f"https://www.stats.govt.nz/information-releases/{slug}/"
+    month_year = slug.replace("building-consents-issued-", "")
+    zip_url = (
+        "https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/"
+        f"Building-consents-issued-{month_year.title()}/Download-data/"
+        f"building-consents-issued-{month_year}.zip"
+    )
+    return release_url, zip_url
+
 
 def fetch_dwelling_consents():
     release_url, zip_url = _find_latest_consents_release_url()
@@ -114,9 +84,6 @@ def fetch_dwelling_consents():
         print(f"[LP11] zip fetch/open error: {e}", flush=True)
         return []
     names = zf.namelist()
-    print(f"[LP11] zip contains {len(names)} files", flush=True)
-    for n in names[:30]:
-        print(f"[LP11]   {n}", flush=True)
     target = None
     for name in names:
         low = name.lower()
@@ -129,26 +96,34 @@ def fetch_dwelling_consents():
                 target = name
                 break
     if target is None:
-        for name in names:
-            if name.lower().endswith(".csv"):
-                target = name
-                break
-    print(f"[LP11] target={target}", flush=True)
-    if target is None:
         return []
     try:
         text = zf.read(target).decode("utf-8", errors="replace")
     except Exception as e:
         print(f"[LP11] csv read error: {e}", flush=True)
         return []
-    rows = list(csv.reader(io.StringIO(text)))
-    print(f"[LP11] csv has {len(rows)} rows", flush=True)
-    if rows:
-        print(f"[LP11] header: {rows[0]}", flush=True)
-    if len(rows) >= 2:
-        print(f"[LP11] row1: {rows[1]}", flush=True)
-    if len(rows) >= 3:
-        print(f"[LP11] row2: {rows[2]}", flush=True)
+    reader = csv.DictReader(io.StringIO(text))
+    series = []
+    for row in reader:
+        if row.get("Series_reference", "").strip() != "BLDM.SW00001A1":
+            continue
+        period_raw = row.get("Period", "").strip()
+        val_raw = row.get("Data_value", "").strip()
+        if not period_raw or not val_raw:
+            continue
+        try:
+            year, month = period_raw.split(".")
+            period = f"{int(year):04d}-{int(month):02d}"
+            val = float(val_raw)
+        except (ValueError, IndexError):
+            continue
+        series.append({"period": period, "value": val})
+    series.sort(key=lambda x: x["period"])
+    print(f"[LP11] parsed {len(series)} points", flush=True)
+    return series[-120:]
+
+
+def fetch_ocr():
     return []
 
 
@@ -160,36 +135,34 @@ def fetch_waitangi_tribunal():
     return []
 
 
-FETCHERS = {12: fetch_ocr, 11: fetch_dwelling_consents, 6: fetch_ombudsman_oia, 1: fetch_waitangi_tribunal}
+FETCHERS = {12: fetch_ocr, 11: fetch_dwelling_consents, 6: fetch_ombudsman_oia, 5: fetch_waitangi_tribunal}
 
 
 def main():
     doc = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    doc["meta"]["generated_at"] = datetime.now(timezone.utc).isoformat()
-    status = []
-    for lp in doc["leverage_points"]:
-        fetcher = FETCHERS.get(lp["id"])
-        if fetcher is None:
-            latest, anomaly = _finalise(lp.get("series") or [])
-            lp["latest"] = latest
-            lp["anomaly"] = anomaly
+    now = datetime.now(timezone.utc).isoformat()
+    for lp in doc.get("leverage_points", []):
+        num = lp.get("number")
+        fetcher = FETCHERS.get(num)
+        if not fetcher:
             continue
         try:
             series = fetcher()
         except Exception as e:
-            status.append(f"LP{lp['id']} fetch failed: {e}")
-            series = lp.get("series") or []
-        if series:
-            lp["series"] = series
-        latest, anomaly = _finalise(lp.get("series") or [])
-        lp["latest"] = latest
-        lp["anomaly"] = anomaly
-        status.append(f"LP{lp['id']} ok - {len(lp.get('series') or [])} points, latest={latest}, anomaly={'yes' if anomaly else 'no'}")
-    doc["meta"]["fetch_status"] = status
+            print(f"[LP{num}] fetch error: {e}", flush=True)
+            continue
+        if not series:
+            print(f"[LP{num}] no data - keeping last known value", flush=True)
+            continue
+        latest, anomaly = _finalise(series)
+        lp["series"] = series
+        if latest is not None:
+            lp["latest_value"] = latest
+        lp["anomaly"] = bool(anomaly)
+        lp["updated_at"] = now
+        print(f"[LP{num}] ok - {len(series)} points, latest={latest}, anomaly={'yes' if anomaly else 'no'}", flush=True)
     DATA_FILE.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("\n".join(status))
-    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
