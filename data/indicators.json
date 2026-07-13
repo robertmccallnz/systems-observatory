@@ -1004,7 +1004,7 @@
       "latest": null,
       "anomaly": false,
       "latest_value": 4168.0,
-      "updated_at": "2026-07-13T05:36:46.374712+00:00"
+      "updated_at": "2026-07-13T20:57:17.558954+00:00"
     },
     {
       "id": 10,
@@ -1260,7 +1260,7 @@
       "latest": null,
       "anomaly": false,
       "latest_value": 32479432.0,
-      "updated_at": "2026-07-13T05:36:46.374712+00:00"
+      "updated_at": "2026-07-13T20:57:17.558954+00:00"
     },
     {
       "id": 9,
