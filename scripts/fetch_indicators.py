@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "indicators.json"
 
 ADE_BASE = "https://api.stats.govt.nz/opendata/v2"
-ADE_KEY = os.environ.get("ADE_API_KEY", "").strip()
+ADE_KEY = "".join(os.environ.get("ADE_API_KEY", "").split())
 TIMEOUT = 90
 
 
