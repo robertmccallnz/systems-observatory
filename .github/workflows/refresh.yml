@@ -18,7 +18,7 @@ jobs:
           python-version: "3.11"
       - name: Fetch live indicators
         env:
-          STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
+          ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
         run: python scripts/fetch_indicators.py
       - name: Commit refreshed data
         run: |
