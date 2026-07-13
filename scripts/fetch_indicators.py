@@ -7,6 +7,7 @@ import io
 import json
 import math
 import os
+import re
 import statistics
 import urllib.request
 import urllib.error
@@ -49,6 +50,52 @@ def _ade_csv(resource_id, key="all", start=None, agency="STATSNZ", version="1.0"
   print(f"[ADE] {resource_id}: {len(rows)} raw rows", flush=True)
   return rows
 
+
+def _waitangi_reports_series():
+    url = "https://waitangitribunal.govt.nz/publications-and-resources/wt-publications/"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            body = r.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"[LP1] Waitangi fetch error: {e}", flush=True)
+        return []
+    years = re.findall(r"\b(19|20)(\d{2})\b", body)
+    counts = {}
+    for prefix, suffix in years:
+        y = int(prefix + suffix)
+        if 1975 <= y <= datetime.now(timezone.utc).year:
+            counts[y] = counts.get(y, 0) + 1
+    series = [{"period": str(y), "value": float(c)} for y, c in sorted(counts.items())]
+    print(f"[LP1] Waitangi parsed {len(series)} year buckets", flush=True)
+    return series
+
+def _fred_series(sid):
+    url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            body = r.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"[FRED] {sid} error: {e}", flush=True)
+        return []
+    if not body.lstrip().lower().startswith("date") and "observation_date" not in body[:200].lower():
+        print(f"[FRED] {sid} returned non-CSV (likely 404)", flush=True)
+        return []
+    rows = []
+    for i, line in enumerate(body.splitlines()):
+        if i == 0:
+            continue
+        parts = [p.strip() for p in line.split(",")]
+        if len(parts) < 2 or parts[1] in (".", ""):
+            continue
+        try:
+            v = float(parts[1])
+        except ValueError:
+            continue
+        rows.append({"TIME_PERIOD": parts[0], "OBS_VALUE": v})
+    print(f"[FRED] {sid} parsed {len(rows)} rows", flush=True)
+    return rows
 
 def _rows_to_series(rows, period_col="TIME_PERIOD", value_col="OBS_VALUE", filter_fn=None):
   series = []
