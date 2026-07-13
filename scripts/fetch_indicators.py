@@ -6,9 +6,8 @@ import csv
 import io
 import json
 import math
-import re
 import statistics
-import sys
+import urllib.error
 import urllib.request
 import zipfile
 from datetime import date, datetime, timezone
@@ -18,6 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "indicators.json"
 UA = "TePaSystemsObservatory/1.0 (+https://te-pa.org)"
 TIMEOUT = 90
+
+MONTHS = ["january", "february", "march", "april", "may", "june",
+         "july", "august", "september", "october", "november", "december"]
 
 
 def _get(url):
@@ -51,28 +53,35 @@ def _finalise(series):
     return latest, anomaly
 
 
-def _find_latest_consents_release_url():
-    try:
-        html = _get("https://www.stats.govt.nz/information-releases").decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"[LP11] topic fetch error: {e}", flush=True)
-        return None, None
-    m = re.search(r"/information-releases/building-consents-issued-[a-z]+-\d{4}/?", html)
-    if not m:
-        return None, None
-    slug = m.group(0).rstrip("/").split("/")[-1]
-    release_url = f"https://www.stats.govt.nz/information-releases/{slug}/"
-    month_year = slug.replace("building-consents-issued-", "")
-    zip_url = (
-        "https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/"
-        f"Building-consents-issued-{month_year.title()}/Download-data/"
-        f"building-consents-issued-{month_year}.zip"
-    )
-    return release_url, zip_url
+def _find_latest_consents_zip():
+    today = date.today()
+    y, m = today.year, today.month
+    for _ in range(12):
+        m -= 1
+        if m == 0:
+            m = 12
+            y -= 1
+        month_name = MONTHS[m - 1]
+        month_year = f"{month_name}-{y}"
+        zip_url = (
+            "https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/"
+            f"Building-consents-issued-{month_name.title()}-{y}/Download-data/"
+            f"building-consents-issued-{month_year}.zip"
+        )
+        release_url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{month_year}/"
+        try:
+            req = urllib.request.Request(zip_url, headers={"User-Agent": UA}, method="HEAD")
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                if r.status == 200:
+                    return release_url, zip_url
+        except Exception as e:
+            print(f"[LP11] probe {month_year} miss: {e}", flush=True)
+            continue
+    return None, None
 
 
 def fetch_dwelling_consents():
-    release_url, zip_url = _find_latest_consents_release_url()
+    release_url, zip_url = _find_latest_consents_zip()
     print(f"[LP11] release_url={release_url}", flush=True)
     if not release_url:
         return []
@@ -97,6 +106,7 @@ def fetch_dwelling_consents():
                 break
     if target is None:
         return []
+    print(f"[LP11] target={target}", flush=True)
     try:
         text = zf.read(target).decode("utf-8", errors="replace")
     except Exception as e:
