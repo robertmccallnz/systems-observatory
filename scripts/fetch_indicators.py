@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
-"""
-Te Pa Systems Observatory - indicator fetcher.
-
-Pulls live public NZ data, computes rolling z-scores, writes data/indicators.json.
-Runs in GitHub Actions on a daily cron (see .github/workflows/refresh.yml).
-
-Design principles:
-- Public, aggregated, non-personal data only (Maori Data Governance Model).
-- Every value is sourced. If a source fails, we keep the last-known value
-  and flag the fetch status, never invent numbers.
-- Anomalies flagged via rolling z-score (|z| >= 2.5).
-"""
+"""Te Pa Systems Observatory - indicator fetcher."""
 from __future__ import annotations
 
 import csv
@@ -22,18 +11,16 @@ import statistics
 import sys
 import urllib.request
 import zipfile
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
-from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "indicators.json"
-
 UA = "TePaSystemsObservatory/1.0 (+https://te-pa.org)"
-TIMEOUT = 60
+TIMEOUT = 90
 
 
-def _get(url: str) -> bytes:
+def _get(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
         return r.read()
@@ -62,17 +49,13 @@ def _finalise(series):
     z = _rolling_zscore(values)
     anomaly = None
     if z is not None and abs(z) >= 2.5:
-        anomaly = {
-            "z_score": z,
-            "direction": "high" if z > 0 else "low",
-            "at": series[-1].get("period"),
-            "message": f"|z|={abs(z):.2f} vs prior 24-period baseline.",
-        }
+        anomaly = {"z_score": z, "direction": "high" if z > 0 else "low",
+                   "at": series[-1].get("period"),
+                   "message": f"|z|={abs(z):.2f} vs prior 24-period baseline."}
     return latest, anomaly
 
 
 def fetch_ocr():
-    """RBNZ Official Cash Rate - historical CSV, downsampled to monthly."""
     url = "https://www.rbnz.govt.nz/-/media/ReserveBank/Files/Statistics/tables/b2/hb2-daily.csv"
     try:
         raw = _get(url).decode("utf-8", errors="replace")
@@ -93,49 +76,56 @@ def fetch_ocr():
     seen = {}
     for p in out:
         seen[p["period"][:7]] = p
-    monthly = sorted(seen.values(), key=lambda x: x["period"])
-    return monthly[-120:]
+    return sorted(seen.values(), key=lambda x: x["period"])[-120:]
+
+
+MONTHS = ["january","february","march","april","may","june","july","august","september","october","november","december"]
+
+
+def _find_latest_consents_release_url():
+    today = date.today()
+    y, m = today.year, today.month
+    for _ in range(24):
+        url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{MONTHS[m-1]}-{y}/"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                if r.status == 200:
+                    return url
+        except Exception:
+            pass
+        m -= 1
+        if m == 0:
+            m = 12
+            y -= 1
+    return None
 
 
 def fetch_dwelling_consents():
-    """Stats NZ - New dwellings consented (monthly).
-
-    Strategy: scrape the Building topic page to find the newest
-    'Building consents issued: {Month} {Year} - CSV' ZIP URL,
-    download it, open the 'institutional sector (Monthly)' CSV inside,
-    parse the total-dwelling-units-authorised column into a monthly series.
-    """
-    topic_url = "https://www.stats.govt.nz/topics/building/"
+    release_url = _find_latest_consents_release_url()
+    if not release_url:
+        return []
     try:
-        html = _get(topic_url).decode("utf-8", errors="replace")
+        html = _get(release_url).decode("utf-8", errors="replace")
     except Exception:
         return []
-    # Find the latest release page URL.
-    m = re.search(r'/information-releases/building-consents-issued-[a-z]+-20\d{2}/', html)
-    if not m:
-        return []
-    release_url = "https://www.stats.govt.nz" + m.group(0)
-    try:
-        release_html = _get(release_url).decode("utf-8", errors="replace")
-    except Exception:
-        return []
-    # Find the CSV ZIP link on the release page.
-    zm = re.search(r'https?://[^"\']+building-consents-issued[^"\']*?\.zip', release_html)
-    if not zm:
-        return []
-    zip_url = zm.group(0)
+    zm = re.search(r'https?://[^"\'\s<>]+building-consents-issued[^"\'\s<>]*?\.zip', html, re.I)
+    if zm:
+        zip_url = zm.group(0)
+    else:
+        rm = re.search(r'(/assets/[^"\'\s<>]+building-consents-issued[^"\'\s<>]*?\.zip)', html, re.I)
+        if not rm:
+            return []
+        zip_url = "https://www.stats.govt.nz" + rm.group(1)
     try:
         zip_bytes = _get(zip_url)
-    except Exception:
-        return []
-    try:
         zf = zipfile.ZipFile(io.BytesIO(zip_bytes))
     except Exception:
         return []
     target = None
     for name in zf.namelist():
         low = name.lower()
-        if "institutional" in low and "monthly" in low and low.endswith(".csv"):
+        if low.endswith(".csv") and "institutional" in low and "monthly" in low:
             target = name
             break
     if target is None:
@@ -144,29 +134,35 @@ def fetch_dwelling_consents():
                 target = name
                 break
     if target is None:
+        for name in zf.namelist():
+            if name.lower().endswith(".csv"):
+                target = name
+                break
+    if target is None:
         return []
     try:
         text = zf.read(target).decode("utf-8", errors="replace")
     except Exception:
         return []
-    reader = csv.reader(io.StringIO(text))
-    rows = list(reader)
-    if not rows:
+    rows = list(csv.reader(io.StringIO(text)))
+    if len(rows) < 2:
         return []
-    # Heuristic: find a column whose header mentions 'dwelling' and 'total'
     header = rows[0]
     period_idx = 0
+    for i, cell in enumerate(rows[1]):
+        if re.match(r"^\d{4}[-/]\d{2}", (cell or "").strip()):
+            period_idx = i
+            break
     value_idx = None
     for i, h in enumerate(header):
-        hl = h.lower()
+        hl = (h or "").lower()
         if "total" in hl and ("dwelling" in hl or "unit" in hl):
             value_idx = i
             break
     if value_idx is None:
-        # Fall back to the last numeric column.
-        for i in range(len(header) - 1, 0, -1):
+        for i in range(len(rows[1]) - 1, -1, -1):
             try:
-                float(rows[1][i].replace(",", ""))
+                float((rows[1][i] or "").replace(",", ""))
                 value_idx = i
                 break
             except (ValueError, IndexError):
@@ -175,26 +171,20 @@ def fetch_dwelling_consents():
         return []
     out = []
     for row in rows[1:]:
-        if len(row) <= value_idx:
+        if len(row) <= max(period_idx, value_idx):
             continue
-        period = row[period_idx].strip()
-        # Normalise YYYY-MM or YYYYMM to YYYY-MM.
-        pm = re.match(r"^(\d{4})[-/]?(\d{2})", period)
+        pm = re.match(r"^(\d{4})[-/]?(\d{2})", (row[period_idx] or "").strip())
         if not pm:
             continue
-        period_norm = f"{pm.group(1)}-{pm.group(2)}"
         try:
-            v = float(row[value_idx].replace(",", ""))
+            v = float((row[value_idx] or "").replace(",", ""))
         except ValueError:
             continue
-        out.append({"period": period_norm, "value": v})
-    out.sort(key=lambda x: x["period"])
-    # De-duplicate on period, keep the last.
+        out.append({"period": f"{pm.group(1)}-{pm.group(2)}", "value": v})
     seen = {}
     for p in out:
         seen[p["period"]] = p
-    monthly = sorted(seen.values(), key=lambda x: x["period"])
-    return monthly[-120:]
+    return sorted(seen.values(), key=lambda x: x["period"])[-120:]
 
 
 def fetch_ombudsman_oia():
@@ -205,12 +195,7 @@ def fetch_waitangi_tribunal():
     return []
 
 
-FETCHERS = {
-    12: fetch_ocr,
-    11: fetch_dwelling_consents,
-    6: fetch_ombudsman_oia,
-    1: fetch_waitangi_tribunal,
-}
+FETCHERS = {12: fetch_ocr, 11: fetch_dwelling_consents, 6: fetch_ombudsman_oia, 1: fetch_waitangi_tribunal}
 
 
 def main():
@@ -234,10 +219,7 @@ def main():
         latest, anomaly = _finalise(lp.get("series") or [])
         lp["latest"] = latest
         lp["anomaly"] = anomaly
-        status.append(
-            f"LP{lp['id']} ok - {len(lp.get('series') or [])} points, "
-            f"latest={latest}, anomaly={'yes' if anomaly else 'no'}"
-        )
+        status.append(f"LP{lp['id']} ok - {len(lp.get('series') or [])} points, latest={latest}, anomaly={'yes' if anomaly else 'no'}")
     doc["meta"]["fetch_status"] = status
     DATA_FILE.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print("\n".join(status))
