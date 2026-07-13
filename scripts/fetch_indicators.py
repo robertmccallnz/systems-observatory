@@ -166,9 +166,9 @@ def fetch_lp10_emissions():
   reader = csv.DictReader(io.StringIO(text))
   series = []
   for row in reader:
-    if row.get("Entity", "").strip() != "New Zealand":
+    if row.get("entity", row.get("Entity", "")).strip() != "New Zealand":
       continue
-    y = row.get("Year", "").strip()
+    y = row.get("year", row.get("Year", "")).strip()
     v = (list(row.values())[3] if len(row) >= 4 else "").strip()
     if not y or not v:
       continue
