@@ -86,9 +86,10 @@ def _find_latest_consents_release_url():
     today = date.today()
     y, m = today.year, today.month
     for _ in range(24):
-        url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{MONTHS[m-1]}-{y}/"
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
+                    url = f"https://www.stats.govt.nz/information-releases/building-consents-issued-{MONTHS[m-1]}-{y}/"
+            _zurl = f"https://www.stats.govt.nz/assets/Uploads/Building-consents-issued/Building-consents-issued-{MONTHS[m-1].capitalize()}-{y}/Download-data/building-consents-issued-{MONTHS[m-1]}-{y}.zip"
+try:
+            req = urllib.request.Request(_zurl, method="HEAD", headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 if r.status == 200:
                     return url
