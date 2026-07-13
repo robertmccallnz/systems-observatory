@@ -155,22 +155,27 @@ def fetch_dwelling_consents():
   return series[-120:]
 
 
-OCR_PATTERN = re.compile(
-  r"(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})[^0-9]{1,200}?(\d+(?:\.\d+)?)\s*%?"
-)
+# LP12 - OCR: global-rates.com uses MM-DD-YYYY | X.XX %
+OCR_ROW = re.compile(r"(\d{2})-(\d{2})-(\d{4})\D{1,80}?(\d+\.\d{2})\s*%")
 
 
-def _parse_ocr_html(html):
+def fetch_ocr():
+  url = "https://www.global-rates.com/en/interest-rates/central-banks/23/new-zealand-official-cash-rate/"
+  try:
+    html = _get_browser(url).decode("utf-8", errors="replace")
+  except Exception as e:
+    print(f"[LP12] fetch error: {e}", flush=True)
+    return []
   seen = set()
   series = []
-  for m in OCR_PATTERN.finditer(html):
-    day, mon, year, rate = m.group(1), m.group(2), m.group(3), m.group(4)
+  for m in OCR_ROW.finditer(html):
+    mo, dy, yr, rate = m.group(1), m.group(2), m.group(3), m.group(4)
     try:
-      d = date(int(year), MONTH_MAP[mon], int(day))
+      d = date(int(yr), int(mo), int(dy))
       r = float(rate)
     except Exception:
       continue
-    if r > 20 or r < 0:
+    if r < 0 or r > 20:
       continue
     key = d.isoformat()
     if key in seen:
@@ -178,25 +183,8 @@ def _parse_ocr_html(html):
     seen.add(key)
     series.append({"period": key, "value": r})
   series.sort(key=lambda x: x["period"])
-  return series
-
-
-def fetch_ocr():
-  urls = [
-    ("https://www.rbnz.govt.nz/monetary-policy/monetary-policy-decisions", None),
-    ("https://en.wikipedia.org/wiki/Official_cash_rate", None),
-  ]
-  for url, referer in urls:
-    try:
-      html = _get_browser(url, referer=referer).decode("utf-8", errors="replace")
-    except Exception as e:
-      print(f"[LP12] fetch {url} error: {e}", flush=True)
-      continue
-    series = _parse_ocr_html(html)
-    print(f"[LP12] {url} parsed {len(series)} candidates", flush=True)
-    if len(series) >= 5:
-      return series[-120:]
-  return []
+  print(f"[LP12] parsed {len(series)} OCR decisions", flush=True)
+  return series[-120:]
 
 
 def fetch_ombudsman_oia():
