@@ -43,6 +43,8 @@
     const latest = lp.latest !== null && lp.latest !== undefined
       ? `<div class="obs-latest">${Number(lp.latest).toLocaleString(undefined, { maximumFractionDigits: 2 })}<small>${lp.unit || ""}</small></div>`
       : `<div class="obs-empty">Awaiting first live fetch.</div>`;
+    const lastPoint = (lp.series && lp.series.length) ? lp.series[lp.series.length-1] : null;
+    const updatedLine = lastPoint ? `<div class="obs-updated">Updated ${lastPoint.period}</div>` : '';
     const anomalyLine = hasAnomaly
       ? `<div><span class="obs-flag">◆ anomaly</span> <span style="color:#d7261e;font-size:12px;">${lp.anomaly.message}</span></div>`
       : "";
@@ -53,6 +55,7 @@
       <h3>${lp.name}</h3>
       <p class="obs-question">${lp.paradigm_question}</p>
       ${latest}
+            ${updatedLine}
       ${sparkline(lp.series, lp.anomaly && lp.anomaly.at)}
       ${anomalyLine}
       <div class="obs-source">Source: <a href="${lp.source_url}" target="_blank" rel="noopener">${lp.source_name}</a></div>

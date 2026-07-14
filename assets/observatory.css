@@ -159,3 +159,6 @@ main { max-width: 1200px; margin: 0 auto; padding: 24px; }
   color: var(--cream);
   border-bottom-color: var(--koura);
 }
+
+.obs-card .obs-updated{font-size:.75rem;opacity:.7;margin:.25rem 0;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+@media print{.obs-card{break-inside:avoid;page-break-inside:avoid}}
