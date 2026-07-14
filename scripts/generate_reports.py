@@ -114,3 +114,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def _build_manifest():
+    import json as _json, re as _re
+    reports_dir = REPORTS
+    reports = []
+    for md in sorted(reports_dir.glob("state-of-the-system-*.md"), reverse=True):
+        month = md.stem.replace("state-of-the-system-", "")
+        pdf = md.with_suffix(".pdf")
+        reports.append({"month": month, "md": md.name, "pdf": pdf.name if pdf.exists() else None})
+    current = reports[0] if reports else None
+    manifest = {"generated": dt.datetime.utcnow().isoformat() + "Z",
+                "current": current, "reports": reports}
+    (reports_dir / "manifest.json").write_text(_json.dumps(manifest, indent=2))
+    print(f"[reports] wrote {reports_dir/'manifest.json'} ({len(reports)} entries)", flush=True)
+
+_build_manifest()

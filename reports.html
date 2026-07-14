@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reports — Systems Observatory</title>
+<link rel="stylesheet" href="assets/observatory.css">
+<style>
+  :root{--ink:#111;--muted:#666;--rule:#ddd;--bg:#fafaf7}
+  body{margin:0;font-family:Georgia,serif;color:var(--ink);background:var(--bg)}
+  main{max-width:960px;margin:0 auto;padding:2rem 1.25rem 4rem}
+  h1{font-size:2rem;margin:.25rem 0 .5rem}
+  .kaupapa{color:var(--muted);border-left:3px solid var(--ink);padding:.5rem .9rem;background:#fff;margin:1.25rem 0}
+  table{width:100%;border-collapse:collapse;background:#fff;margin:1rem 0;font-size:.95rem}
+  th,td{padding:.55rem .6rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+  th{background:#f2f0ea;font-weight:700}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .arrow-up{color:#0b6}.arrow-dn{color:#c33}.arrow-flat{color:var(--muted)}
+  .downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+  .downloads a{display:inline-block;padding:.5rem .9rem;background:#111;color:#fff;text-decoration:none;border-radius:2px;font-family:system-ui,sans-serif;font-size:.9rem}
+  .downloads a:hover{background:#333}
+  .manifest ul{list-style:none;padding:0}
+  .manifest li{padding:.4rem 0;border-bottom:1px dotted var(--rule);display:flex;justify-content:space-between;gap:1rem}
+  .manifest a{color:#111}
+  nav a{color:#111;margin-right:1rem;text-decoration:none;border-bottom:1px solid transparent}
+  nav a:hover{border-bottom-color:#111}
+  footer{margin-top:2rem;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">← Observatory</a><a href="governance.html">Governance</a><a href="reports.html"><strong>Reports</strong></a></nav>
+<h1>Reports — State of the System</h1>
+<div class="kaupapa">
+  Public accountability infrastructure. Each report is auto-generated from the same
+  <code>data/indicators.json</code> that powers the dashboard cards. When a live fetch fails,
+  the last-known value is preserved — no fabricated numbers.
+</div>
+
+<h2>Latest indicators</h2>
+<div id="latest-status" class="kaupapa" style="display:none">Loading…</div>
+<table id="latest-table">
+  <thead><tr><th>LP</th><th>Tier</th><th>Indicator</th><th>Latest</th><th>Δ</th><th>Source</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<div class="downloads">
+  <a href="reports/indicators-latest.csv" download>⬇ Latest CSV</a>
+  <a id="dl-md" href="#">⬇ Current-month Markdown</a>
+  <a id="dl-pdf" href="#">⬇ Current-month PDF</a>
+  <a href="assets/social/">SVG bundle (per LP)</a>
+</div>
+
+<h2 class="manifest">Past monthly reports</h2>
+<div class="manifest"><ul id="manifest-list"><li>Loading manifest…</li></ul></div>
+
+<footer>
+Systems Observatory · kiwidialectic.com · Data sources: Stats NZ ADE, RBNZ, FRED, Waitangi Tribunal.
+</footer>
+</main>
+<script>
+(async function(){
+  function arrow(prev,last){
+    if(prev==null||last==null) return '→';
+    const a=Number(prev), b=Number(last);
+    if(!isFinite(a)||!isFinite(b)) return '→';
+    if(b>a) return '<span class="arrow-up">▲</span>';
+    if(b<a) return '<span class="arrow-dn">▼</span>';
+    return '<span class="arrow-flat">→</span>';
+  }
+  function pct(prev,last){
+    const a=Number(prev), b=Number(last);
+    if(!isFinite(a)||!isFinite(b)||a===0) return '';
+    return ((b-a)/Math.abs(a)*100).toFixed(1)+'%';
+  }
+  try{
+    const d=await fetch('data/indicators.json',{cache:'no-store'}).then(r=>r.json());
+    const tbody=document.querySelector('#latest-table tbody');
+    for(const lp of (d.leverage_points||[])){
+      const s=lp.series||[]; const last=s.at(-1)||{}; const prev=s.at(-2)||{};
+      const src = lp.source_url ? `<a href="${lp.source_url}" target="_blank" rel="noopener">${lp.source_name||'source'}</a>` : (lp.source_name||'');
+      const latest = last.value!=null ? `${last.value} <small style="color:#888">(${last.period||''})</small>` : '—';
+      tbody.insertAdjacentHTML('beforeend',
+        `<tr><td class="num">LP${lp.id}</td><td>${lp.tier||''}</td><td>${lp.name||''}</td>`+
+        `<td class="num">${latest}</td><td class="num">${arrow(prev.value,last.value)} ${pct(prev.value,last.value)}</td>`+
+        `<td>${src}</td></tr>`);
+    }
+  }catch(e){
+    document.getElementById('latest-status').style.display='block';
+    document.getElementById('latest-status').textContent='Could not load indicators.json: '+e.message;
+  }
+  // manifest
+  try{
+    const m=await fetch('reports/manifest.json',{cache:'no-store'}).then(r=>r.json());
+    const ul=document.getElementById('manifest-list'); ul.innerHTML='';
+    if(m.current){
+      document.getElementById('dl-md').href='reports/'+m.current.md;
+      if(m.current.pdf) document.getElementById('dl-pdf').href='reports/'+m.current.pdf;
+      else { const p=document.getElementById('dl-pdf'); p.style.opacity=.4; p.title='PDF not yet built for this month'; p.href='#'; }
+    }
+    for(const r of (m.reports||[])){
+      ul.insertAdjacentHTML('beforeend',
+        `<li><a href="reports/${r.md}">${r.month}</a><span>${r.md} · ${r.pdf?`<a href="reports/${r.pdf}">pdf</a>`:'(no pdf)'}</span></li>`);
+    }
+    if(!(m.reports||[]).length) ul.innerHTML='<li>No reports yet.</li>';
+  }catch(e){
+    document.getElementById('manifest-list').innerHTML='<li>Manifest not built yet — will appear after next workflow run.</li>';
+  }
+})();
+</script>
+</body></html>

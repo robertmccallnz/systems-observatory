@@ -1,5 +1,5 @@
 id,tier,name,latest_period,latest_value,prev_period,prev_value,delta_pct,source_name,source_url
-12,Constants & Parameters,Official Cash Rate,2024-12,4.33,2024-11,4.79,-9.6%,RBNZ · FMA · Global-Rates cross-check,https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions
+12,Constants & Parameters,Official Cash Rate,2026-07,2.5,2024-12,4.33,-42.3%,RBNZ · FMA · Global-Rates cross-check,https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions
 11,Buffers & Stocks,"New dwelling consents (monthly, seasonally adjusted)",2026-05,4168.0,2026-04,4000.0,+4.2%,Stats NZ — Building consents issued,https://www.stats.govt.nz/indicators/building-consents-issued
 10,Material Stocks & Flows,"Greenhouse-gas emissions, gross (annual)",2024,32479432.0,2023,31559814.0,+2.9%,Stats NZ — Environmental-Economic Accounts,https://www.stats.govt.nz/indicators/greenhouse-gas-emissions-industry-and-household
 9,Delays,OIA responses within statutory timeframe (%),,,,,,Public Service Commission — OIA statistics,https://www.publicservice.govt.nz/research-and-data/oia-statistics
