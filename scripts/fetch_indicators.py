@@ -140,13 +140,28 @@ def _finalise(series):
 
 
 def fetch_lp1_waitangi():
-  print("[LP1] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    series = _waitangi_reports_series()
+    if series:
+        print(f"[LP1] Waitangi reports parsed {len(series)} year buckets", flush=True)
+        return series[-30:]
+    print("[LP1] Waitangi fetch failed - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp2_hansard():
-  print("[LP2] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    # Attempt Stats NZ ADE dataflow "HES_INCQ" (unverified id; on failure
+    # the assembler preserves the last-known value from indicators.json).
+    try:
+        rows = _ade_csv("HES_INCQ", start="2015-Q1")
+    except Exception as e:
+        print(f"[LP2] ADE HES_INCQ error: {e} - keeping last known value", flush=True)
+        return []
+    series = _rows_to_series(rows) if rows else []
+    if series:
+        print(f"[LP2] ADE HES_INCQ parsed {len(series)} points", flush=True)
+        return series[-40:]
+    print("[LP2] ADE HES_INCQ returned no rows - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp3_wellbeing_budget():
@@ -155,8 +170,19 @@ def fetch_lp3_wellbeing_budget():
 
 
 def fetch_lp4_cogovernance():
-  print("[LP4] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    # Attempt Stats NZ ADE dataflow "MAO_POPQ" (unverified id; on failure
+    # the assembler preserves the last-known value from indicators.json).
+    try:
+        rows = _ade_csv("MAO_POPQ", start="2015-Q1")
+    except Exception as e:
+        print(f"[LP4] ADE MAO_POPQ error: {e} - keeping last known value", flush=True)
+        return []
+    series = _rows_to_series(rows) if rows else []
+    if series:
+        print(f"[LP4] ADE MAO_POPQ parsed {len(series)} points", flush=True)
+        return series[-40:]
+    print("[LP4] ADE MAO_POPQ returned no rows - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp5_jobseeker():
@@ -165,8 +191,19 @@ def fetch_lp5_jobseeker():
 
 
 def fetch_lp6_ombudsman():
-  print("[LP6] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    # Attempt Stats NZ ADE dataflow "JUS_COMP" (unverified id; on failure
+    # the assembler preserves the last-known value from indicators.json).
+    try:
+        rows = _ade_csv("JUS_COMP", start="2015")
+    except Exception as e:
+        print(f"[LP6] ADE JUS_COMP error: {e} - keeping last known value", flush=True)
+        return []
+    series = _rows_to_series(rows) if rows else []
+    if series:
+        print(f"[LP6] ADE JUS_COMP parsed {len(series)} points", flush=True)
+        return series[-40:]
+    print("[LP6] ADE JUS_COMP returned no rows - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp7_wealth():
@@ -175,13 +212,35 @@ def fetch_lp7_wealth():
 
 
 def fetch_lp8_union():
-  print("[LP8] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    # Attempt Stats NZ ADE dataflow "EES_QRT" (unverified id; on failure
+    # the assembler preserves the last-known value from indicators.json).
+    try:
+        rows = _ade_csv("EES_QRT", start="2015-Q1")
+    except Exception as e:
+        print(f"[LP8] ADE EES_QRT error: {e} - keeping last known value", flush=True)
+        return []
+    series = _rows_to_series(rows) if rows else []
+    if series:
+        print(f"[LP8] ADE EES_QRT parsed {len(series)} points", flush=True)
+        return series[-40:]
+    print("[LP8] ADE EES_QRT returned no rows - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp9_oia_timeliness():
-  print("[LP9] no ADE dataflow - keeping last known value", flush=True)
-  return []
+    # Attempt Stats NZ ADE dataflow "SSC_OIA" (unverified id; on failure
+    # the assembler preserves the last-known value from indicators.json).
+    try:
+        rows = _ade_csv("SSC_OIA", start="2015")
+    except Exception as e:
+        print(f"[LP9] ADE SSC_OIA error: {e} - keeping last known value", flush=True)
+        return []
+    series = _rows_to_series(rows) if rows else []
+    if series:
+        print(f"[LP9] ADE SSC_OIA parsed {len(series)} points", flush=True)
+        return series[-40:]
+    print("[LP9] ADE SSC_OIA returned no rows - keeping last known value", flush=True)
+    return []
 
 
 def fetch_lp10_emissions():
