@@ -1,0 +1,13 @@
+id,tier,name,latest_period,latest_value,prev_period,prev_value,delta_pct,source_name,source_url
+12,Constants & Parameters,Official Cash Rate,2024-12,4.33,2024-11,4.79,-9.6%,RBNZ · FMA · Global-Rates cross-check,https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions
+11,Buffers & Stocks,"New dwelling consents (monthly, seasonally adjusted)",2026-05,4168.0,2026-04,4000.0,+4.2%,Stats NZ — Building consents issued,https://www.stats.govt.nz/indicators/building-consents-issued
+10,Material Stocks & Flows,"Greenhouse-gas emissions, gross (annual)",2024,32479432.0,2023,31559814.0,+2.9%,Stats NZ — Environmental-Economic Accounts,https://www.stats.govt.nz/indicators/greenhouse-gas-emissions-industry-and-household
+9,Delays,OIA responses within statutory timeframe (%),,,,,,Public Service Commission — OIA statistics,https://www.publicservice.govt.nz/research-and-data/oia-statistics
+8,Negative Feedback Loops,Trade union membership rate,,,,,,Stats NZ HLFS · MBIE registered unions,https://www.mbie.govt.nz/business-and-employment/employment-and-skills/employment-relations/registered-unions/
+7,Positive Feedback Loops,Household net worth — top 1% share,,,,,,Stats NZ — Household Economic Survey,https://www.stats.govt.nz/information-releases/household-net-worth-statistics-year-ended-june-2021
+6,Information Flows,OIA complaints upheld by Ombudsman (annual),,,,,,Office of the Ombudsman,https://www.ombudsman.parliament.nz/resources/
+5,Rules,People receiving Jobseeker Support,2026-01,5.3,2025-10,5.4,-1.9%,MSD — Monthly Benefits Update,https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/monthly-reporting/
+4,Self-Organisation,Active iwi / hapū co-governance arrangements,,,,,,Te Puni Kōkiri via data.govt.nz,https://catalogue.data.govt.nz/organization/te-puni-kokiri
+3,Goals,Wellbeing-Budget priority spend ÷ GDP-growth spend,,,,,,The Treasury — Wellbeing Budget,https://www.treasury.govt.nz/publications/wellbeing-budget
+2,Paradigms,"Hansard framing ratio: ""growth"" ÷ (""wellbeing"" + ""tino rangatiratanga"")",,,,,,NZ Parliament — Hansard,https://www.parliament.nz/en/pb/hansard-debates/rhr/
+1,Transcending Paradigms,Waitangi Tribunal reports released (annual),,,,,,Waitangi Tribunal,https://waitangitribunal.govt.nz/
