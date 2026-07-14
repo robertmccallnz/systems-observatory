@@ -254,12 +254,13 @@ def fetch_lp11_consents():
 
 
 def fetch_lp12_ocr():
-    series = _fred_series("IR3TIB01NZM156N")
-    if series:
-        print(f"[LP12] FRED OCR parsed {len(series)} points", flush=True)
-    else:
-        print("[LP12] FRED OCR fetch failed - keeping last known value", flush=True)
-    return series[-120:] if series else []
+    # FRED IR3TIB01NZM156N is the interbank 3-month rate, NOT the OCR; and
+    # FRED does not currently expose a live RBNZ policy-rate series.
+    # RBNZ's direct XLSX endpoint returns 403 to headless clients.
+    # Until a robust RBNZ scraper is wired, return [] so the manual last-known
+    # value in data/indicators.json is preserved (see manual_last_value flag).
+    print("[LP12] no reliable live OCR feed - preserving manual last-known value", flush=True)
+    return []
 
 
 FETCHERS = {
