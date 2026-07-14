@@ -195,8 +195,12 @@ def fetch_lp11_consents():
 
 
 def fetch_lp12_ocr():
-  print("[LP12] no ADE dataflow (RBNZ series) - keeping last known value", flush=True)
-  return []
+    series = _fred_series("IR3TIB01NZM156N")
+    if series:
+        print(f"[LP12] FRED OCR parsed {len(series)} points", flush=True)
+    else:
+        print("[LP12] FRED OCR fetch failed - keeping last known value", flush=True)
+    return series[-120:] if series else []
 
 
 FETCHERS = {
