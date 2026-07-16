@@ -254,12 +254,15 @@ def fetch_lp11_consents():
 
 
 def fetch_lp12_ocr():
-    # FRED IR3TIB01NZM156N is the interbank 3-month rate, NOT the OCR; and
-    # FRED does not currently expose a live RBNZ policy-rate series.
-    # RBNZ's direct XLSX endpoint returns 403 to headless clients.
-    # Until a robust RBNZ scraper is wired, return [] so the manual last-known
-    # value in data/indicators.json is preserved (see manual_last_value flag).
-    print("[LP12] no reliable live OCR feed - preserving manual last-known value", flush=True)
+        # Primary: RBNZ RSS/Atom (HTML endpoint returns 403 to headless clients).
+    try:
+        import lp12_rss
+        rate = lp12_rss.fetch_rbnz_ocr_rss()
+        period = datetime.now(timezone.utc).strftime("%Y-%m")
+        print(f"[LP12] RBNZ RSS live OCR: {rate}% ({period})", flush=True)
+        return [{"period": period, "value": float(rate), "source": "RBNZ RSS"}]
+    except Exception as exc:
+        print(f"[LP12] RBNZ RSS unavailable ({exc}); preserving manual last-known value", flush=True)
     return []
 
 
