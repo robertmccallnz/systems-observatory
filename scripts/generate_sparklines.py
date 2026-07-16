@@ -23,8 +23,8 @@ def _svg(lp):
     name = (lp.get("name") or "").replace("&", "&amp;")
     latest = "\u2014"
     if series:
-        latest = f"{series[-1].get('value','\u2014')}"
-    if len(values) < 2:
+                    latest = str(series[-1].get('value', '\u2014'))
+        if len(values) < 2:
         path = ""
     else:
         mn, mx = min(values), max(values)
