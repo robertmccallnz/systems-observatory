@@ -1,6 +1,6 @@
 # State of the System — 2026-07
 
-_Auto-generated 2026-07-16 from `data/indicators.json`. Values are the latest observations returned by the refresh workflow; where a fetch fails the last-known value is preserved (no fabrication).
+_Auto-generated 2026-07-17 from `data/indicators.json`. Values are the latest observations returned by the refresh workflow; where a fetch fails the last-known value is preserved (no fabrication).
 
 | LP | Tier | Indicator | Latest | Δ | Source |
 |----|------|-----------|--------|---|--------|
