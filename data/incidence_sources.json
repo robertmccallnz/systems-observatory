@@ -1,0 +1,16 @@
+{
+  "_comment": "Per-leverage-point mapping to Aotearoa Data Explorer (ADE) SDMX queries. Keys are string forms of leverage-point ids (1..12) matching data/incidence.json. Each entry has bears_cost and benefits arrays of query objects. A query object shape is: {\"context\": \"dataflow\", \"agencyId\": \"STATSNZ\", \"resourceId\": \"<DATAFLOW_ID>\", \"version\": \"1.0\", \"key\": \"all\", \"params\": {\"startPeriod\": \"2020\"}}. Empty arrays keep the LP in 'pending distributional analysis' status.",
+  "_ade_base": "https://apis.stats.govt.nz/ade-api/rest/v2",
+  "1":  { "bears_cost": [], "benefits": [] },
+  "2":  { "bears_cost": [], "benefits": [] },
+  "3":  { "bears_cost": [], "benefits": [] },
+  "4":  { "bears_cost": [], "benefits": [] },
+  "5":  { "bears_cost": [], "benefits": [] },
+  "6":  { "bears_cost": [], "benefits": [] },
+  "7":  { "bears_cost": [], "benefits": [] },
+  "8":  { "bears_cost": [], "benefits": [] },
+  "9":  { "bears_cost": [], "benefits": [] },
+  "10": { "bears_cost": [], "benefits": [] },
+  "11": { "bears_cost": [], "benefits": [] },
+  "12": { "bears_cost": [], "benefits": [] }
+}
