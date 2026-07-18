@@ -117,7 +117,7 @@ def main():
     for lp in lps:
         lp_id = lp.get("id") or lp.get("lp_id") or "LP?"
         inc = lp.get("incidence") or {}
-        src_map = (mapping.get(lp_id) or {})
+        src_map = (mapping.get(str(lp_id)) or {})
         fetched_bc, fetched_bn = [], []
         for q in src_map.get("bears_cost", []) or []:
             fetched_bc.extend(_fetch_query(q))
