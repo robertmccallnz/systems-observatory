@@ -20,6 +20,10 @@ jobs:
         env:
           ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
         run: python scripts/fetch_indicators.py
+      - name: Fetch incidence data
+        env:
+          ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
+        run: python scripts/fetch_incidence.py
       - name: Generate reports (CSV + monthly Markdown)
         run: python scripts/generate_reports.py
       - name: Generate per-LP sparkline SVGs
@@ -41,6 +45,6 @@ jobs:
         run: |
           git config user.name "te-pa-observatory-bot"
           git config user.email "bot@te-pa.org"
-          git add data/indicators.json reports/ assets/social/
+          git add data/indicators.json data/incidence.json reports/ assets/social/
           git diff --cached --quiet || git commit -m "chore: refresh indicators $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
