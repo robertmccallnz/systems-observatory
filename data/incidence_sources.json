@@ -1,16 +1,78 @@
 {
-  "_comment": "Per-leverage-point mapping to Aotearoa Data Explorer (ADE) SDMX queries. Keys are string forms of leverage-point ids (1..12) matching data/incidence.json. Each entry has bears_cost and benefits arrays of query objects. A query object shape is: {\"context\": \"dataflow\", \"agencyId\": \"STATSNZ\", \"resourceId\": \"<DATAFLOW_ID>\", \"version\": \"1.0\", \"key\": \"all\", \"params\": {\"startPeriod\": \"2020\"}}. Empty arrays keep the LP in 'pending distributional analysis' status.",
+  "_comment": "DRAFT MAPPING PROPOSAL -- for review, not yet ratified. Per-leverage-point mapping to Aotearoa Data Explorer (ADE) SDMX queries. Keys are string forms of leverage-point ids (1..12) matching data/incidence.json. Each entry has bears_cost and benefits arrays of query objects with shape {context, agencyId, resourceId, version, key, params?}. Empty arrays keep the LP in 'pending distributional analysis' status. To fill a TODO, open https://explore.data.stats.govt.nz , find a table, click 'Developer API' and copy the dataflow id into resourceId.",
   "_ade_base": "https://apis.stats.govt.nz/ade-api/rest/v2",
-  "1":  { "bears_cost": [], "benefits": [] },
-  "2":  { "bears_cost": [], "benefits": [] },
-  "3":  { "bears_cost": [], "benefits": [] },
-  "4":  { "bears_cost": [], "benefits": [] },
-  "5":  { "bears_cost": [], "benefits": [] },
-  "6":  { "bears_cost": [], "benefits": [] },
-  "7":  { "bears_cost": [], "benefits": [] },
-  "8":  { "bears_cost": [], "benefits": [] },
-  "9":  { "bears_cost": [], "benefits": [] },
-  "10": { "bears_cost": [], "benefits": [] },
-  "11": { "bears_cost": [], "benefits": [] },
-  "12": { "bears_cost": [], "benefits": [] }
+  "_ade_ui": "https://explore.data.stats.govt.nz",
+
+  "1": {
+    "_topic": "Constants, parameters, numbers -- CPI, tax rates, price indices",
+    "_todo": "Locate CPI dataflow id via ADE UI Developer API panel and paste into resourceId below.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "2": {
+    "_topic": "Buffers and stocks -- population stock, business stock",
+    "_todo": "Candidate dataflows: 'Population estimates', 'Business demography'. Fill in resourceId.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "3": {
+    "_topic": "Stock-and-flow structures -- housing stock, migration flows",
+    "_todo": "Candidate dataflows: housing / migration. Fill in resourceId.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "4": {
+    "_topic": "Delays -- qualitative, ADE has no direct dataflow",
+    "_note": "Likely stays 'pending distributional analysis' until non-ADE source added.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "5": {
+    "_topic": "Balancing feedback loops -- qualitative",
+    "_note": "Likely stays 'pending distributional analysis'.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "6": {
+    "_topic": "Reinforcing feedback loops -- qualitative",
+    "_note": "Likely stays 'pending distributional analysis'.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "7": {
+    "_topic": "Information flows -- media literacy / transparency; not in ADE",
+    "_note": "Likely stays 'pending distributional analysis'.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "8": {
+    "_topic": "Rules of the system -- justice, corrections statistics",
+    "_todo": "Candidate dataflows: 'Corrections', 'Justice'. Fill in resourceId.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "9": {
+    "_topic": "Self-organisation -- firm births/deaths as proxy",
+    "_todo": "Candidate dataflow: 'Business demography'. Fill in resourceId.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "10": {
+    "_topic": "Goals of the system -- distributional outcomes (income, expenditure)",
+    "_todo": "Candidate dataflows: 'Incomes', 'Household expenditure', LEED. Fill in resourceId.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "11": {
+    "_topic": "Paradigms -- qualitative",
+    "_note": "Likely stays 'pending distributional analysis'.",
+    "bears_cost": [],
+    "benefits": []
+  },
+  "12": {
+    "_topic": "Transcending paradigms -- qualitative",
+    "_note": "Likely stays 'pending distributional analysis'.",
+    "bears_cost": [],
+    "benefits": []
+  }
 }
