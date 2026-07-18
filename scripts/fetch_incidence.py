@@ -27,6 +27,11 @@ MAP = ROOT / "data" / "incidence_sources.json"
 
 ADE_BASE = os.environ.get("ADE_API_BASE", "https://apis.stats.govt.nz/ade-api/rest/v2")
 ADE_KEY = os.environ.get("ADE_API_KEY", "")
+ADE_STRICT = os.environ.get("ADE_STRICT", "1") != "0"
+
+class ADEFetchError(RuntimeError):
+    """Raised when ADE_STRICT is on and a fetch fails."""
+
 
 
 def _is_valid_url(u):
@@ -61,9 +66,20 @@ def _ade_get(path, params=None):
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        print("[incidence] HTTP " + str(e.code) + " on " + url, flush=True)
+        body = b""
+        try:
+            body = e.read()[:400]
+        except Exception:
+            pass
+        msg = "[incidence] HTTP " + str(e.code) + " on " + url + " body=" + repr(body)
+        print(msg, flush=True)
+        if ADE_STRICT:
+            raise ADEFetchError(msg) from e
     except Exception as e:
-        print("[incidence] fetch error on " + url + ": " + str(e), flush=True)
+        msg = "[incidence] fetch error on " + url + ": " + str(e)
+        print(msg, flush=True)
+        if ADE_STRICT:
+            raise ADEFetchError(msg) from e
     return None
 
 
