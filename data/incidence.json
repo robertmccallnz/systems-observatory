@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated": null,
+  "notes": "Per-LP distributional incidence. Every bears_cost/benefits row must carry a resolvable source_url. Missing rows render as 'pending distributional analysis'. No IDI-linked figures; public aggregate data only.",
+  "leverage_points": [
+    {"id": 1,  "name": "Constants, parameters, numbers",         "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 2,  "name": "Buffers and stocks",                    "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 3,  "name": "Stock-and-flow structures",              "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 4,  "name": "Delays",                                 "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 5,  "name": "Balancing feedback loops",               "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 6,  "name": "Reinforcing feedback loops",             "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 7,  "name": "Information flows",                     "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 8,  "name": "Rules of the system",                   "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 9,  "name": "Self-organisation",                     "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 10, "name": "Goals of the system",                   "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 11, "name": "Paradigms",                             "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}},
+    {"id": 12, "name": "Transcending paradigms / OCR",           "policy_signal": null, "source": null, "incidence": {"bears_cost": [], "benefits": [], "method": null, "as_of": null, "confidence": null, "status": "pending distributional analysis"}}
+  ]
+}
