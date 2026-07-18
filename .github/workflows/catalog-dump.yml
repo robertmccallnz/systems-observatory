@@ -16,22 +16,49 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Diagnostics
+        run: |
+          curl --version | head -1
+          getent hosts apis.stats.govt.nz || true
+          echo "key_len=${#ADE_API_KEY}"
+        env:
+          ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
+
       - name: Fetch ADE dataflow catalog
         env:
           ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
         run: |
-          set -euo pipefail
-          if [ -z "${ADE_API_KEY}" ]; then
-            echo "::error::ADE_API_KEY secret is empty"
+          set -uo pipefail
+          # Strip any whitespace / CR / LF from the secret (common paste hazard).
+          KEY="$(printf '%s' "${ADE_API_KEY}" | tr -d ' \t\r\n')"
+          if [ -z "${KEY}" ]; then
+            echo "::error::ADE_API_KEY is empty after trim"
             exit 1
           fi
+          echo "trimmed key_len=${#KEY}"
           mkdir -p data
-          curl -sS --fail-with-body \
-            -H "Ocp-Apim-Subscription-Key: ${ADE_API_KEY}" \
-            -H "Accept: application/vnd.sdmx.structure+json;version=1.0.0" \
-            "https://apis.stats.govt.nz/ade-api/rest/v2/structure/dataflow/all" \
-            -o data/ade_catalog.raw.json
-          echo "Bytes: $(wc -c < data/ade_catalog.raw.json)"
+          URL="https://apis.stats.govt.nz/ade-api/rest/v2/structure/dataflow/all"
+          # Attempt 1: SDMX-JSON accept header
+          HTTP=$(curl -sS -o data/ade_catalog.raw.json -w '%{http_code}' \
+                 -H "Ocp-Apim-Subscription-Key: ${KEY}" \
+                 -H "Accept: application/vnd.sdmx.structure+json;version=1.0.0" \
+                 "$URL") || { echo "::error::curl attempt-1 exited $?"; }
+          echo "attempt-1 HTTP=${HTTP:-none}  bytes=$(wc -c < data/ade_catalog.raw.json 2>/dev/null || echo 0)"
+          if [ "${HTTP:-000}" != "200" ]; then
+            echo "---attempt-1 body head---"
+            head -c 400 data/ade_catalog.raw.json || true; echo
+            # Attempt 2: plain application/json
+            HTTP=$(curl -sS -o data/ade_catalog.raw.json -w '%{http_code}' \
+                   -H "Ocp-Apim-Subscription-Key: ${KEY}" \
+                   -H "Accept: application/json" \
+                   "$URL") || { echo "::error::curl attempt-2 exited $?"; exit 1; }
+            echo "attempt-2 HTTP=${HTTP}  bytes=$(wc -c < data/ade_catalog.raw.json)"
+          fi
+          if [ "${HTTP}" != "200" ]; then
+            echo "---final body head---"; head -c 800 data/ade_catalog.raw.json; echo
+            echo "::error::ADE catalog fetch failed with HTTP ${HTTP}"; exit 1
+          fi
+          # Normalise
           jq '{
             fetched_at: (now | todate),
             count: (.data.dataflows | length),
@@ -47,16 +74,18 @@ jobs:
           jq -r '.dataflows[] | "\(.id)\t\(.name)"' data/ade_catalog.json | head -30
 
       - name: Upload catalog as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ade-catalog
           path: |
             data/ade_catalog.json
             data/ade_catalog.raw.json
+          if-no-files-found: warn
           retention-days: 30
 
       - name: Commit catalog to repo
-        if: ${{ inputs.commit }}
+        if: ${{ inputs.commit && success() }}
         run: |
           git config user.name  "observatory-bot"
           git config user.email "observatory-bot@users.noreply.github.com"
