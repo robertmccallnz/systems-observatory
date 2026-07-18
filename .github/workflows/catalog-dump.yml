@@ -1,0 +1,70 @@
+name: ADE Catalog Dump
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: "Commit result to data/ade_catalog.json"
+        type: boolean
+        default: true
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch ADE dataflow catalog
+        env:
+          ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ADE_API_KEY}" ]; then
+            echo "::error::ADE_API_KEY secret is empty"
+            exit 1
+          fi
+          mkdir -p data
+          curl -sS --fail-with-body \
+            -H "Ocp-Apim-Subscription-Key: ${ADE_API_KEY}" \
+            -H "Accept: application/vnd.sdmx.structure+json;version=1.0.0" \
+            "https://apis.stats.govt.nz/ade-api/rest/v2/structure/dataflow/all" \
+            -o data/ade_catalog.raw.json
+          echo "Bytes: $(wc -c < data/ade_catalog.raw.json)"
+          jq '{
+            fetched_at: (now | todate),
+            count: (.data.dataflows | length),
+            dataflows: [.data.dataflows[] | {
+              id: .id,
+              agency: .agencyID,
+              version: .version,
+              name: (.names.en // .name // ""),
+              description: (.descriptions.en // "")
+            }]
+          }' data/ade_catalog.raw.json > data/ade_catalog.json
+          echo "Dataflow count: $(jq '.count' data/ade_catalog.json)"
+          jq -r '.dataflows[] | "\(.id)\t\(.name)"' data/ade_catalog.json | head -30
+
+      - name: Upload catalog as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ade-catalog
+          path: |
+            data/ade_catalog.json
+            data/ade_catalog.raw.json
+          retention-days: 30
+
+      - name: Commit catalog to repo
+        if: ${{ inputs.commit }}
+        run: |
+          git config user.name  "observatory-bot"
+          git config user.email "observatory-bot@users.noreply.github.com"
+          rm -f data/ade_catalog.raw.json
+          git add data/ade_catalog.json
+          if git diff --cached --quiet; then
+            echo "No catalog change."
+          else
+            git commit -m "chore(catalog): refresh ADE dataflow catalog"
+            git push
+          fi
