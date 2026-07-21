@@ -12,10 +12,10 @@ from __future__ import annotations
 import json, pathlib, collections, sys
 
 LP_RULES = {
-    'LP12': {'RBNZ', 'OCR', 'CONST', 'PARAM'},
-    'LP11': {'DWLLNG', 'CONSENT', 'HOUS', 'BUFFER', 'STOCK'},
-    'LP10': {'ENV', 'EMISS', 'CO2', 'GHG', 'AGR', 'ENERGY'},
-    'LP9':  {'DELAY', 'RATE', 'LAG'},
+    12: {'RBNZ', 'OCR', 'CONST', 'PARAM'},
+    11: {'DWLLNG', 'CONSENT', 'HOUS', 'BUFFER', 'STOCK'},
+    10: {'ENV', 'EMISS', 'CO2', 'GHG', 'AGR', 'ENERGY'},
+     9: {'DELAY', 'RATE', 'LAG'},
 }
 DATASET = 'te-pa/systems-observatory-annotations'
 
