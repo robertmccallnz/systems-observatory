@@ -57,5 +57,11 @@ jobs:
           git config user.name "te-pa-observatory-bot"
           git config user.email "bot@te-pa.org"
           git add data/indicators.json data/incidence.json data/news-events.json reports/ assets/social/
-          git diff --cached --quiet || git commit -m "chore: refresh indicators $(date -u +%Y-%m-%dT%H:%MZ)"
+          if git diff --cached --quiet; then
+            # No data changes: empty keepalive commit so the
+            # scheduled workflow is never auto-disabled for inactivity.
+            git commit --allow-empty -m "chore: keepalive $(date -u +%Y-%m-%dT%H:%M%Z)"
+          else
+            git commit -m "chore: refresh indicators $(date -u +%Y-%m-%dT%H:%M%Z)"
+          fi
           git push

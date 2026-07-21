@@ -1,102 +1,84 @@
-#!/usr/bin/env python3
-"""Fetch NZ news via RSS and map headlines to Meadows leverage points.
-
-Writes data/news-events.json in the schema consumed by assets/news-feed.js:
-{headline, url, tier, impact, reasoning, date, source, auto}
-"""
-import json, os, re, sys
+import json
+import os
+import re
 from datetime import datetime, timezone
 
-try:
-    import feedparser
-except ImportError:
-    sys.exit("feedparser not installed: pip install feedparser")
+import feedparser
 
-# Meadows 12 leverage points -> keyword patterns (specific first).
 KEYWORD_MAP = [
-    (r"\b(transcend|paradigm shift|abolish|reimagin|transformation)\b", "1-transcend"),
-    (r"\b(treaty|tiriti|decoloni|indigenous rights|structural racism|constitution)\b", "2-paradigm"),
-    (r"\b(goal|target|mission|wellbeing|living standards|strategy)\b", "3-goals"),
-    (r"\b(self-govern|autonomy|tino rangatiratanga|devolution|co-govern|cooperative)\b", "4-self-org"),
-    (r"\b(law|legislation|\bact\b|policy|regulation|reform|repeal|bill)\b", "5-rules"),
-    (r"\b(data|transparency|oia|disclosure|report|publish|official information)\b", "6-info"),
-    (r"\b(growth|viral|escalat|compound|accelerat|cascade|boom|surge)\b", "7-pos-loops"),
-    (r"\b(watchdog|oversight|enforcement|audit|sanction|penalty|inquiry)\b", "8-neg-loops"),
-    (r"\b(delay|lag|slow|response time|reporting period|data gap|backlog)\b", "9-feedback"),
-    (r"\b(spending|immigration|birth rate|investment|migration|budget|funding)\b", "10-flows"),
-    (r"\b(reserve|fund|stockpile|infrastructure|capacity|housing stock|supply)\b", "11-buffers"),
-    (r"\b(ocr|interest rate|inflation|cpi|gdp|wage|unemployment|tax)\b", "12-parameters"),
-]
-
-IMPACT_MAP = [
-    (r"\b(cut|fall|drop|decline|loss|crisis|fail|reject|scandal|warn|risk)\b", "negative"),
-    (r"\b(rise|boost|gain|invest|expand|approve|win|record|improve|launch)\b", "positive"),
+    (r'\b(ocr|interest rate|inflation|cpi|gdp|wage|unemployment|tax rate|subsidy|tariff|fine|fee|penalty|benefit rate)\b', '12-parameters'),
+    (r'\b(reserve|fund|stockpile|infrastructure|capacity|housing stock|buffer|inventory|resource)\b', '11-buffers'),
+    (r'\b(spending|flow|throughput|immigration rate|birth rate|death rate|investment|migration)\b', '10-flows'),
+    (r'\b(delay|lag|slow|response time|reporting period|data gap|latency)\b', '9-feedback'),
+    (r'\b(regulation|watchdog|oversight|enforcement|audit|sanction|corrective|penalty|review)\b', '8-neg-loops'),
+    (r'\b(growth|viral|escalat|compound|accelerat|reinfor|cascade|boom|amplif)\b', '7-pos-loops'),
+    (r'\b(data|transparency|OIA|disclosure|report|publish|inform|media|censorship|propaganda)\b', '6-info'),
+    (r'\b(law|legislation|act|policy|rule|constitution|charter|regulation|reform|repeal|bill passed)\b', '5-rules'),
+    (r'\b(self-govern|autonomy|tino rangatiratanga|devolution|self-organis|local decision|co-govern)\b', '4-self-org'),
+    (r'\b(goal|target|objective|mission|vision|purpose|wellbeing|living standard)\b', '3-goals'),
+    (r'\b(treaty|tiriti|decoloni|paradigm|worldview|kaupapa|indigenous|systemic|structural racism|colonialism)\b', '2-paradigm'),
+    (r'\b(transcend|beyond|new world|transformation|revolution|shift|reimagin|abolish)\b', '1-transcend'),
 ]
 
 FEEDS = [
-    ("https://www.rnz.co.nz/rss/national.xml", "RNZ"),
-    ("https://www.rnz.co.nz/rss/political.xml", "RNZ Politics"),
-    ("https://thespinoff.co.nz/feed", "The Spinoff"),
-    ("https://www.stats.govt.nz/rss/", "Stats NZ"),
+    ('https://www.rnz.co.nz/rss/news.xml', 'RNZ'),
+    ('https://thespinoff.co.nz/feed', 'The Spinoff'),
+    ('https://www.stats.govt.nz/feed/', 'Stats NZ'),
+    ('https://www.treasury.govt.nz/news-and-events/rss.xml', 'The Treasury'),
 ]
 
-MAX_PER_FEED = 6
-
-
-def classify(text, table, default):
-    for pattern, label in table:
-        if re.search(pattern, text, re.IGNORECASE):
-            return label
-    return default
-
+def auto_tier(text):
+    for pattern, tier in KEYWORD_MAP:
+        if re.search(pattern, text or '', re.IGNORECASE):
+            return tier
+    return '6-info'
 
 def norm_date(entry):
-    for key in ("published", "updated"):
+    for key in ('published_parsed', 'updated_parsed'):
         val = entry.get(key)
         if val:
-            return val[:10] if re.match(r"\d{4}-\d{2}-\d{2}", val[:10]) else _parse(entry, key)
+            try:
+                return datetime(*val[:6], tzinfo=timezone.utc).date().isoformat()
+            except Exception:
+                pass
+    for key in ('published', 'updated'):
+        val = entry.get(key)
+        if val:
+            m = re.search(r'(\d{4}-\d{2}-\d{2})', val)
+            if m:
+                return m.group(1)
     return datetime.now(timezone.utc).date().isoformat()
 
+events = []
+seen = set()
 
-def _parse(entry, key):
-    tm = entry.get(key + "_parsed")
-    if tm:
-        return datetime(*tm[:6]).date().isoformat()
-    return datetime.now(timezone.utc).date().isoformat()
+for url, source in FEEDS:
+    feed = feedparser.parse(url)
+    for entry in (feed.entries or [])[:10]:
+        headline = (entry.get('title') or '').strip()
+        link = (entry.get('link') or '').strip()
+        summary = (entry.get('summary') or entry.get('description') or '').strip()
+        if not headline:
+            continue
+        key = headline.lower()[:120]
+        if key in seen:
+            continue
+        seen.add(key)
+        events.append({
+            'headline': headline,
+            'url': link or None,
+            'tier': auto_tier(f'{headline} {summary}'),
+            'impact': 'ambiguous',
+            'reasoning': 'Auto-mapped via keyword analysis — verify and correct via the annotation form below.',
+            'date': norm_date(entry),
+            'source': source,
+            'auto': True
+        })
 
+events.sort(key=lambda x: x.get('date', ''), reverse=True)
 
-def main():
-    events = []
-    for url, source in FEEDS:
-        feed = feedparser.parse(url)
-        for entry in feed.entries[:MAX_PER_FEED]:
-            title = entry.get("title", "").strip()
-            if not title:
-                continue
-            blob = title + " " + re.sub(r"<[^>]+>", " ", entry.get("summary", ""))
-            events.append({
-                "headline": title,
-                "url": entry.get("link", ""),
-                "tier": classify(blob, KEYWORD_MAP, "6-info"),
-                "impact": classify(blob, IMPACT_MAP, "ambiguous"),
-                "reasoning": "Auto-mapped via keyword analysis. Verify via the Add event form.",
-                "date": _parse(entry, "published") if entry.get("published_parsed") else norm_date(entry),
-                "source": source,
-                "auto": True,
-            })
+os.makedirs('data', exist_ok=True)
+with open('data/news-events.json', 'w', encoding='utf-8') as f:
+    json.dump(events, f, ensure_ascii=False, indent=2)
 
-    # newest first
-    events.sort(key=lambda e: e["date"], reverse=True)
-
-    out = os.path.join("data", "news-events.json")
-    os.makedirs("data", exist_ok=True)
-    if not events:
-        print("WARNING: no events fetched; leaving existing file untouched")
-        return
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(events, f, indent=2, ensure_ascii=False)
-    print(f"Wrote {len(events)} events to {out}")
-
-
-if __name__ == "__main__":
-    main()
+print(f'wrote {len(events)} events to data/news-events.json')
