@@ -1,0 +1,10 @@
+{
+  "dataset": "te-pa/systems-observatory-annotations",
+  "total": 1,
+  "counts": {
+    "UNMAPPED": 1
+  },
+  "unmapped_sample": [
+    "00000000-0000-4000-8000-000000000000"
+  ]
+}

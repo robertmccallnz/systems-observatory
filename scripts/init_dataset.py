@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create the community annotations dataset on the Hugging Face Hub.
 
-Run once after `huggingface-cli login`.
+Run once after `hf auth login`.
 """
 from __future__ import annotations
 import json
