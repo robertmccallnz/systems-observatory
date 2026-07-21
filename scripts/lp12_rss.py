@@ -22,6 +22,7 @@ _UA = (
 
 # Candidate RBNZ feeds - tried in order. Extend as new URLs are discovered.
 _FEEDS = [
+    "https://www.rbnz.govt.nz/monetary-policy/official-cash-rate-decisions",
     "https://www.rbnz.govt.nz/rss/news",
     "https://www.rbnz.govt.nz/rss/monetary-policy",
     "https://www.rbnz.govt.nz/rss/official-cash-rate",
@@ -41,8 +42,17 @@ def _http_get(url: str, timeout: int = 20) -> str:
         },
     )
     ctx = ssl.create_default_context()
+try:
     with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
         return resp.read().decode("utf-8", errors="replace")
+except urllib.error.HTTPError as e:
+    if e.code in (403, 429, 503) and not url.startswith("https://r.jina.ai/"):
+        proxied = "https://r.jina.ai/" + url
+        print(f"[LP12] direct {e.code} on {url}; retrying via reader proxy", flush=True)
+        req2 = urllib.request.Request(proxied, headers={"User-Agent": _UA, "Accept": "text/plain, */*;q=0.5"})
+        with urllib.request.urlopen(req2, timeout=timeout, context=ctx) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    raise
 
 
 def _extract_rate_from_text(text: str) -> Optional[float]:
