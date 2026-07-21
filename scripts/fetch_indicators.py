@@ -18,7 +18,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "indicators.json"
 
 ADE_BASE = "https://api.stats.govt.nz/opendata/v2"
-ADE_KEY = "".join(c for c in os.environ.get("ADE_API_KEY","") if 33 <= ord(c) <= 126)
+def _pick_ade_key():
+    for n in ("ADE_API_KEY","STATS_ADE_API_KEY","STATSNZ_ADE_API_KEY","ADE_KEY","STATSNZ_API_KEY"):
+        v = os.environ.get(n,"")
+        v = "".join(c for c in v if 33 <= ord(c) <= 126)
+        if v:
+            print(f"[ADE] using env var {n} (len={len(v)})", flush=True)
+            return v
+    print("[ADE] no key found in env; checked ADE_API_KEY, STATS_ADE_API_KEY, STATSNZ_ADE_API_KEY, ADE_KEY, STATSNZ_API_KEY", flush=True)
+    return ""
+ADE_KEY = _pick_ade_key()
 TIMEOUT = 90
 print(f"[ADE] key_present={bool(ADE_KEY)} key_len={len(ADE_KEY)}", flush=True)
 
@@ -52,7 +61,7 @@ def _ade_csv(resource_id, key="all", start=None, agency="STATSNZ", version="1.0"
 
 
 def _waitangi_reports_series():
-    url = "https://waitangitribunal.govt.nz/publications-and-resources/wt-publications/"
+    url = "https://waitangitribunal.govt.nz/news/rss/"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
         with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
