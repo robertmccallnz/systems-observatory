@@ -61,7 +61,7 @@ jobs:
           # Normalise
           python3 scripts/normalise_ade_catalog.py data/ade_catalog.raw.json data/ade_catalog.json
           echo "Dataflow count: $(jq '.count' data/ade_catalog.json)"
-          jq -r '.dataflows[] | "\(.id)\t\(.name)"' data/ade_catalog.json | head -30
+          (jq -r '.dataflows[] | "\(.id)\t\(.name)"' data/ade_catalog.json | head -30) || true
 
       - name: Upload catalog as artifact
         if: always()
