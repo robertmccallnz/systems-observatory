@@ -19,10 +19,16 @@ jobs:
       - name: Fetch live indicators
         env:
           ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
+          STATS_ADE_API_KEY: ${{ secrets.STATS_ADE_API_KEY }}
+          STATSNZ_ADE_API_KEY: ${{ secrets.STATSNZ_ADE_API_KEY }}
+          STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
         run: python scripts/fetch_indicators.py
       - name: Fetch incidence data
         env:
           ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
+          STATS_ADE_API_KEY: ${{ secrets.STATS_ADE_API_KEY }}
+          STATSNZ_ADE_API_KEY: ${{ secrets.STATSNZ_ADE_API_KEY }}
+          STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
         run: python scripts/fetch_incidence.py
       - name: Generate reports (CSV + monthly Markdown)
         run: python scripts/generate_reports.py
