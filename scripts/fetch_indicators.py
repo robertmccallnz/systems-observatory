@@ -28,6 +28,30 @@ def _pick_ade_key():
     print("[ADE] no key found in env; checked ADE_API_KEY, STATS_ADE_API_KEY, STATSNZ_ADE_API_KEY, ADE_KEY, STATSNZ_API_KEY", flush=True)
     return ""
 ADE_KEY = _pick_ade_key()
+
+
+# --- HTTP hardening: shared UA + retry/backoff ------------------------------
+USER_AGENT = "te-pa-observatory/1.0 (+https://robertmccallnz.github.io/systems-observatory; contact=bot@te-pa.org)"
+def http_get(url, headers=None, timeout=None, retries=4, backoff=1.6):
+    import time as _t, random as _r
+    hdrs = {"User-Agent": USER_AGENT, "Accept": "*/*"}
+    if headers: hdrs.update(headers)
+    to = timeout if timeout is not None else globals().get("TIMEOUT", 30)
+    last = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=hdrs)
+            return urllib.request.urlopen(req, timeout=to).read()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code in (403, 429) or 500 <= e.code < 600:
+                _t.sleep(backoff ** i + _r.random() * 0.3); continue
+            raise
+        except Exception as e:
+            last = e
+            _t.sleep(backoff ** i + _r.random() * 0.3); continue
+    raise last
+# ---------------------------------------------------------------------------
 TIMEOUT = 90
 print(f"[ADE] key_present={bool(ADE_KEY)} key_len={len(ADE_KEY)}", flush=True)
 
@@ -63,9 +87,7 @@ def _ade_csv(resource_id, key="all", start=None, agency="STATSNZ", version="1.0"
 def _waitangi_reports_series():
     url = "https://waitangitribunal.govt.nz/news/rss/"
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-            body = r.read().decode("utf-8", errors="replace")
+        body = http_get(url, timeout=TIMEOUT).decode("utf-8", errors="replace")
     except Exception as e:
         print(f"[LP1] Waitangi fetch error: {e}", flush=True)
         return []
@@ -82,9 +104,7 @@ def _waitangi_reports_series():
 def _fred_series(sid):
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}"
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TePaSystemsObservatory/2.0"})
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-            body = r.read().decode("utf-8", errors="replace")
+        body = http_get(url, timeout=TIMEOUT).decode("utf-8", errors="replace")
     except Exception as e:
         print(f"[FRED] {sid} error: {e}", flush=True)
         return []
