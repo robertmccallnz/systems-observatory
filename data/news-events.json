@@ -1,7 +1,7 @@
 [
   {
-    "headline": "Health NZ spend on locum doctors hits a new high, at $220 million",
-    "url": "https://www.rnz.co.nz/news/health/760568/health-nz-spend-on-locum-doctors-hits-a-new-high-at-220-million",
+    "headline": "Floor set for milk prices",
+    "url": "https://www.rnz.co.nz/news/business/765791/floor-set-for-milk-prices",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +10,58 @@
     "auto": true
   },
   {
-    "headline": "Nicola Willis blames 'Trump spike' for high inflation",
-    "url": "https://www.rnz.co.nz/news/political/759223/nicola-willis-blames-trump-spike-for-high-inflation",
+    "headline": "Government flip-flopped on Treaty's role in school curriculum",
+    "url": "https://www.rnz.co.nz/news/education/763370/government-flip-flopped-on-treaty-s-role-in-school-curriculum",
+    "tier": "2-paradigm",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "27 missing, including 11 children, after two boats capsize off Papua New Guinea",
+    "url": "https://www.rnz.co.nz/news/pacific/764569/27-missing-including-11-children-after-two-boats-capsize-off-papua-new-guinea",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Kids do feel the cold, so why won’t they wear jumpers?",
+    "url": "https://www.rnz.co.nz/life/relationships/family/kids-do-feel-the-cold-so-why-won-t-they-wear-a-jumper",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'Sensible' or 'unpopular' - Auckland's housing intensification compromise",
+    "url": "https://www.rnz.co.nz/news/regions_auckland/763387/sensible-or-unpopular-auckland-s-housing-intensification-compromise",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "From 'achievable' to 'unlikely' in nine days: Immigration NZ's botched $35m project",
+    "url": "https://www.rnz.co.nz/news/political/763211/from-achievable-to-unlikely-in-nine-days-immigration-nz-s-botched-35m-project",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Older people facing impossible choices as cost of living continues to bite",
+    "url": "https://www.rnz.co.nz/news/business/763333/older-people-facing-impossible-choices-as-cost-of-living-continues-to-bite",
     "tier": "12-parameters",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +70,8 @@
     "auto": true
   },
   {
-    "headline": "Wellington bike shop owner recovers $10,000 worth of goods using GPS trackers",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/760529/wellington-bike-shop-owner-recovers-10-000-worth-of-goods-using-gps-trackers",
+    "headline": "The Girl Who Couldn’t Eat: From athlete to one of medicine's most contested diagnoses",
+    "url": "https://www.rnz.co.nz/programmes/in-depth-special-projects/story/2019041582/the-girl-who-couldn-t-eat",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +80,8 @@
     "auto": true
   },
   {
-    "headline": "Rural communities rally to help flood-hit farmers rebuild damaged fences",
-    "url": "https://www.rnz.co.nz/news/country/760289/rural-communities-rally-to-help-flood-hit-farmers-rebuild-damaged-fences",
+    "headline": "Former judge says proposed move on orders are careless and callous",
+    "url": "https://www.rnz.co.nz/news/political/764022/former-judge-says-proposed-move-on-orders-are-careless-and-callous",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,58 +90,8 @@
     "auto": true
   },
   {
-    "headline": "Waikato prison inmates were readily accessing contraband, report finds",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/759340/waikato-prison-inmates-were-readily-accessing-contraband-report-finds",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Coroner told about LynnMall terrorist's time in prison's extreme risk unit",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/760213/coroner-told-about-lynnmall-terrorist-s-time-in-prison-s-extreme-risk-unit",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Thousands sign petition seeking Keytruda funding for early-stage breast cancer",
-    "url": "https://www.rnz.co.nz/news/health/759983/thousands-sign-petition-seeking-keytruda-funding-for-early-stage-breast-cancer",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Parliament's week: Government and (unusually), non-government bills",
-    "url": "https://www.rnz.co.nz/news/political/759976/parliament-s-week-government-and-unusually-non-government-bills",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Govt prioritising language law change over consent law reform - Labour",
-    "url": "https://www.rnz.co.nz/news/political/759516/govt-prioritising-language-law-change-over-consent-law-reform-labour",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Tauranga's ballooning burial costs hard on families: funeral directors",
-    "url": "https://www.rnz.co.nz/news/community/758893/tauranga-s-ballooning-burial-costs-hard-on-families-funeral-directors",
+    "headline": "Two need medical treatment after chemical scare in Waikato",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/763575/two-need-medical-treatment-after-chemical-scare-in-waikato",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
