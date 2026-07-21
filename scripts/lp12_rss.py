@@ -42,17 +42,17 @@ def _http_get(url: str, timeout: int = 20) -> str:
         },
     )
     ctx = ssl.create_default_context()
-try:
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-        return resp.read().decode("utf-8", errors="replace")
-except urllib.error.HTTPError as e:
-    if e.code in (403, 429, 503) and not url.startswith("https://r.jina.ai/"):
-        proxied = "https://r.jina.ai/" + url
-        print(f"[LP12] direct {e.code} on {url}; retrying via reader proxy", flush=True)
-        req2 = urllib.request.Request(proxied, headers={"User-Agent": _UA, "Accept": "text/plain, */*;q=0.5"})
-        with urllib.request.urlopen(req2, timeout=timeout, context=ctx) as resp:
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             return resp.read().decode("utf-8", errors="replace")
-    raise
+    except urllib.error.HTTPError as e:
+        if e.code in (403, 429, 503) and not url.startswith("https://r.jina.ai/"):
+            proxied = "https://r.jina.ai/" + url
+            print(f"[LP12] direct {e.code} on {url}; retrying via reader proxy", flush=True)
+            req2 = urllib.request.Request(proxied, headers={"User-Agent": _UA, "Accept": "text/plain, */*;q=0.5"})
+            with urllib.request.urlopen(req2, timeout=timeout, context=ctx) as resp:
+                return resp.read().decode("utf-8", errors="replace")
+        raise
 
 
 def _extract_rate_from_text(text: str) -> Optional[float]:
