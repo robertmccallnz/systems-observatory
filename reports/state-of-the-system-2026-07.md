@@ -4,7 +4,7 @@ _Auto-generated 2026-07-21 from `data/indicators.json`. Values are the latest ob
 
 | LP | Tier | Indicator | Latest | Δ | Source |
 |----|------|-----------|--------|---|--------|
-| 12 | Constants & Parameters | Official Cash Rate | 2.5 (2026-07) | ▼ -42.3% | [RBNZ · FMA · Global-Rates cross-check](https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions) |
+| 12 | Constants & Parameters | Official Cash Rate | 2.5 (2026-07) | ▲ +11.1% | [RBNZ decisions page (auto-fetched via reader-proxy or BIS fallback)](https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions) |
 | 11 | Buffers & Stocks | New dwelling consents (monthly, seasonally adjusted) | 4168.0 (2026-05) | ▲ +4.2% | [Stats NZ — Building consents issued](https://www.stats.govt.nz/indicators/building-consents-issued) |
 | 10 | Material Stocks & Flows | Greenhouse-gas emissions, gross (annual) | 32479432.0 (2024) | ▲ +2.9% | [Stats NZ — Environmental-Economic Accounts](https://www.stats.govt.nz/indicators/greenhouse-gas-emissions-industry-and-household) |
 | 9 | Delays | OIA responses within statutory timeframe (%) | — | →  | [Public Service Commission — OIA statistics](https://www.publicservice.govt.nz/research-and-data/oia-statistics) |
