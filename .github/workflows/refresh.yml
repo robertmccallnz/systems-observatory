@@ -23,6 +23,11 @@ jobs:
           STATSNZ_ADE_API_KEY: ${{ secrets.STATSNZ_ADE_API_KEY }}
           STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
         run: python scripts/fetch_indicators.py
+      - name: Fetch news events (RSS -> leverage points)
+        run: |
+          pip install feedparser
+          python scripts/fetch_news.py
+
       - name: Fetch incidence data
         env:
           ADE_API_KEY: ${{ secrets.ADE_API_KEY }}
@@ -51,6 +56,6 @@ jobs:
         run: |
           git config user.name "te-pa-observatory-bot"
           git config user.email "bot@te-pa.org"
-          git add data/indicators.json data/incidence.json reports/ assets/social/
+          git add data/indicators.json data/incidence.json data/news-events.json reports/ assets/social/
           git diff --cached --quiet || git commit -m "chore: refresh indicators $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
