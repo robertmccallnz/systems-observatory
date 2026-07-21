@@ -86,6 +86,11 @@ def fetch_rbnz_ocr_rss() -> float:
         try:
             root = ET.fromstring(body)
         except ET.ParseError as exc:
+            # Reader-proxy returns markdown/plain-text, not XML — try regex extraction directly
+            rate_txt = _extract_rate_from_text(body)
+            if rate_txt is not None:
+                print(f"[LP12] extracted OCR {rate_txt}% from non-XML body of {url}", flush=True)
+                return rate_txt
             last_error = f"{url}: parse error: {exc}"
             continue
         for elem in root.iter():
