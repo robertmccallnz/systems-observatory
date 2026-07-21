@@ -282,8 +282,25 @@ def fetch_lp11_consents():
   return _rows_to_series(rows)[-120:]
 
 
+_LP12_FORWARD = []
+
 def fetch_lp12_ocr():
-        # Primary: RBNZ RSS/Atom (HTML endpoint returns 403 to headless clients).
+    """Return enacted OCR series; stash forward schedule on module global."""
+    global _LP12_FORWARD
+    _LP12_FORWARD = []
+    today_iso = datetime.now(timezone.utc).date().isoformat()
+    try:
+        import lp12_rss
+        schedule = lp12_rss.fetch_ocr_schedule()
+        enacted = [e for e in schedule if e["date"] <= today_iso]
+        forward = [e for e in schedule if e["date"] >  today_iso]
+        _LP12_FORWARD = [{"date": e["date"], "value": float(e["value"]), "source": "RBNZ decisions page"} for e in forward]
+        series = [{"period": e["date"][:7], "date": e["date"], "value": float(e["value"]), "source": "RBNZ decisions page"} for e in enacted]
+        latest = series[-1] if series else None
+        print(f"[LP12] RBNZ decisions: {len(series)} enacted, {len(_LP12_FORWARD)} forward (latest enacted {latest})", flush=True)
+        return series
+    except Exception as exc:
+        print(f"[LP12] schedule fetch failed ({exc}); falling back to RSS single-rate", flush=True)
     try:
         import lp12_rss
         rate = lp12_rss.fetch_rbnz_ocr_rss()
@@ -292,8 +309,7 @@ def fetch_lp12_ocr():
         return [{"period": period, "value": float(rate), "source": "RBNZ RSS"}]
     except Exception as exc:
         print(f"[LP12] RBNZ RSS unavailable ({exc}); preserving manual last-known value", flush=True)
-    return []
-
+        return []
 
 FETCHERS = {
   1: fetch_lp1_waitangi,
@@ -331,6 +347,8 @@ def main():
       continue
     latest, anomaly = _finalise(series)
     lp["series"] = series
+    if num == 12:
+        lp["forward"] = list(_LP12_FORWARD)
     if latest is not None:
       lp["latest_value"] = latest
     lp["anomaly"] = bool(anomaly)

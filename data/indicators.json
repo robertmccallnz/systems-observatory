@@ -20,501 +20,306 @@
       "tier": "Constants & Parameters",
       "name": "Official Cash Rate",
       "unit": "%",
-      "source_name": "RBNZ · FMA · Global-Rates cross-check",
+      "source_name": "RBNZ decisions page (auto-fetched via reader-proxy or BIS fallback)",
       "source_url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/official-cash-rate-decisions",
       "paradigm_question": "Whose cost of living moves when the number moves?",
       "series": [
         {
-          "period": "2015-01",
-          "value": 3.42
-        },
-        {
-          "period": "2015-02",
-          "value": 3.4
-        },
-        {
-          "period": "2015-03",
-          "value": 3.42
-        },
-        {
-          "period": "2015-04",
-          "value": 3.44
-        },
-        {
-          "period": "2015-05",
-          "value": 3.41
-        },
-        {
-          "period": "2015-06",
-          "value": 3.25
-        },
-        {
-          "period": "2015-07",
-          "value": 3.07
-        },
-        {
-          "period": "2015-08",
-          "value": 2.9
-        },
-        {
-          "period": "2015-09",
-          "value": 2.76
-        },
-        {
-          "period": "2015-10",
-          "value": 2.68
-        },
-        {
-          "period": "2015-11",
-          "value": 2.65
-        },
-        {
-          "period": "2015-12",
-          "value": 2.55
-        },
-        {
-          "period": "2016-01",
-          "value": 2.39
-        },
-        {
-          "period": "2016-02",
-          "value": 2.37
-        },
-        {
-          "period": "2016-03",
-          "value": 2.21
-        },
-        {
-          "period": "2016-04",
-          "value": 2.17
-        },
-        {
-          "period": "2016-05",
-          "value": 2.16
-        },
-        {
-          "period": "2016-06",
-          "value": 2.16
-        },
-        {
-          "period": "2016-07",
-          "value": 2.11
-        },
-        {
-          "period": "2016-08",
-          "value": 2.06
-        },
-        {
-          "period": "2016-09",
-          "value": 1.92
-        },
-        {
-          "period": "2016-10",
-          "value": 1.88
-        },
-        {
-          "period": "2016-11",
-          "value": 1.74
-        },
-        {
-          "period": "2016-12",
-          "value": 1.68
-        },
-        {
-          "period": "2017-01",
-          "value": 1.66
-        },
-        {
-          "period": "2017-02",
-          "value": 1.71
-        },
-        {
-          "period": "2017-03",
-          "value": 1.66
-        },
-        {
-          "period": "2017-04",
-          "value": 1.62
-        },
-        {
-          "period": "2017-05",
-          "value": 1.67
-        },
-        {
-          "period": "2017-06",
-          "value": 1.71
-        },
-        {
-          "period": "2017-07",
-          "value": 1.63
-        },
-        {
-          "period": "2017-08",
-          "value": 1.65
-        },
-        {
-          "period": "2017-09",
-          "value": 1.64
-        },
-        {
-          "period": "2017-10",
-          "value": 1.61
-        },
-        {
-          "period": "2017-11",
-          "value": 1.64
-        },
-        {
-          "period": "2017-12",
-          "value": 1.67
-        },
-        {
-          "period": "2018-01",
-          "value": 1.66
-        },
-        {
-          "period": "2018-02",
-          "value": 1.67
-        },
-        {
-          "period": "2018-03",
-          "value": 1.67
-        },
-        {
-          "period": "2018-04",
-          "value": 1.71
-        },
-        {
-          "period": "2018-05",
-          "value": 1.73
-        },
-        {
-          "period": "2018-06",
-          "value": 1.69
-        },
-        {
-          "period": "2018-07",
-          "value": 1.67
-        },
-        {
-          "period": "2018-08",
-          "value": 1.71
-        },
-        {
-          "period": "2018-09",
-          "value": 1.68
-        },
-        {
-          "period": "2018-10",
-          "value": 1.68
-        },
-        {
-          "period": "2018-11",
-          "value": 1.72
-        },
-        {
-          "period": "2018-12",
-          "value": 1.72
-        },
-        {
-          "period": "2019-01",
-          "value": 1.67
-        },
-        {
-          "period": "2019-02",
-          "value": 1.73
-        },
-        {
-          "period": "2019-03",
-          "value": 1.73
-        },
-        {
-          "period": "2019-04",
-          "value": 1.7
-        },
-        {
-          "period": "2019-05",
-          "value": 1.51
-        },
-        {
-          "period": "2019-06",
-          "value": 1.45
-        },
-        {
-          "period": "2019-07",
-          "value": 1.43
-        },
-        {
-          "period": "2019-08",
-          "value": 1.1
-        },
-        {
-          "period": "2019-09",
-          "value": 0.96
-        },
-        {
-          "period": "2019-10",
-          "value": 0.97
-        },
-        {
-          "period": "2019-11",
-          "value": 0.99
-        },
-        {
-          "period": "2019-12",
-          "value": 0.95
-        },
-        {
-          "period": "2020-01",
-          "value": 0.92
-        },
-        {
           "period": "2020-02",
-          "value": 0.93
+          "date": "2020-02-12",
+          "value": 1.0,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-03",
-          "value": 0.56
+          "date": "2020-03-16",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2020-03",
+          "date": "2020-03-23",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-04",
-          "value": 0.26
+          "date": "2020-04-07",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-05",
-          "value": 0.25
+          "date": "2020-05-13",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-06",
-          "value": 0.23
-        },
-        {
-          "period": "2020-07",
-          "value": 0.21
+          "date": "2020-06-24",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-08",
-          "value": 0.15
+          "date": "2020-08-12",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-09",
-          "value": 0.26
-        },
-        {
-          "period": "2020-10",
-          "value": 0.21
+          "date": "2020-09-23",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2020-11",
-          "value": 0.22
-        },
-        {
-          "period": "2020-12",
-          "value": 0.23
-        },
-        {
-          "period": "2021-01",
-          "value": 0.24
+          "date": "2020-11-11",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-02",
-          "value": 0.24
-        },
-        {
-          "period": "2021-03",
-          "value": 0.23
+          "date": "2021-02-24",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-04",
-          "value": 0.24
+          "date": "2021-04-14",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-05",
-          "value": 0.22
-        },
-        {
-          "period": "2021-06",
-          "value": 0.23
+          "date": "2021-05-26",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-07",
-          "value": 0.23
+          "date": "2021-07-14",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-08",
-          "value": 0.21
-        },
-        {
-          "period": "2021-09",
-          "value": 0.2
+          "date": "2021-08-18",
+          "value": 0.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-10",
-          "value": 0.38
+          "date": "2021-10-06",
+          "value": 0.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2021-11",
-          "value": 0.54
-        },
-        {
-          "period": "2021-12",
-          "value": 0.71
-        },
-        {
-          "period": "2022-01",
-          "value": 0.67
+          "date": "2021-11-24",
+          "value": 0.75,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-02",
-          "value": 0.73
-        },
-        {
-          "period": "2022-03",
-          "value": 0.94
+          "date": "2022-02-23",
+          "value": 1.0,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-04",
-          "value": 1.24
+          "date": "2022-04-13",
+          "value": 1.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-05",
-          "value": 1.53
-        },
-        {
-          "period": "2022-06",
-          "value": 1.96
+          "date": "2022-05-25",
+          "value": 2.0,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-07",
-          "value": 2.2
+          "date": "2022-07-13",
+          "value": 2.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-08",
-          "value": 2.78
-        },
-        {
-          "period": "2022-09",
-          "value": 2.9
+          "date": "2022-08-17",
+          "value": 3.0,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-10",
-          "value": 3.29
+          "date": "2022-10-05",
+          "value": 3.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2022-11",
-          "value": 3.55
-        },
-        {
-          "period": "2022-12",
-          "value": 4.18
-        },
-        {
-          "period": "2023-01",
-          "value": 4.21
+          "date": "2022-11-23",
+          "value": 4.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-02",
-          "value": 4.2
-        },
-        {
-          "period": "2023-03",
-          "value": 4.75
+          "date": "2023-02-22",
+          "value": 4.75,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-04",
-          "value": 5.01
+          "date": "2023-04-05",
+          "value": 5.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-05",
-          "value": 5.34
-        },
-        {
-          "period": "2023-06",
-          "value": 5.4
+          "date": "2023-05-24",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-07",
-          "value": 5.47
+          "date": "2023-07-12",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-08",
-          "value": 5.41
-        },
-        {
-          "period": "2023-09",
-          "value": 5.39
+          "date": "2023-08-16",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-10",
-          "value": 5.4
+          "date": "2023-10-04",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2023-11",
-          "value": 5.43
-        },
-        {
-          "period": "2023-12",
-          "value": 5.35
-        },
-        {
-          "period": "2024-01",
-          "value": 5.52
+          "date": "2023-11-29",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-02",
-          "value": 5.43
-        },
-        {
-          "period": "2024-03",
-          "value": 5.38
+          "date": "2024-02-28",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-04",
-          "value": 5.47
+          "date": "2024-04-10",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-05",
-          "value": 5.5
-        },
-        {
-          "period": "2024-06",
-          "value": 5.52
+          "date": "2024-05-22",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-07",
-          "value": 5.49
+          "date": "2024-07-10",
+          "value": 5.5,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-08",
-          "value": 5.45
-        },
-        {
-          "period": "2024-09",
-          "value": 5.21
+          "date": "2024-08-14",
+          "value": 5.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-10",
-          "value": 4.77
+          "date": "2024-10-09",
+          "value": 4.75,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2024-11",
-          "value": 4.79
+          "date": "2024-11-27",
+          "value": 4.25,
+          "source": "RBNZ decisions page"
         },
         {
-          "period": "2024-12",
-          "value": 4.33
+          "period": "2025-02",
+          "date": "2025-02-19",
+          "value": 3.75,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-04",
+          "date": "2025-04-09",
+          "value": 3.5,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-05",
+          "date": "2025-05-28",
+          "value": 3.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-07",
+          "date": "2025-07-09",
+          "value": 3.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-08",
+          "date": "2025-08-20",
+          "value": 3.0,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-10",
+          "date": "2025-10-08",
+          "value": 2.5,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2025-11",
+          "date": "2025-11-26",
+          "value": 2.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2026-02",
+          "date": "2026-02-18",
+          "value": 2.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2026-04",
+          "date": "2026-04-08",
+          "value": 2.25,
+          "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2026-05",
+          "date": "2026-05-27",
+          "value": 2.25,
+          "source": "RBNZ decisions page"
         },
         {
           "period": "2026-07",
+          "date": "2026-07-08",
           "value": 2.5,
-          "source": "RBNZ press release (manual override pending live scraper)"
+          "source": "RBNZ decisions page"
         }
       ],
-      "latest": 2.25,
+      "latest": 3.25,
       "anomaly": false,
-      "latest_value": 4.33,
-      "updated_at": "2026-07-13T05:28:46.113587+00:00",
-      "manual_last_value": true
+      "latest_value": 2.5,
+      "updated_at": "2026-07-21T05:50:09.154598+00:00",
+      "manual_last_value": true,
+      "latest_period": "2026-05",
+      "forward": []
     },
     {
       "id": 11,
