@@ -27,7 +27,7 @@ This is the automated monthly digest from the Te Pā Systems Observatory. Every 
 
 # State of the System — 2026-07
 
-_Auto-generated 2026-07-23 from `data/indicators.json`. Values are the latest observations returned by the refresh workflow; where a fetch fails the last-known value is preserved (no fabrication).
+_Auto-generated 2026-07-24 from `data/indicators.json`. Values are the latest observations returned by the refresh workflow; where a fetch fails the last-known value is preserved (no fabrication).
 
 | LP | Tier | Indicator | Latest | Δ | Source |
 |----|------|-----------|--------|---|--------|
