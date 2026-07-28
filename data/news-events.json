@@ -1,102 +1,142 @@
 [
   {
-    "headline": "Man arrested in Russia over accusations of spying for New Zealand, local media report",
-    "url": "https://www.rnz.co.nz/news/world/812822/man-arrested-in-russia-over-accusations-of-spying-for-new-zealand-local-media-report",
+    "headline": "Live: Glasgow Commonwealth Games, day five",
+    "url": "https://www.rnz.co.nz/news/sport/803735/live-glasgow-commonwealth-games-day-five",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Bill Hammond painting expected to sell for up to $1.8m at auction",
-    "url": "https://www.rnz.co.nz/news/business/811970/bill-hammond-painting-expected-to-sell-for-up-to-1-point-8m-at-auction",
+    "headline": "Double murder charge as two homes cordoned off on Auckland's North Shore",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/826205/double-murder-charge-as-two-homes-cordoned-off-on-auckland-s-north-shore",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Who's offering more generous paid parental leave?",
-    "url": "https://www.rnz.co.nz/news/personal-finance/811965/who-s-offering-more-generous-paid-parental-leave",
+    "headline": "Qantas 24-hour test flight tracked by millions online",
+    "url": "https://www.rnz.co.nz/news/world/826242/qantas-24-hour-test-flight-tracked-by-millions-online",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Freezing start for much of New Zealand as bitter cold snap continues",
-    "url": "https://www.rnz.co.nz/news/weather/811629/freezing-start-for-much-of-new-zealand-as-bitter-cold-snap-continues",
+    "headline": "University procedures for harassment not good enough, students and staff say",
+    "url": "https://www.rnz.co.nz/news/education/825502/university-procedures-for-harassment-not-good-enough-students-and-staff-say",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Opportunity Party still open to working with National despite Christopher Luxon ruling it out",
-    "url": "https://www.rnz.co.nz/news/political/811628/opportunity-party-still-open-to-working-with-national-despite-christopher-luxon-ruling-it-out",
+    "headline": "Government sensible to adopt 'blank canvas' stance on Russian spying - former minister",
+    "url": "https://www.rnz.co.nz/news/world/826524/government-sensible-to-adopt-blank-canvas-stance-on-russian-spying-former-minister",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Live: Glasgow Commonwealth Games, day four",
-    "url": "https://www.rnz.co.nz/news/sport/803735/live-glasgow-commonwealth-games-day-four",
+    "headline": "Commonwealth Games: Silver Ferns remain on course to top pool after beating Uganda",
+    "url": "https://www.rnz.co.nz/news/sport/826499/commonwealth-games-silver-ferns-remain-on-course-to-top-pool-after-beating-uganda",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Government to consider future of cost of living payment",
-    "url": "https://www.rnz.co.nz/news/political/811878/government-to-consider-future-of-cost-of-living-payment",
+    "headline": "'Left to rot': Auckland residents say Kainga Ora ghost homes attracting illegal dumping",
+    "url": "https://www.rnz.co.nz/news/regions_auckland/825269/left-to-rot-auckland-residents-say-kainga-ora-ghost-homes-attracting-illegal-dumping",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Residents fear Auckland sinkhole a sign of wider problem with old infrastructure",
-    "url": "https://www.rnz.co.nz/news/regions_auckland/811958/residents-fear-auckland-sinkhole-a-sign-of-wider-problem-with-old-infrastructure",
+    "headline": "'Timely': Horticulture industry welcomes government's changes to RSE scheme",
+    "url": "https://www.rnz.co.nz/news/political/825252/timely-horticulture-industry-welcomes-government-s-changes-to-rse-scheme",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Australian surgeon pledges Kiwi patients' fees towards new vascular compressions research",
+    "url": "https://www.rnz.co.nz/news/health/824944/australian-surgeon-pledges-kiwi-patients-fees-towards-new-vascular-compressions-research",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Commonwealth Games: Lewis Clareburt completes double defence to win second gold",
+    "url": "https://www.rnz.co.nz/news/sport/826094/commonwealth-games-lewis-clareburt-completes-double-defence-to-win-second-gold",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Children’s commissioner on her controversial early exit: ‘I have a lot more left to give’",
+    "url": "https://thespinoff.co.nz/politics/28-07-2026/childrens-commissioner-on-her-controversial-early-exit-i-have-a-lot-more-left-to-give",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-28",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "How Hugo Koha Lindsay turned colonial blackboards into works of Māori resistance",
+    "url": "https://thespinoff.co.nz/atea/28-07-2026/how-hugo-koha-lindsay-turned-colonial-blackboards-into-works-of-maori-resistance",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-07-28",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The cost of being: A dad and first-time homeowner who hates sneaky fees",
+    "url": "https://thespinoff.co.nz/society/27-07-2026/the-cost-of-being-a-dad-and-first-time-home-owner-who-hates-sneaky-fees",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-07-27",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "Commonwealth Games: Para-swimmer Josh Willmer promoted to silver at Glasgow",
-    "url": "https://www.rnz.co.nz/news/sport/812086/commonwealth-games-para-swimmer-josh-willmer-promoted-to-silver-at-glasgow",
-    "tier": "6-info",
+    "headline": "Does the case for moving to Australia still stack up? Here’s what the numbers tell us",
+    "url": "https://thespinoff.co.nz/politics/27-07-2026/does-the-case-for-moving-to-australia-still-stack-up-heres-what-the-numbers-tell-us",
+    "tier": "12-parameters",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-07-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Commonwealth Games: Bowls format 'brutal' as two NZ teams miss out on medals",
-    "url": "https://www.rnz.co.nz/news/sport/812288/commonwealth-games-bowls-format-brutal-as-two-nz-teams-miss-out-on-medals",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
@@ -110,18 +150,8 @@
     "auto": true
   },
   {
-    "headline": "Amazing: National have finally discovered women exist",
+    "headline": "Amazing: National has finally discovered women exist",
     "url": "https://thespinoff.co.nz/politics/27-07-2026/amazing-national-have-finally-discovered-women-exist",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Does the case for moving to Australia still stack up? Here’s what the numbers tell us",
-    "url": "https://thespinoff.co.nz/politics/27-07-2026/does-the-case-for-moving-to-australia-still-stack-up-heres-what-the-numbers-tell-us",
     "tier": "12-parameters",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -166,36 +196,6 @@
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-07-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "With contentious fisheries reforms on hold, should NZ rethink bottom trawling?",
-    "url": "https://thespinoff.co.nz/politics/26-07-2026/with-contentious-fisheries-reforms-on-hold-should-nz-rethink-bottom-trawling",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-26",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The one thing I’d never given my kids",
-    "url": "https://thespinoff.co.nz/partner-aainsurance/26-07-2026/the-one-thing-id-never-given-my-kids",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-26",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "One MP, One Pint: Willow-Jean Prime on juggling basketballs, babies and big issues",
-    "url": "https://thespinoff.co.nz/politics/26-07-2026/one-mp-one-pint-willow-jean-prime-on-juggling-basketballs-babies-and-big-issues",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-26",
     "source": "The Spinoff",
     "auto": true
   }
