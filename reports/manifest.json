@@ -1,11 +1,16 @@
 {
-  "generated": "2026-07-31T21:04:26.339506Z",
+  "generated": "2026-08-01T20:53:15.997146Z",
   "current": {
-    "month": "2026-07",
-    "md": "state-of-the-system-2026-07.md",
+    "month": "2026-08",
+    "md": "state-of-the-system-2026-08.md",
     "pdf": null
   },
   "reports": [
+    {
+      "month": "2026-08",
+      "md": "state-of-the-system-2026-08.md",
+      "pdf": null
+    },
     {
       "month": "2026-07",
       "md": "state-of-the-system-2026-07.md",
