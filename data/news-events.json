@@ -1,201 +1,201 @@
 [
   {
-    "headline": "Declining birth rate is more complex than a 'baby bonus' can fix, academic says",
-    "url": "https://www.rnz.co.nz/news/political/869429/declining-birth-rate-is-more-complex-than-a-baby-bonus-can-fix-academic-says",
-    "tier": "10-flows",
+    "headline": "Labour leader Chris Hipkins rules out working with Winston Peters as foreign affairs minister",
+    "url": "https://www.rnz.co.nz/news/political/876313/labour-leader-chris-hipkins-rules-out-working-with-winston-peters-as-foreign-affairs-minister",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
+    "date": "2026-08-03",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Squishy dumpling toy banned overseas can still be ordered in New Zealand",
-    "url": "https://www.rnz.co.nz/news/business/849508/squishy-dumpling-toy-banned-overseas-can-still-be-ordered-in-new-zealand",
+    "headline": "Wild deer costing Hawke's Bay farmers tens of thousands of dollars - study",
+    "url": "https://www.rnz.co.nz/news/country/875999/wild-deer-costing-hawke-s-bay-farmers-tens-of-thousands-of-dollars-study",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
+    "date": "2026-08-03",
     "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Who's feeling job market recovery? And where has downturn hit hardest?",
+    "url": "https://www.rnz.co.nz/news/business/875742/who-s-feeling-job-market-recovery-and-where-has-downturn-hit-hardest",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Live weather: Drivers warned as snow blankets roads, Cook Strait ferries cancelled",
+    "url": "https://www.rnz.co.nz/news/weather/875731/live-weather-drivers-warned-as-snow-blankets-roads-cook-strait-ferries-cancelled",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "No need for Luxon to apologise over Rotorua business meeting comments, mayor says",
+    "url": "https://www.rnz.co.nz/news/political/875729/no-need-for-luxon-to-apologise-over-rotorua-business-meeting-comments-mayor-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "At least 10 police staff face criminal charges after anti-corruption investigation",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/875728/at-least-10-police-staff-face-criminal-charges-after-anti-corruption-investigation",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Pacific women MPs share the push for more representation in parliaments",
+    "url": "https://www.rnz.co.nz/news/pacific/875883/pacific-women-mps-share-the-push-for-more-representation-in-parliaments",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Solomon Islands government confirms response to rescue trapped NZ climbers",
+    "url": "https://www.rnz.co.nz/news/pacific/876189/solomon-islands-government-confirms-response-to-rescue-trapped-nz-climbers",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Cost blowout puts fees for foreign PhD students under review",
+    "url": "https://www.rnz.co.nz/news/education/875736/cost-blowout-puts-fees-for-foreign-phd-students-under-review",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Death during brawl at league game in Samoa raises safety question",
+    "url": "https://www.rnz.co.nz/news/pacific/876044/death-during-brawl-at-league-game-in-samoa-raises-safety-question",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "You should all be using Claude, Luxon told Rotorua businesspeople. So we did",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/you-should-all-be-using-claude-luxon-told-rotorua-businesspeople-so-we-did",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "As election day approaches, what do we know about who’s enrolled to vote?",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/as-election-day-approaches-what-do-we-know-about-whos-enrolled-to-vote",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Kiri Allan is open about her mental health and a closed book on other parts of her life",
+    "url": "https://thespinoff.co.nz/books/03-08-2026/kiri-allan-is-open-about-her-mental-health-and-a-closed-book-on-other-parts-of-her-life",
+    "tier": "9-feedback",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Christopher Luxon had a rough day (and may have another one today)",
+    "url": "https://thespinoff.co.nz/the-bulletin/03-08-2026/christopher-luxon-had-a-rough-day-and-may-have-another-one-today",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "New to Streaming: What to watch on Netflix NZ, Neon and more this week",
+    "url": "https://thespinoff.co.nz/pop-culture/03-08-2026/new-to-streaming-what-to-watch-on-netflix-nz-neon-and-more-this-week-157",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "NZ First’s baby bonus? It’s been tried",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/nz-firsts-baby-bonus-its-been-tried",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Review: The new Jim Anderton doco loves him too much to make him interesting",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/review-the-new-jim-anderton-doco-loves-him-too-much-to-make-him-interesting",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "I get it, Prime Minister, I wouldn’t want to call Winston Peters either",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/i-get-it-prime-minister-i-wouldnt-want-to-call-winston-peters-either",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Wayne Brown digs out the last of the CAVEs",
+    "url": "https://thespinoff.co.nz/politics/03-08-2026/wayne-brown-digs-out-the-last-of-the-caves",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-03",
+    "source": "The Spinoff",
     "auto": true
   },
   {
     "headline": "Concern as number of laws rushed through parliament surges",
-    "url": "https://www.rnz.co.nz/news/political/868764/concern-as-number-of-laws-rushed-through-parliament-surges",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Why old fruit and veges should probably be binned",
-    "url": "https://www.rnz.co.nz/life/food/why-old-fruit-and-veg-should-probably-be-binned",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Live: Glasgow Commonwealth Games, closing ceremony",
-    "url": "https://www.rnz.co.nz/news/sport/867882/live-glasgow-commonwealth-games-closing-ceremony",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Hauraki Gulf shellfish harvesting ban extended until 2028",
-    "url": "https://www.rnz.co.nz/news/environment/869040/hauraki-gulf-shellfish-harvesting-ban-extended-until-2028",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "The rise of the young hustlers: Teens getting into business",
-    "url": "https://www.rnz.co.nz/life/people/the-rise-of-the-young-hustlers",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Ten medals for Pacific Island countries at Glasgow Commonwealth Games",
-    "url": "https://www.rnz.co.nz/news/pacific/868993/ten-medals-for-pacific-island-countries-at-glasgow-commonwealth-games",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Auckland axe attacker quietly deported to China",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/868767/auckland-axe-attacker-quietly-deported-to-china",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Commonwealth Games: Silver Ferns break 16-year gold-medal drought at Glasgow",
-    "url": "https://www.rnz.co.nz/news/sport/867989/commonwealth-games-silver-ferns-break-16-year-gold-medal-drought-at-glasgow",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Disciplining ‘little shits’, cash for babies and a Māori Education Authority",
-    "url": "https://thespinoff.co.nz/the-bulletin/02-08-2026/disciplining-little-shits-cash-for-babies-and-a-maori-education-authority",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The new UK prime minister just cut taxes on pubs. New Zealand should do the same.",
-    "url": "https://thespinoff.co.nz/opinion/02-08-2026/the-new-uk-prime-minister-just-cut-taxes-on-pubs-new-zealand-should-do-the-same",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Auckland gets to host the big football matches now but it has Wellington to thank for the honour",
-    "url": "https://thespinoff.co.nz/sports/02-08-2026/auckland-gets-to-host-the-big-football-matches-now-but-it-has-wellington-to-thank-for-the-honour",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-02",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Love, actually, at 43: ‘He’s understandably unsure whether he can trust me’",
-    "url": "https://thespinoff.co.nz/society/01-08-2026/love-actually-at-43-hes-understandably-unsure-whether-he-can-trust-me",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-01",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Has the arts sector ever done it this hard?",
-    "url": "https://thespinoff.co.nz/pop-culture/01-08-2026/has-the-arts-sector-ever-done-it-this-hard",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-01",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "‘I felt sick’: How one Dunedin knitting group fell foul of the law",
-    "url": "https://thespinoff.co.nz/society/01-08-2026/i-felt-sick-how-one-dunedin-knitting-group-fell-foul-of-the-law",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-01",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "‘Not everything happens for a reason’: Dean O’Gorman’s most controversial opinion",
-    "url": "https://thespinoff.co.nz/pop-culture/01-08-2026/not-everything-happens-for-a-reason-dean-ogormans-most-controversial-opinion",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-01",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Sometimes it’s worse when our prime minister does actually make himself clear",
-    "url": "https://thespinoff.co.nz/opinion/01-08-2026/sometimes-its-worse-when-our-prime-minister-does-actually-make-himself-clear",
+    "url": "https://thespinoff.co.nz/politics/02-08-2026/more-laws-rushed-through-parliament-under-urgency-than-any-term-since-2008",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-01",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "If I could say one thing to Winston Peters, it would be: please don’t use mean words",
-    "url": "https://thespinoff.co.nz/society/31-07-2026/if-i-could-say-one-thing-to-winston-peters-it-would-be-please-dont-use-mean-words",
-    "tier": "3-goals",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-31",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Where is the Count Binface for New Zealand?",
-    "url": "https://thespinoff.co.nz/politics/31-07-2026/where-is-the-count-binface-for-new-zealand",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-07-31",
+    "date": "2026-08-02",
     "source": "The Spinoff",
     "auto": true
   }
