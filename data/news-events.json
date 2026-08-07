@@ -1,7 +1,7 @@
 [
   {
-    "headline": "CNMI: Tinian mayor welcomes US military training approval",
-    "url": "https://www.rnz.co.nz/news/pacific/904421/cnmi-tinian-mayor-welcomes-us-military-training-approval",
+    "headline": "Weather: One of NZ's warmest Julys followed by record-breaking lows",
+    "url": "https://www.rnz.co.nz/news/weather/933315/weather-one-of-nz-s-warmest-julys-followed-by-record-breaking-lows",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +10,8 @@
     "auto": true
   },
   {
-    "headline": "Coalition still in position to form government in new Taxpayers' Union Curia poll",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/925138/coalition-still-in-position-to-form-government-in-new-taxpayers-union-curia-poll",
+    "headline": "All Blacks run in four late tries to beat Stormers 21-38 in South Africa",
+    "url": "https://www.rnz.co.nz/news/sport/932567/all-blacks-run-in-four-late-tries-to-beat-stormers-21-38-in-south-africa",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +20,8 @@
     "auto": true
   },
   {
-    "headline": "'A perfect storm': Teachers forced outside subjects of expertise as shortage bites",
-    "url": "https://www.rnz.co.nz/news/education/925549/a-perfect-storm-teachers-forced-outside-subjects-of-expertise-as-shortage-bites",
+    "headline": "Country Life: From sheep and beef to growing olives",
+    "url": "https://www.rnz.co.nz/news/country/933261/country-life-from-sheep-and-beef-to-growing-olives",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Northern Marianas tennis player Carol Lee stuns top seed in Poland",
-    "url": "https://www.rnz.co.nz/news/pacific/925813/northern-marianas-tennis-player-carol-lee-stuns-top-seed-in-poland",
+    "headline": "City Rail Link 'First Look' events begin",
+    "url": "https://www.rnz.co.nz/news/regional/933067/city-rail-link-first-look-events-begin",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,8 +40,8 @@
     "auto": true
   },
   {
-    "headline": "'It's a shock': Kaitāia's Northland Mill closes down two weeks early",
-    "url": "https://www.rnz.co.nz/news/business/925802/it-s-a-shock-kaitaia-s-northland-mill-closes-down-two-weeks-early",
+    "headline": "Missing teen in New Plymouth found",
+    "url": "https://www.rnz.co.nz/news/emergency/932976/missing-teen-in-new-plymouth-found",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -50,8 +50,8 @@
     "auto": true
   },
   {
-    "headline": "Shearer Dylan Manthey sentenced for inflicting 'extreme violence' on lambs",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/925693/shearer-dylan-manthey-sentenced-for-inflicting-extreme-violence-on-lambs",
+    "headline": "Hutt Hospital neonatal upgrades underway, long-promised maternity ward delayed",
+    "url": "https://www.rnz.co.nz/news/health/931670/hutt-hospital-neonatal-upgrades-underway-long-promised-maternity-ward-delayed",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -60,139 +60,139 @@
     "auto": true
   },
   {
-    "headline": "Fiji Rugby defends scheduling after women's test match put between school games",
-    "url": "https://www.rnz.co.nz/news/pacific/925558/fiji-rugby-defends-scheduling-after-women-s-test-match-put-between-school-games",
+    "headline": "Country Life: Three native nurseries, a fridge full of seeds",
+    "url": "https://www.rnz.co.nz/news/country/932521/country-life-three-native-nurseries-a-fridge-full-of-seeds",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Rugby League World Cup: FNRL helping Wests Tigers Fainu brothers prove their Fijian heritage",
-    "url": "https://www.rnz.co.nz/news/pacific/925354/rugby-league-world-cup-fnrl-helping-wests-tigers-fainu-brothers-prove-their-fijian-heritage",
+    "headline": "Timor-Leste: The new tourism frontier",
+    "url": "https://www.rnz.co.nz/news/world/931674/timor-leste-the-new-tourism-frontier",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Young Kiwis trapped on Solomon Islands mountain never gave up hope of return",
-    "url": "https://www.rnz.co.nz/news/world/917418/young-kiwis-trapped-on-solomon-islands-mountain-never-gave-up-hope-of-return",
+    "headline": "Transport Agency refuses to release documents about tolling roads",
+    "url": "https://www.rnz.co.nz/news/political/931675/transport-agency-refuses-to-release-documents-about-tolling-roads",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Auckland police officer Matthew Rogers pleads guilty to possessing objectionable publication",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/924854/auckland-police-officer-matthew-rogers-pleads-guilty-to-possessing-objectionable-publication",
+    "headline": "In China-US rivalry, NZ remains isolated but not insulated",
+    "url": "https://www.rnz.co.nz/news/political/931672/in-china-us-rivalry-nz-remains-isolated-but-not-insulated",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Where to eat in central Hamilton – an insider’s guide",
+    "url": "https://thespinoff.co.nz/kai/07-08-2026/where-to-eat-in-central-hamilton-an-insiders-guide",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "What I learned at a singing course for the shy and shamed-out",
+    "url": "https://thespinoff.co.nz/pop-culture/07-08-2026/what-i-learned-at-a-singing-course-for-the-shy-and-shamed-out",
+    "tier": "7-pos-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Jolly Roger: Farewell to a Waiheke legend",
+    "url": "https://thespinoff.co.nz/society/07-08-2026/jolly-roger-farewell-to-a-waiheke-legend",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Kiri Allan: The call that changed my life",
+    "url": "https://thespinoff.co.nz/books/07-08-2026/kiri-allan-the-phone-call-that-changed-my-life",
+    "tier": "9-feedback",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "What living in the Cook Islands taught me about reo Māori",
+    "url": "https://thespinoff.co.nz/atea/07-08-2026/what-living-in-the-cook-islands-taught-me-about-reo-maori",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Gone By Lunchtime: What is Mr Luxon doing?",
+    "url": "https://thespinoff.co.nz/politics/07-08-2026/gone-by-lunchtime-what-is-mr-luxon-doing",
+    "tier": "10-flows",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The Unity Books bestseller chart for the week ending August 7",
+    "url": "https://thespinoff.co.nz/books/07-08-2026/the-unity-books-bestseller-chart-for-the-week-ending-august-7-2",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Echo Chamber: The Winston Peters double standard",
+    "url": "https://thespinoff.co.nz/politics/07-08-2026/echo-chamber-the-winston-peters-double-standard",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The Opportunity Party wave is real, new poll confirms",
+    "url": "https://thespinoff.co.nz/politics/07-08-2026/the-opportunity-party-wave-is-real-new-poll-confirms",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-07",
+    "source": "The Spinoff",
     "auto": true
   },
   {
     "headline": "All Blacks in South Africa: where Rugby’s Greatest Rivalry will be won and lost",
     "url": "https://thespinoff.co.nz/sports/06-08-2026/all-blacks-in-south-africa-where-rugbys-greatest-rivalry-will-be-won-and-lost",
     "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Review: Settling is a TV rom-com that’s easy to fall in love with",
-    "url": "https://thespinoff.co.nz/pop-culture/06-08-2026/review-settling-is-a-tv-rom-com-thats-easy-to-fall-in-love-with",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "To MMP or not to MMP, that is Christopher Luxon’s question",
-    "url": "https://thespinoff.co.nz/the-bulletin/06-08-2026/to-mmp-or-not-to-mmp-that-is-christopher-luxons-question",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "One Candidate, One Pint: James Christmas on his angry teen years and ditching National",
-    "url": "https://thespinoff.co.nz/politics/06-08-2026/one-candidate-one-pint-james-christmas-on-his-angry-teen-years-and-ditching-national",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "A not-so-wet but still quite whiny week on the campaign trail",
-    "url": "https://thespinoff.co.nz/politics/06-08-2026/a-not-so-wet-but-still-quite-whiny-week-on-the-campaign-trail",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The Spinoff fires the starting gun on Election 2026",
-    "url": "https://thespinoff.co.nz/politics/06-08-2026/the-spinoff-fires-the-starting-gun-on-election-2026",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The 24-year-old who wears Winston Peters’ ink",
-    "url": "https://thespinoff.co.nz/politics/06-08-2026/the-24-year-old-who-wears-winston-peters-ink",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Te Pāti Māori says it has moved on from the chaos. Will Māori voters agree?",
-    "url": "https://thespinoff.co.nz/atea/06-08-2026/te-pati-maori-says-it-has-moved-on-from-the-chaos-will-maori-voters-agree",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Luck on Labour’s side as party eyes up small business ‘partnership’",
-    "url": "https://thespinoff.co.nz/politics/06-08-2026/luck-on-labours-side-as-party-eyes-up-small-business-partnership",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-06",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Why the City Rail Link opening date gaffe matters",
-    "url": "https://thespinoff.co.nz/auckland/06-08-2026/why-the-city-rail-link-opening-date-gaffe-matters",
-    "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-06",
