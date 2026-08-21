@@ -1,201 +1,201 @@
 [
   {
-    "headline": "Consumers fed up with power companies making billions as bills rise, market commentators say",
-    "url": "https://www.rnz.co.nz/news/personal-finance/1068718/consumers-fed-up-with-power-companies-making-billions-as-bills-rise-market-commentators-say",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Electrical expert's experiment with soon-to-be unbanned switch sends 200 volts to toaster",
-    "url": "https://www.rnz.co.nz/news/political/1070753/electrical-expert-s-experiment-with-soon-to-be-unbanned-switch-sends-200-volts-to-toaster",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Big names back for All Blacks as team to play Springboks revealed",
-    "url": "https://www.rnz.co.nz/news/sport/1068376/big-names-back-for-all-blacks-as-team-to-play-springboks-revealed",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "How lessons from the Covid-19 pandemic could be applied to current flu outbreak",
-    "url": "https://www.rnz.co.nz/news/health/1068381/how-lessons-from-the-covid-19-pandemic-could-be-applied-to-current-flu-outbreak",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Auckland Hospital's near-constant overcrowding putting patients at risk, doctor says",
-    "url": "https://www.rnz.co.nz/news/health/1068573/auckland-hospital-s-near-constant-overcrowding-putting-patients-at-risk-doctor-says",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Parents dubious of Meta's claims over social media addiction - researcher",
-    "url": "https://www.rnz.co.nz/news/health/1070574/parents-dubious-of-meta-s-claims-over-social-media-addiction-researcher",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "No guarantee shelter can be provided for every rough sleeper - officials",
-    "url": "https://www.rnz.co.nz/news/political/1068377/no-guarantee-shelter-can-be-provided-for-every-rough-sleeper-officials",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Whangārei stump grinder death: Kevin Barry pulled into spinning blade",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/1069725/whangarei-stump-grinder-death-kevin-barry-pulled-into-spinning-blade",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "'Horrible way to live': 15-year wait for an endometriosis diagnosis",
-    "url": "https://www.rnz.co.nz/life/wellbeing/horrible-way-to-live-15-year-wait-for-an-endometriosis-diagnosis",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "NZ marine tech company Vessev raises $32 million in funding for US expansion",
-    "url": "https://www.rnz.co.nz/news/business/1069280/nz-marine-tech-company-vessev-raises-32-million-in-funding-for-us-expansion",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Review: Election Meltdown is the joy we need in the end times",
-    "url": "https://thespinoff.co.nz/politics/20-08-2026/review-election-meltdown-is-the-joy-we-need-in-the-end-times",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-20",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "One Candidate, One Pint: Why winning Māngere is the ‘worst-case scenario’ for the Greens’ Michel Mulipola",
-    "url": "https://thespinoff.co.nz/politics/19-08-2026/one-candidate-one-pint-why-winning-mangere-is-the-worst-case-scenario-for-the-greens-michel-mulipola",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The stories behind four of Wellington’s most meaningful dishes",
-    "url": "https://thespinoff.co.nz/partner/19-08-2026/the-stories-behind-four-of-wellingtons-most-meaningful-dishes",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Help Me Hera: My late-in-life queer awakening is stressing me out",
-    "url": "https://thespinoff.co.nz/society/19-08-2026/help-me-hera-my-late-in-life-queer-awakening-is-stressing-me-out",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "New fast-track fights: ‘Growth paying for growth’ v local backlash",
-    "url": "https://thespinoff.co.nz/the-bulletin/19-08-2026/new-fast-track-fights-growth-paying-for-growth-v-local-backlash",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Left, right or centre? How voters view the Opportunity Party",
-    "url": "https://thespinoff.co.nz/politics/19-08-2026/left-right-or-centre-how-voters-view-the-opportunity-party",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "I lived: A true story of surviving the cycle lanes of Molesworth Street",
-    "url": "https://thespinoff.co.nz/politics/19-08-2026/i-lived-a-true-story-of-surviving-the-cycle-lanes-of-molesworth-street",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "There are more Māori on the Māori roll than ever. Will they turn out to vote?",
-    "url": "https://thespinoff.co.nz/atea/19-08-2026/there-are-more-maori-on-the-maori-roll-than-ever-will-they-turn-out-to-vote",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Live updates from the 2026 NZ Book Awards for Children and Young Adults",
-    "url": "https://thespinoff.co.nz/books/19-08-2026/live-updates-from-the-2026-nz-book-awards-for-children-and-young-adults",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Dating Files: A 58-year-old aromantic looking for community on the Kāpiti Coast",
-    "url": "https://thespinoff.co.nz/society/19-08-2026/dating-files-a-58-year-old-aromantic-looking-for-community-on-the-kapiti-coast",
+    "headline": "Country Life: Taranaki dairy farm's herd home",
+    "url": "https://www.rnz.co.nz/news/country/1078933/country-life-taranaki-dairy-farm-s-herd-home",
     "tier": "10-flows",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-19",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Protesters interrupt ACT's South Island campaign launch",
+    "url": "https://www.rnz.co.nz/news/political/1078829/protesters-interrupt-act-s-south-island-campaign-launch",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "One dead in crash south of Whangārei",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1078756/one-dead-in-crash-south-of-whangarei",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Crash closes Tauranga's main road",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1078743/crash-closes-tauranga-s-main-road",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Warriors forward Shakira Baker's double life",
+    "url": "https://www.rnz.co.nz/news/sport/1078406/warriors-forward-shakira-baker-s-double-life",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "MBIE backs council ruling that Christchurch Airbnb owners need to get consent or stop",
+    "url": "https://www.rnz.co.nz/news/business/1071529/mbie-backs-council-ruling-that-christchurch-airbnb-owners-need-to-get-consent-or-stop",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Hamilton man Jason Monkley charged childcare firm $2900 to fix van - then torched it",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/1077646/hamilton-man-jason-monkley-charged-childcare-firm-2900-to-fix-van-then-torched-it",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "East Coast conservationist rescues emu chicks after feral cat attack",
+    "url": "https://www.rnz.co.nz/news/environment/1077210/east-coast-conservationist-rescues-emu-chicks-after-feral-cat-attack",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "ACT to campaign on Paul Henry's 'Starship for cancer' proposal",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1077302/act-to-campaign-on-paul-henry-s-starship-for-cancer-proposal",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Lawyer convicted of assault on his 12-year-old son which left him hospitalised",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/1076370/lawyer-convicted-of-assault-on-his-12-year-old-son-which-left-him-hospitalised",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Where to eat in Avondale, Auckland – an insider’s guide",
+    "url": "https://thespinoff.co.nz/kai/21-08-2026/where-to-eat-in-avondale-auckland-an-insiders-guide",
+    "tier": "10-flows",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Where did all the acne go?",
+    "url": "https://thespinoff.co.nz/society/21-08-2026/where-did-all-the-acne-go",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Greatsouth on making music and what it really means to be a good Kiwi",
+    "url": "https://thespinoff.co.nz/atea/21-08-2026/greatsouth-on-making-music-and-what-it-really-means-to-be-a-good-kiwi",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Why own anything any more? The rise and rise of rental culture",
+    "url": "https://thespinoff.co.nz/society/21-08-2026/why-own-anything-any-more-the-rise-and-rise-of-rental-culture",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "What has Chris Penk been up to since getting sacked?",
+    "url": "https://thespinoff.co.nz/politics/21-08-2026/what-has-chris-penk-been-up-to-since-getting-sacked",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Echo Chamber: Attack of the taxes!",
+    "url": "https://thespinoff.co.nz/politics/21-08-2026/echo-chamber-attack-of-the-taxes",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The Unity Books bestseller chart for the week ending August 21",
+    "url": "https://thespinoff.co.nz/books/21-08-2026/the-unity-books-bestseller-chart-for-the-week-ending-august-21",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-21",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "20 takeaways from NZ Fashion Week 2026",
+    "url": "https://thespinoff.co.nz/society/20-08-2026/20-takeaways-from-nz-fashion-week-2026",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-20",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Meet 25 young people changing Aotearoa and the world",
+    "url": "https://thespinoff.co.nz/partner/20-08-2026/meet-25-young-people-changing-aotearoa-and-the-world-2",
+    "tier": "10-flows",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-20",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The Nelson Tenths are coming home – now comes the hard part",
+    "url": "https://thespinoff.co.nz/atea/20-08-2026/the-nelson-tenths-are-coming-home-now-comes-the-hard-part",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-20",
     "source": "The Spinoff",
     "auto": true
   }
