@@ -1,102 +1,192 @@
 [
   {
-    "headline": "Body found after car plunged into Ōamaru Harbour",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1122352/body-found-after-car-plunged-into-oamaru-harbour",
+    "headline": "Weather: Highways closed as rain and snow trigger warnings",
+    "url": "https://www.rnz.co.nz/news/weather/1147140/weather-highways-closed-as-rain-and-snow-trigger-warnings",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
+    "date": "2026-08-26",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "A world less sparkly: Tributes pour in for Dolly Parton",
-    "url": "https://www.rnz.co.nz/life/people/celebrity/a-world-less-sparkly-tributes-pour-in-after-death-of-dolly-parton",
+    "headline": "Long time coming: After decades of struggle, is Bougainville on the brink of statehood?",
+    "url": "https://www.rnz.co.nz/news/pacific/1147105/long-time-coming-after-decades-of-struggle-is-bougainville-on-the-brink-of-statehood",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
+    "date": "2026-08-26",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "What the Opportunity Party's land tax would mean for house prices",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1120357/what-the-opportunity-party-s-land-tax-would-mean-for-house-prices",
+    "headline": "Whangārei Boys High School Year 10 students rostered home due to staff illness",
+    "url": "https://www.rnz.co.nz/news/health/1150318/whangarei-boys-high-school-year-10-students-rostered-home-due-to-staff-illness",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
+    "date": "2026-08-26",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "West Coast in for a lashing of heavy rain over next three days",
-    "url": "https://www.rnz.co.nz/news/weather/1120137/west-coast-in-for-a-lashing-of-heavy-rain-over-next-three-days",
+    "headline": "Live: Five New Zealanders missing following Nepal flash flood - reports",
+    "url": "https://www.rnz.co.nz/news/world/1148384/live-five-new-zealanders-missing-following-nepal-flash-flood-reports",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
+    "date": "2026-08-26",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "'Totally wrong': Community up in arms about stormwater runoff into native forest park",
-    "url": "https://www.rnz.co.nz/news/environment/1120140/totally-wrong-community-up-in-arms-about-stormwater-runoff-into-native-forest-park",
+    "headline": "New Zealand has gone in 'wrong direction' on addressing child poverty - action group",
+    "url": "https://www.rnz.co.nz/news/political/1146919/new-zealand-has-gone-in-wrong-direction-on-addressing-child-poverty-action-group",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Mark Brown's Cook Islands Party set to govern for historic fifth consecutive term",
+    "url": "https://www.rnz.co.nz/news/pacific/1148865/mark-brown-s-cook-islands-party-set-to-govern-for-historic-fifth-consecutive-term",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "The taboo experience of motherhood regret",
+    "url": "https://www.rnz.co.nz/life/relationships/family/the-taboo-experience-of-motherhood-regret",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Advocacy group says no legislation means New Zealand falling behind in gender pay gap",
+    "url": "https://www.rnz.co.nz/news/political/1149383/advocacy-group-says-no-legislation-means-new-zealand-falling-behind-in-gender-pay-gap",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Delays and cancellations as fog hits Auckland Airport",
+    "url": "https://www.rnz.co.nz/news/weather/1146948/delays-and-cancellations-as-fog-hits-auckland-airport",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'It hurts' - street performers restricted from one of Auckland's most popular busking spots",
+    "url": "https://www.rnz.co.nz/news/regions_auckland/1149054/it-hurts-street-performers-restricted-from-one-of-auckland-s-most-popular-busking-spots",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "What 40-plus years in fashion has taught NOM*d’s Margi Robertson",
+    "url": "https://thespinoff.co.nz/society/26-08-2026/wealth-and-popularity-are-over-rated-what-40-plus-years-in-fashion-has-taught-nomds-margi-robertson",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Help Me Hera: Should I burn my old love letters?",
+    "url": "https://thespinoff.co.nz/society/26-08-2026/help-me-hera-should-i-burn-my-old-love-letters",
+    "tier": "3-goals",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Te Pāti Māori’s tax plan: $30k tax-free, a new stamp duty, and a ‘kai credit’",
+    "url": "https://thespinoff.co.nz/the-bulletin/26-08-2026/te-pati-maoris-tax-plan-30k-tax-free-a-new-stamp-duty-and-a-kai-credit",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Wayne Brown has given up on the government",
+    "url": "https://thespinoff.co.nz/politics/26-08-2026/wayne-brown-has-given-up-on-the-government",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "RNZ",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "New Zealand's ATM dead zones",
-    "url": "https://www.rnz.co.nz/news/personal-finance/1120139/new-zealand-s-atm-dead-zones",
+    "headline": "What the election slogans say – and what they whisper",
+    "url": "https://thespinoff.co.nz/politics/26-08-2026/theres-what-the-election-slogans-say-and-theres-what-they-whisper",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "One Candidate, One Pint: Labour’s Max Harris on his push to ‘reclaim’ Tāmaki",
+    "url": "https://thespinoff.co.nz/politics/26-08-2026/one-candidate-one-pint-labours-max-harris-on-his-push-to-reclaim-tamaki",
+    "tier": "10-flows",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "New Zealand’s hospital headaches, by the numbers",
+    "url": "https://thespinoff.co.nz/society/26-08-2026/new-zealands-hospital-headaches-by-the-numbers",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-26",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "‘It’s everything I look for in a story’: Stephen Lovatt’s favourite book",
+    "url": "https://thespinoff.co.nz/books/25-08-2026/its-everything-i-look-for-in-story-stephen-lovatts-favourite-book",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-25",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "All Blacks scrape past Lions to retain perfect record in South Africa",
-    "url": "https://www.rnz.co.nz/news/sport/1120133/all-blacks-scrape-past-lions-to-retain-perfect-record-in-south-africa",
-    "tier": "6-info",
+    "headline": "Algorithms are choosing who sees what political ads. NZ needs transparency",
+    "url": "https://thespinoff.co.nz/politics/25-08-2026/algorithms-are-choosing-who-sees-what-political-ads-nz-urgently-needs-transparency",
+    "tier": "10-flows",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "The Dunedin clinic helping wean patients off antidepressants",
-    "url": "https://www.rnz.co.nz/life/wellbeing/a-clinic-helping-new-zealanders-wean-off-antidepressants",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Pacific Games Council seeks legal advice after Solomon Islands court ruling",
-    "url": "https://www.rnz.co.nz/news/pacific/1121094/pacific-games-council-seeks-legal-advice-after-solomon-islands-court-ruling",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Pedestrian dies after being hit by car in Auckland supermarket carpark",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1121009/pedestrian-dies-after-being-hit-by-car-in-auckland-supermarket-carpark",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
@@ -106,96 +196,6 @@
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-25",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "National should just admit it wants to turn councils into the Department of Parks and Pipes",
-    "url": "https://thespinoff.co.nz/opinion/25-08-2026/national-should-just-admit-it-wants-to-turn-councils-into-the-department-of-parks-and-pipes",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Health? Yes. Harmony? No. Politicians trade ideas on health and harm prevention",
-    "url": "https://thespinoff.co.nz/politics/25-08-2026/health-yes-harmony-no-politicians-trade-ideas-on-health-and-harm-prevention",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Dating Files: A Wellingtonian who keeps meeting people ‘about to leave the country’",
-    "url": "https://thespinoff.co.nz/society/25-08-2026/dating-files-a-wellingtonian-who-keeps-meeting-people-about-to-leave-the-country",
-    "tier": "3-goals",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Reb Fountain is voting for love this year",
-    "url": "https://thespinoff.co.nz/pop-culture/25-08-2026/reb-fountain-is-voting-for-love-this-year",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-25",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Where political parties stand on Te Tiriti o Waitangi",
-    "url": "https://thespinoff.co.nz/atea/24-08-2026/where-political-parties-stand-on-te-tiriti-o-waitangi",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-24",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Top towns of the NZ economy – where is the recovery firing, and where is it not?",
-    "url": "https://thespinoff.co.nz/politics/24-08-2026/top-towns-of-the-nz-economy-where-is-the-recovery-firing-and-where-is-it-not",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-24",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The cost of being: A homeowner who wants their money to work harder than they do",
-    "url": "https://thespinoff.co.nz/society/24-08-2026/the-cost-of-being-a-homeowner-who-wants-their-money-to-work-harder-than-they-do",
-    "tier": "3-goals",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-24",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The proposed social media ban for under-16s divides parents, kids, politicians and experts",
-    "url": "https://thespinoff.co.nz/the-bulletin/24-08-2026/the-proposed-social-media-ban-for-under-16s-divides-parents-kids-politicians-and-experts",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-24",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The rule-in, rule-out game is ruining one of the best things about MMP",
-    "url": "https://thespinoff.co.nz/politics/24-08-2026/the-rule-in-rule-out-game-is-ruining-one-of-the-best-things-about-mmp",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-24",
     "source": "The Spinoff",
     "auto": true
   }
