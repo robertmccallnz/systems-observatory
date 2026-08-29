@@ -1,7 +1,77 @@
 [
   {
-    "headline": "Three arrested after alleged shooting in Hamilton",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/1163325/three-arrested-after-alleged-shooting-in-hamilton",
+    "headline": "Government imposes 10 years of performance requirements on Tiaki Wai",
+    "url": "https://www.rnz.co.nz/news/regions_wellington/1169833/government-imposes-10-years-of-performance-requirements-on-tiaki-wai",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "An oasis of calm to consider RMA as politics gets frantic",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1169755/an-oasis-of-calm-to-consider-rma-as-politics-gets-frantic",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Kiwi scientists trying to fathom why Nepal flash floods generated so much water",
+    "url": "https://www.rnz.co.nz/news/world/1169676/kiwi-scientists-trying-to-fathom-why-nepal-flash-floods-generated-so-much-water",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Mental health crisis looming and urgent investment needed, psychiatrists warn",
+    "url": "https://www.rnz.co.nz/news/health/1169162/mental-health-crisis-looming-and-urgent-investment-needed-psychiatrists-warn",
+    "tier": "10-flows",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "How Dolly Parton won the hearts of younger generations",
+    "url": "https://www.rnz.co.nz/life/music/how-dolly-parton-won-the-hearts-of-younger-generations",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Driver seriously injured after allegedly stealing car and hitting four vehicles near Pukekohe",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1169534/driver-seriously-injured-after-allegedly-stealing-car-and-hitting-four-vehicles-near-pukekohe",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-29",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Thousands of youths set to lose access to unemployment benefits after welfare law change",
+    "url": "https://www.rnz.co.nz/news/political/1169347/thousands-of-youths-set-to-lose-access-to-unemployment-benefits-after-welfare-law-change",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-08-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Heavy rain for upper North Island, avalanche risk ongoing for South Island",
+    "url": "https://www.rnz.co.nz/news/weather/1168795/heavy-rain-for-upper-north-island-avalanche-risk-ongoing-for-south-island",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +80,8 @@
     "auto": true
   },
   {
-    "headline": "TVNZ to pay government dividend despite underlying operating loss",
-    "url": "https://www.rnz.co.nz/news/media-technology/1162872/tvnz-to-pay-government-dividend-despite-underlying-operating-loss",
+    "headline": "Four young people arrested after series of unprovoked group assaults in Dunedin",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/1169171/four-young-people-arrested-after-series-of-unprovoked-group-assaults-in-dunedin",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,18 +90,8 @@
     "auto": true
   },
   {
-    "headline": "All Blacks prop George Bower expects 'hurt' Springboks to come out 'guns blazing'",
-    "url": "https://www.rnz.co.nz/news/pacific/1162769/all-blacks-prop-george-bower-expects-hurt-springboks-to-come-out-guns-blazing",
-    "tier": "1-transcend",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-28",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Nepal flash flood highlights Kailash Mansarovar pilgrimage danger",
-    "url": "https://www.rnz.co.nz/news/indonz-featured/1162083/nepal-flash-flood-highlights-kailash-mansarovar-pilgrimage-danger",
+    "headline": "Country Life: How two fake rooms inside Ashburton Hospital are helping keep rural medicine alive",
+    "url": "https://www.rnz.co.nz/news/country/1168565/country-life-how-two-fake-rooms-inside-ashburton-hospital-are-helping-keep-rural-medicine-alive",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,63 +100,53 @@
     "auto": true
   },
   {
-    "headline": "Wattle Downs double homicide victims found following reports of an armed person at the home - police",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/1161500/wattle-downs-double-homicide-victims-found-following-reports-of-an-armed-person-at-the-home-police",
-    "tier": "6-info",
+    "headline": "Noelle McCarthy on facing people after you’ve told your story of alcoholism and horrible sex",
+    "url": "https://thespinoff.co.nz/books/28-08-2026/noelle-mccarthy-on-facing-people-after-youve-told-your-story-of-alcoholism-and-horrible-sex",
+    "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-28",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "Immigration checkpoint reportedly swept away in Nepal flash flood",
-    "url": "https://www.rnz.co.nz/news/world/1160477/nepal-flood-nz-pledges-2-million-in-humanitarian-assistance-search-for-kiwis-ongoing",
+    "headline": "Where to eat in Newtown, Wellington – an insider’s guide",
+    "url": "https://thespinoff.co.nz/kai/28-08-2026/where-to-eat-in-newtown-wellington-an-insiders-guide",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-28",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "New Zealand's four Realm leaders are meeting in Auckland - what's on their minds?",
-    "url": "https://www.rnz.co.nz/news/pacific/1159234/new-zealand-s-four-realm-leaders-are-meeting-in-auckland-what-s-on-their-minds",
-    "tier": "6-info",
+    "headline": "The midlife edit: giving up on good friends",
+    "url": "https://thespinoff.co.nz/society/28-08-2026/the-midlife-edit-giving-up-on-good-friends",
+    "tier": "9-feedback",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-28",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "More schools ask parents to keep children home as winter illnesses bite",
-    "url": "https://www.rnz.co.nz/news/health/1159642/more-schools-ask-parents-to-keep-children-home-as-winter-illnesses-bite",
+    "headline": "‘I felt every one of our cuts’: Catherine Chidgey on finishing Kelly Ana Morey’s ‘epic Māori novel’",
+    "url": "https://thespinoff.co.nz/books/28-08-2026/i-felt-every-one-of-our-cuts-catherine-chidgey-on-finishing-kelly-ana-moreys-epic-maori-novel",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-28",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "NZ-backed climate mobility initiative launched across Pacific",
-    "url": "https://www.rnz.co.nz/news/pacific/1161814/nz-backed-climate-mobility-initiative-launched-across-pacific",
-    "tier": "6-info",
+    "headline": "A glimpse inside Dunedin’s new hospital",
+    "url": "https://thespinoff.co.nz/politics/28-08-2026/a-glimpse-inside-dunedins-new-hospital",
+    "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-28",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Dr Shane Reti farewells Parliament",
-    "url": "https://www.rnz.co.nz/news/political/1161630/dr-shane-reti-farewells-parliament",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-28",
-    "source": "RNZ",
+    "source": "The Spinoff",
     "auto": true
   },
   {
@@ -146,56 +196,6 @@
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-08-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "A 26-year-old voter worried about the ‘diminishing rights of minority groups’",
-    "url": "https://thespinoff.co.nz/politics/27-08-2026/a-26-year-old-voter-worried-about-the-diminishing-rights-of-minority-groups",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The Spinoff hall of fame: New Zealand’s greatest sport mullets",
-    "url": "https://thespinoff.co.nz/society/27-08-2026/the-spinoff-hall-of-fame-new-zealands-greatest-sport-mullets",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Which councils could meet government’s proposed rates cap?",
-    "url": "https://thespinoff.co.nz/politics/27-08-2026/which-councils-could-meet-governments-proposed-rates-cap",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Plea: Put Dame Lynda Topp on every television show right now",
-    "url": "https://thespinoff.co.nz/pop-culture/27-08-2026/plea-put-dame-lynda-topp-on-every-television-show-right-now",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-27",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "What 40-plus years in fashion has taught NOM*d’s Margi Robertson",
-    "url": "https://thespinoff.co.nz/society/26-08-2026/wealth-and-popularity-are-over-rated-what-40-plus-years-in-fashion-has-taught-nomds-margi-robertson",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-08-26",
     "source": "The Spinoff",
     "auto": true
   }
