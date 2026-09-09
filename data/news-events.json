@@ -1,102 +1,182 @@
 [
   {
-    "headline": "Is a bigger solar system always better?",
-    "url": "https://www.rnz.co.nz/news/personal-finance/1308466/is-a-bigger-solar-system-always-better",
+    "headline": "RNZ election coverage: Multiple forms, on every platform",
+    "url": "https://www.rnz.co.nz/news/political/1320604/rnz-election-coverage-multiple-forms-on-every-platform",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "How New Zealand's largest lightsaber group 'forged a village'",
-    "url": "https://www.rnz.co.nz/life/people/identity/new-zealand-s-largest-lightsaber-group-forged-a-village-in-palmy",
+    "headline": "Average KiwiSaver balance cracks $40k",
+    "url": "https://www.rnz.co.nz/news/personal-finance/1320600/average-kiwisaver-balance-cracks-40k",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Labour policy on breaking up supermarket duopoly to come, Vanushi Walters says",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1309035/labour-policy-on-breaking-up-supermarket-duopoly-to-come-vanushi-walters-says",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "I’m trying to lose weight. Will exercising make me hungrier and eat more?",
-    "url": "https://www.rnz.co.nz/life/wellbeing/i-m-trying-to-lose-weight-will-exercising-make-me-hungrier-and-eat-more",
+    "headline": "High school students were on platform when boy was fatally struck by train",
+    "url": "https://www.rnz.co.nz/news/emergency/1319080/high-school-students-were-on-platform-when-boy-was-fatally-struck-by-train",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "'Don't be a stranger': New tourism campaign targets overseas friends and whānau",
-    "url": "https://www.rnz.co.nz/news/business/1308988/don-t-be-a-stranger-new-tourism-campaign-targets-overseas-friends-and-whanau",
+    "headline": "CNMI groups sue US over deep sea mining plan covering 67 million acres",
+    "url": "https://www.rnz.co.nz/news/pacific/1310770/cnmi-groups-sue-us-over-deep-sea-mining-plan-covering-67-million-acres",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Corrections senior staffer Leigh Marsh cleared of bullying and harassment allegations",
-    "url": "https://www.rnz.co.nz/news/business/1308960/corrections-senior-staffer-leigh-marsh-cleared-of-bullying-and-harassment-allegations",
+    "headline": "Oil prices could reach $US120 - analysts",
+    "url": "https://www.rnz.co.nz/news/business/1320478/oil-prices-could-reach-us120-analysts",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Hospital discharges homeless man with major health needs in just a gown",
-    "url": "https://www.rnz.co.nz/news/health/1308227/hospital-discharges-homeless-man-with-major-health-needs-in-just-a-gown",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Weight management supplement company Calocurb raises $27m as it looks to expand globally",
-    "url": "https://www.rnz.co.nz/news/business/1308906/weight-management-supplement-company-calocurb-raises-27m-as-it-looks-to-expand-globally",
+    "headline": "Helicopter plunged 30 metres down mountain after blades strikes rockface",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1320421/helicopter-plunged-30-metres-down-mountain-after-blades-strikes-rockface",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Migrants shocked by NZ First’s superannuation policy",
-    "url": "https://www.rnz.co.nz/news/chinese_english/1308732/migrants-shocked-by-nz-first-s-superannuation-policy",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "How Facebook is shaping public debate on sorcery violence in PNG",
-    "url": "https://www.rnz.co.nz/news/pacific/1299789/how-facebook-is-shaping-public-debate-on-sorcery-violence-in-png",
+    "headline": "CityFitness gym leases space in former Reading Cinemas complex in Courtney Place",
+    "url": "https://www.rnz.co.nz/news/business/1320463/cityfitness-gym-leases-space-in-former-reading-cinemas-complex-in-courtney-place",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Lack of funding is main reason 60 percent of calls not answered, Lifeline says",
+    "url": "https://www.rnz.co.nz/news/health/1320434/lack-of-funding-is-main-reason-60-percent-of-calls-not-answered-lifeline-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Is Australia out of touch with the Pacific?",
+    "url": "https://www.rnz.co.nz/news/pacific/1319951/is-australia-out-of-touch-with-the-pacific",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Police apologise to mother of Rachel Molloy who died after supposed fall down concrete stairs",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/1320143/police-apologise-to-mother-of-rachel-molloy-who-died-after-supposed-fall-down-concrete-stairs",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Labour’s AI plan: Data centre rules, copyright protections and an online safety regulator",
+    "url": "https://thespinoff.co.nz/the-bulletin/09-09-2026/labours-ai-plan-data-centre-rules-copyright-protections-and-an-online-safety-regulator",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "An urgent update from The Spinoff’s CEO",
+    "url": "https://thespinoff.co.nz/media/09-09-2026/an-urgent-update-from-the-spinoffs-ceo",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "All the best (and most questionable) political party merch for election 2026",
+    "url": "https://thespinoff.co.nz/politics/09-09-2026/all-the-best-and-most-questionable-campaign-merch-for-2026",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "First home buyers have taken over the housing market",
+    "url": "https://thespinoff.co.nz/business/09-09-2026/first-home-buyers-have-taken-over-the-housing-market",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Dating Files: A ‘mostly straight’ 25-year-old looking for a ‘minimum 6’1” educated guy’",
+    "url": "https://thespinoff.co.nz/society/09-09-2026/dating-files-a-mostly-straight-25-year-old-looking-for-a-minimum-61-educated-guy",
+    "tier": "3-goals",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Auckland Council fast-tracks a big fat middle finger to the government",
+    "url": "https://thespinoff.co.nz/politics/09-09-2026/auckland-council-fast-tracks-a-big-fat-middle-finger-to-the-government",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-09",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The intimacy and joy of biking in traffic",
+    "url": "https://thespinoff.co.nz/partner-bosch/08-09-2026/the-intimacy-and-joy-of-biking-in-traffic",
+    "tier": "1-transcend",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-08",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "When a gambling ad played instead of Jai Arrow’s walkout, it felt personal",
+    "url": "https://thespinoff.co.nz/society/08-09-2026/when-a-gambling-ad-played-instead-of-jai-arrows-walkout-it-felt-personal",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-08",
+    "source": "The Spinoff",
     "auto": true
   },
   {
@@ -116,86 +196,6 @@
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-09-08",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "What’s the difference between a tax and a levy – and does it even matter?",
-    "url": "https://thespinoff.co.nz/money/08-09-2026/whats-the-difference-between-a-tax-and-a-levy-and-does-it-even-matter",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Why the world thinks New Zealand solved the housing crisis",
-    "url": "https://thespinoff.co.nz/politics/08-09-2026/why-the-world-thinks-new-zealand-solved-the-housing-crisis",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "One Candidate, One Pint: Paul Henry on never giving a shit what anyone thinks",
-    "url": "https://thespinoff.co.nz/politics/08-09-2026/one-candidate-one-pint-paul-henry-on-never-giving-a-shit-what-anyone-thinks",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Can Labour up the ante after getting outflanked by National on KiwiSaver?",
-    "url": "https://thespinoff.co.nz/politics/08-09-2026/can-labour-up-the-ante-after-getting-outflanked-by-national-on-kiwisaver",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-08",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "What Wellington’s culture crowd is looking forward to this spring",
-    "url": "https://thespinoff.co.nz/partner/07-09-2026/what-wellingtons-culture-crowd-is-looking-forward-to-this-spring",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-07",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Robyn Malcolm wants us to change how we think about menopause",
-    "url": "https://thespinoff.co.nz/pop-culture/07-09-2026/robyn-malcolm-wants-us-to-change-how-we-think-about-menopause",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-07",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The cost of being: An ‘abundantly-minded but not abundantly pocketed’ receptionist",
-    "url": "https://thespinoff.co.nz/society/07-09-2026/the-cost-of-being-an-abundantly-minded-but-not-abundantly-pocketed-receptionist",
-    "tier": "12-parameters",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-07",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "MSD told thousands food was ‘not an essential need’",
-    "url": "https://thespinoff.co.nz/the-bulletin/07-09-2026/msd-told-thousands-food-was-not-an-essential-need",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-07",
     "source": "The Spinoff",
     "auto": true
   }
