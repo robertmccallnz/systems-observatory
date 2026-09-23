@@ -1,102 +1,182 @@
 [
   {
-    "headline": "Post code lottery still alive and well in health sector, latest figures show",
-    "url": "https://www.rnz.co.nz/news/health/1529599/post-code-lottery-still-alive-and-well-in-health-sector-latest-figures-show",
+    "headline": "Row engulfs Dolly Parton's estate as manager accuses nephew of making threats",
+    "url": "https://www.rnz.co.nz/life/music/row-engulfs-dolly-parton-s-estate-as-manager-accuses-nephew-of-making-threats",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
+    "date": "2026-09-23",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "MBIE confirms botched biometric projects costs blown out to $50.7 million",
-    "url": "https://www.rnz.co.nz/news/political/1527356/mbie-confirms-botched-biometric-projects-costs-blown-out-to-50-point-7-million",
+    "headline": "Papuan civilians shot in latest security forces violence in Yahukimo",
+    "url": "https://www.rnz.co.nz/news/pacific/1551510/papuan-civilians-shot-in-latest-security-forces-violence-in-yahukimo",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
+    "date": "2026-09-23",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Indian businesses eye investment opportunities after signing of free trade agreement",
-    "url": "https://www.rnz.co.nz/news/indonz-featured/1529163/indian-businesses-eye-investment-opportunities-after-signing-of-free-trade-agreement",
+    "headline": "Bringing Aotea back to life through a te ao Māori lens",
+    "url": "https://www.rnz.co.nz/news/te-manu-korihi/1549658/bringing-aotea-back-to-life-through-a-te-ao-maori-lens",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'Not set a date': Rabuka says Fiji election timing depends on constitutional reform",
+    "url": "https://www.rnz.co.nz/news/pacific/1551463/not-set-a-date-rabuka-says-fiji-election-timing-depends-on-constitutional-reform",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Person critically injured after crash involving car and cyclist in Auckland's Herne Bay",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1549669/person-critically-injured-after-crash-involving-car-and-cyclist-in-auckland-s-herne-bay",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Firefighters' union says FENZ shake-up can't wait until after election",
+    "url": "https://www.rnz.co.nz/news/political/1551346/firefighters-union-says-fenz-shake-up-can-t-wait-until-after-election",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'Great time to be blind': Visually impaired hail AI smart glasses despite privacy concerns",
+    "url": "https://www.rnz.co.nz/news/science-and-technology/1551281/great-time-to-be-blind-visually-impaired-hail-ai-smart-glasses-despite-privacy-concerns",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Fonterra reports $3.4 billion operating profit following sale of Mainland brands",
+    "url": "https://www.rnz.co.nz/news/business/1550998/fonterra-reports-3-point-4-billion-operating-profit-following-sale-of-mainland-brands",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "How much are people making from side hustles?",
+    "url": "https://www.rnz.co.nz/news/personal-finance/1549260/how-much-are-people-making-from-side-hustles",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "North Korea uses remote IT worker to clandestinely earn NZ currency",
+    "url": "https://www.rnz.co.nz/news/world/1549255/north-korea-uses-remote-it-worker-to-clandestinely-earn-nz-currency",
+    "tier": "8-neg-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "‘The specifics to Auckland life really got me’: Gabrielle Vincent’s favourite local read",
+    "url": "https://thespinoff.co.nz/books/23-09-2026/the-specifics-to-auckland-life-really-got-me-gabrielle-vincents-favourite-local-read",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "Help me Hera: I am not your clown",
+    "url": "https://thespinoff.co.nz/society/23-09-2026/help-me-hera-i-am-not-your-clown",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "The ministry of education’s OIA-gate: Whistleblower says it’s not an isolated incident and the ombudsman wants answers",
+    "url": "https://thespinoff.co.nz/the-bulletin/23-09-2026/copy-of-nicky-hagers-dirty-work-taxpayers-union-three-waters-and-a-rotten-stench",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "New Zealand city centres have an empty shop problem. Do the Greens have the answer?",
+    "url": "https://thespinoff.co.nz/politics/23-09-2026/new-zealand-city-centres-have-an-empty-shop-problem-do-the-greens-have-the-answer",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "Labour sums up its foreign policy approach as 'independent, principled and unafraid'",
-    "url": "https://www.rnz.co.nz/news/political/1528401/labour-sums-up-its-foreign-policy-approach-as-independent-principled-and-unafraid",
-    "tier": "5-rules",
+    "headline": "How New Zealanders really feel about tax – exclusive poll results",
+    "url": "https://thespinoff.co.nz/politics/23-09-2026/how-new-zealanders-really-feel-about-tax-exclusive-poll-results",
+    "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "Off-beat titles keep this year's Booker Prize shortlist spicy",
-    "url": "https://www.rnz.co.nz/life/books/booker-prize-2026-off-beat-titles-keep-the-shortlist-spicy",
+    "headline": "Nicky Hager and Dirty Work, 24 hours on",
+    "url": "https://thespinoff.co.nz/books/23-09-2026/nicky-hager-and-dirty-work-24-hours-on",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
     "auto": true
   },
   {
-    "headline": "Concerns for missing 21-year-old in Christchurch",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1528898/concerns-for-missing-21-year-old-in-christchurch",
+    "headline": "Dating Files: A 29-year-old who has ‘only dated men in the past but open to dating women’",
+    "url": "https://thespinoff.co.nz/society/23-09-2026/dating-files-a-29-year-old-who-has-only-dated-men-in-the-past-but-open-to-dating-women",
+    "tier": "3-goals",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
+    "auto": true
+  },
+  {
+    "headline": "New and approved: Hamilton Hotel Public Bar & Bistro, Hamilton",
+    "url": "https://thespinoff.co.nz/kai/23-09-2026/new-and-approved-hamilton-hotel-public-bar-bistro-hamilton",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Report suggests taking Wellington Opera House out of use amid falling attendance",
-    "url": "https://www.rnz.co.nz/news/regions_wellington/1526460/report-suggests-taking-wellington-opera-house-out-of-use-amid-falling-attendance",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Fiji Rugby League executive under police investigation over sexual harassment allegations",
-    "url": "https://www.rnz.co.nz/news/pacific/1528777/fiji-rugby-league-executive-under-police-investigation-over-sexual-harassment-allegations",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Sweeping changes to Fiji's governance recommended by Constitution Commission",
-    "url": "https://www.rnz.co.nz/news/pacific/1522583/sweeping-changes-to-fiji-s-governance-recommended-by-constitution-commission",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Daylight saving 2026: When it starts, why we observe it and how to change the time on your phone",
-    "url": "https://www.rnz.co.nz/news/science-and-technology/1528181/daylight-saving-2026-when-it-starts-why-we-observe-it-and-how-to-change-the-time-on-your-phone",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "RNZ",
+    "date": "2026-09-23",
+    "source": "The Spinoff",
     "auto": true
   },
   {
@@ -116,86 +196,6 @@
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-09-22",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Labour’s election pitch: Better starts now… only it looks pretty much the same",
-    "url": "https://thespinoff.co.nz/politics/22-09-2026/labours-election-pitch-expect-better-but-dont-expect-too-much",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "A dispatch from the sweaty, feverish launch of Nicky Hager’s new book, Dirty Work",
-    "url": "https://thespinoff.co.nz/politics/22-09-2026/a-dispatch-from-the-sweaty-feverish-launch-of-nicky-hagers-new-book-dirty-work",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Review: New doco Meet the Preppers will make you stop scrolling and get ready",
-    "url": "https://thespinoff.co.nz/pop-culture/22-09-2026/review-new-doco-meet-the-preppers-will-make-you-stop-scrolling-and-get-ready",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "One Candidate, One Pint: Labour’s Sophie Handford on finding zen in politics",
-    "url": "https://thespinoff.co.nz/politics/22-09-2026/one-candidate-one-pint-labours-sophie-handford-on-finding-zen-in-politics",
-    "tier": "7-pos-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-22",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Levelling the field: The fund helping disabled people compete in this year’s election",
-    "url": "https://thespinoff.co.nz/partner/21-09-2026/levelling-the-field-the-fund-helping-disabled-people-compete-in-this-years-election",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-21",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "The cost of being: A ‘stingy’ 20-something who just bought their first home",
-    "url": "https://thespinoff.co.nz/society/21-09-2026/the-cost-of-being-a-stingy-20-something-who-just-bought-their-first-home",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-21",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Not without costs: Winston Peters questions nuclear-free ‘mythologising’",
-    "url": "https://thespinoff.co.nz/the-bulletin/21-09-2026/not-without-costs-winston-peters-questions-nuclear-free-mythologising",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-21",
-    "source": "The Spinoff",
-    "auto": true
-  },
-  {
-    "headline": "Wayne Brown’s doomed, months-long effort to get a beer with Chris Bishop",
-    "url": "https://thespinoff.co.nz/politics/21-09-2026/wayne-browns-doomed-months-long-effort-to-get-a-beer-with-chris-bishop",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-09-21",
     "source": "The Spinoff",
     "auto": true
   }
