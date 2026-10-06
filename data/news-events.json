@@ -1,7 +1,7 @@
 [
   {
-    "headline": "FENZ responding to vegetation fire on Walter Peak, smoke visible from Queenstown",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1758895/fenz-responding-to-vegetation-fire-on-walter-peak-smoke-visible-from-queenstown",
+    "headline": "NZ First list ranks newcomers above sitting MPs",
+    "url": "https://www.rnz.co.nz/news/political/1780805/nz-first-list-ranks-newcomers-above-sitting-mps",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,18 +10,8 @@
     "auto": true
   },
   {
-    "headline": "Election 2026 live: New poll sees National crash ahead as Hipkins, Luxon prepare for first debate",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1749767/election-2026-live-new-poll-sees-national-crash-ahead-as-hipkins-luxon-prepare-for-first-debate",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-10-06",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Fiji, Samoa and Tonga name 2026 Rugby League World Cup squads",
-    "url": "https://www.rnz.co.nz/news/pacific/1758482/fiji-samoa-and-tonga-name-2026-rugby-league-world-cup-squads",
+    "headline": "Plane declares mayday near Hawke's Bay Airport",
+    "url": "https://www.rnz.co.nz/news/regions_hawkes-bay/1780786/plane-declares-mayday-near-hawke-s-bay-airport",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +20,8 @@
     "auto": true
   },
   {
-    "headline": "'Cart before the horse': Fiji opposition slams Rabuka's pre-emptive referendum date",
-    "url": "https://www.rnz.co.nz/news/pacific/1758479/cart-before-the-horse-fiji-opposition-slams-rabuka-s-pre-emptive-referendum-date",
+    "headline": "Cook Islands and PNG name mixed squads for Rugby League World Cup",
+    "url": "https://www.rnz.co.nz/news/pacific/1780767/cook-islands-and-png-name-mixed-squads-for-rugby-league-world-cup",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Friend of missing Queenstown woman Erika Coelho remaining optimistic",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1758230/friend-of-missing-queenstown-woman-erika-coelho-remaining-optimistic",
+    "headline": "Election 2026 live: Nicola Willis and Barbara Edmonds go head-to-head in RNZ finance debate",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1774626/election-2026-live-nicola-willis-and-barbara-edmonds-go-head-to-head-in-rnz-finance-debate",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -50,8 +40,8 @@
     "auto": true
   },
   {
-    "headline": "Man arrested, woman still missing after pair jumped into Ōpōtiki's Ōtara River to evade police",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/1758112/man-arrested-woman-still-missing-after-pair-jumped-into-opotiki-s-otara-river-to-evade-police",
+    "headline": "Labour targets big banks in cost-of-living push",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1780500/labour-targets-big-banks-in-cost-of-living-push",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -60,9 +50,9 @@
     "auto": true
   },
   {
-    "headline": "NZ First calls National's foreign aid cut promise desperate, ACT hails it as win",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1757525/nz-first-calls-national-s-foreign-aid-cut-promise-desperate-act-hails-it-as-win",
-    "tier": "5-rules",
+    "headline": "Chris v Chris: Are they still playing in the major party league?",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1772799/chris-v-chris-are-they-still-playing-in-the-major-party-league",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-10-06",
@@ -70,32 +60,42 @@
     "auto": true
   },
   {
-    "headline": "$50 painting found in ‘dark corner’ fetches $2.4m at auction",
-    "url": "https://www.rnz.co.nz/life/culture/a-usd50-painting-found-in-dark-corner-of-estate-sale-fetches-nzusd2-4m-at-auction",
+    "headline": "Finance debate: Where National and Labour agree, and where they don't",
+    "url": "https://www.rnz.co.nz/news/political/1779926/finance-debate-where-national-and-labour-agree-and-where-they-don-t",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Election 2026: National promises to cut foreign aid to boost Pharmac's budget, cancer screenings",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1754401/election-2026-national-promises-to-cut-foreign-aid-to-boost-pharmac-s-budget-cancer-screenings",
-    "tier": "5-rules",
+    "headline": "National unveils 47-point small business plan",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1779077/national-unveils-47-point-small-business-plan",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "'Nasty decisions' for Wellington councillors looking to find $60m in savings",
-    "url": "https://www.rnz.co.nz/news/regions_wellington/1756754/nasty-decisions-for-wellington-councillors-looking-to-find-60m-in-savings",
+    "headline": "'Respect the people': Fiji coalition clash over Rabuka's fast-tracked constitutional referendum",
+    "url": "https://www.rnz.co.nz/news/pacific/1779589/respect-the-people-fiji-coalition-clash-over-rabuka-s-fast-tracked-constitutional-referendum",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-10-05",
+    "date": "2026-10-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Fire near Queenstown surges to cover 1200 hectares as winds fuel flames",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/1774948/fire-near-queenstown-surges-to-cover-1200-hectares-as-winds-fuel-flames",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-10-06",
     "source": "RNZ",
     "auto": true
   }
