@@ -311,12 +311,18 @@
           "date": "2026-07-08",
           "value": 2.5,
           "source": "RBNZ decisions page"
+        },
+        {
+          "period": "2026-09",
+          "date": "2026-09-02",
+          "value": 2.75,
+          "source": "RBNZ decisions page"
         }
       ],
       "latest": 3.25,
       "anomaly": false,
-      "latest_value": 2.5,
-      "updated_at": "2026-07-28T21:08:05.386024+00:00",
+      "latest_value": 2.75,
+      "updated_at": "2026-10-13T23:37:04.341140+00:00",
       "manual_last_value": true,
       "latest_period": "2026-05",
       "forward": []

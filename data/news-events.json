@@ -1,7 +1,7 @@
 [
   {
-    "headline": "Thousands of Kiwis could live longer with continuous glucose monitoring - study",
-    "url": "https://www.rnz.co.nz/news/te-manu-korihi/1872166/thousands-of-kiwis-could-live-longer-with-continuous-glucose-monitoring-study",
+    "headline": "More than 2 million train trips taken in first month of City Rail Link",
+    "url": "https://www.rnz.co.nz/news/business/1893327/more-than-2-million-train-trips-taken-in-first-month-of-city-rail-link",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +10,8 @@
     "auto": true
   },
   {
-    "headline": "RLWC2026: Toa Samoa banks on Luai",
-    "url": "https://www.rnz.co.nz/news/pacific/1872105/rlwc2026-toa-samoa-banks-on-luai",
+    "headline": "The Kiwis avoiding the big supermarkets",
+    "url": "https://www.rnz.co.nz/life/food/the-new-zealanders-avoiding-big-supermarkets",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +20,8 @@
     "auto": true
   },
   {
-    "headline": "Reserve Bank puts digital cash on hold",
-    "url": "https://www.rnz.co.nz/news/business/1872050/reserve-bank-puts-digital-cash-on-hold",
+    "headline": "Government extends strategic diesel reserve agreement to August 2027",
+    "url": "https://www.rnz.co.nz/news/political/1892737/government-extends-strategic-diesel-reserve-agreement-to-august-2027",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Mystery of large pool of blood found in Wellington pedestrian tunnel solved",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/1871395/mystery-of-large-pool-of-blood-found-in-wellington-pedestrian-tunnel-solved",
+    "headline": "Papua priest says Indonesia does not need to fear UN visit to West Papua",
+    "url": "https://www.rnz.co.nz/news/pacific/1892650/papua-priest-says-indonesia-does-not-need-to-fear-un-visit-to-west-papua",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,8 +40,8 @@
     "auto": true
   },
   {
-    "headline": "Anthony Scaramucci on what he got wrong about Donald Trump",
-    "url": "https://www.rnz.co.nz/life/books/anthony-scaramucci-on-what-he-got-wrong-about-donald-trump",
+    "headline": "'Psychological nightmare': Why New Zealand won't let a stranded woman pass through",
+    "url": "https://www.rnz.co.nz/news/pacific/1892394/a-psychological-nightmare-why-nz-declined-transit-visa-for-woman-stranded-in-cook-islands",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -50,8 +50,8 @@
     "auto": true
   },
   {
-    "headline": "Man in court charged with stealing EV charging cables worth more than $57,000",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/1871736/man-in-court-charged-with-stealing-ev-charging-cables-worth-more-than-57-000",
+    "headline": "US learned 'absolutely nothing' from post-9/11 wars - Peter Bergen",
+    "url": "https://www.rnz.co.nz/news/world/1891933/us-learned-absolutely-nothing-from-post-9-11-wars-peter-bergen",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -60,18 +60,8 @@
     "auto": true
   },
   {
-    "headline": "Election 2026 live: Labour goes on the attack, Greens promise an economic fix",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1866029/election-2026-live-labour-goes-on-the-attack-greens-promise-an-economic-fix",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-10-13",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "'Humiliating' - former PM Helen Clark slams NZ abstention on UN pandemic vote",
-    "url": "https://www.rnz.co.nz/news/political/1871690/humiliating-former-pm-helen-clark-slams-nz-abstention-on-un-pandemic-vote",
+    "headline": "Affordability of hospitals' upgrade a 'major concern' documents show",
+    "url": "https://www.rnz.co.nz/news/health/1892349/affordability-of-hospitals-upgrade-a-major-concern-documents-show",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -80,8 +70,8 @@
     "auto": true
   },
   {
-    "headline": "Eight dead in September massacre at Papua New Guinea's troubled Porgera",
-    "url": "https://www.rnz.co.nz/news/pacific/1865980/eight-dead-in-september-massacre-at-papua-new-guinea-s-troubled-porgera",
+    "headline": "Kāinga Ora urged to halt pre-election sale of empty Wellington state houses",
+    "url": "https://www.rnz.co.nz/news/regions_wellington/1892344/kainga-ora-urged-to-halt-pre-election-sale-of-empty-wellington-state-houses",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -90,9 +80,19 @@
     "auto": true
   },
   {
-    "headline": "Former National health minister slams party's 'punitive' beneficiary drug testing policy",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/1871623/former-national-health-minister-slams-party-s-punitive-beneficiary-drug-testing-policy",
-    "tier": "5-rules",
+    "headline": "Tauranga City Council removes provocative 'crap in my hands' political billboards",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/1892309/tauranga-city-council-removes-provocative-crap-in-my-hands-political-billboards",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-10-13",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Jobs on the line as mega-ministry MCERT unveils restructure plan",
+    "url": "https://www.rnz.co.nz/news/political/1892126/jobs-on-the-line-as-mega-ministry-mcert-unveils-restructure-plan",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-10-13",
