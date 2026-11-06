@@ -1,7 +1,7 @@
 [
   {
-    "headline": "Multiple Wellington schools locked down after potential sighting of 'person of interest'",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2374917/multiple-wellington-schools-locked-down-after-potential-sighting-of-person-of-interest",
+    "headline": "Crews scramble to fix burst water main in Porirua",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2399022/crews-scramble-to-fix-burst-water-main-in-porirua",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +10,8 @@
     "auto": true
   },
   {
-    "headline": "'Be proud of what you're bringing': Council supplier network opens doors for Pasifika businesses",
-    "url": "https://www.rnz.co.nz/news/pacific/2381335/be-proud-of-what-you-re-bringing-council-supplier-network-opens-doors-for-pasifika-businesses",
+    "headline": "One dead, four injured in Wellington crash",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2393195/one-dead-four-injured-in-wellington-crash",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +20,8 @@
     "auto": true
   },
   {
-    "headline": "TV producer Alexander Breingan accused of serious fraud, loses appeal to remain overseas",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2380803/tv-producer-alexander-breingan-accused-of-serious-fraud-loses-appeal-to-remain-overseas",
+    "headline": "Could AI help save pilot whales from a stranding?",
+    "url": "https://www.rnz.co.nz/news/environment/2397552/could-ai-help-save-pilot-whales-from-a-stranding",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Property listings hit highest October level in 12 years",
-    "url": "https://www.rnz.co.nz/news/business/2380088/property-listings-hit-highest-october-level-in-12-years",
+    "headline": "Country Life: Calves, callouts and 75 years of country vetting",
+    "url": "https://www.rnz.co.nz/news/country/2393365/country-life-calves-callouts-and-75-years-of-country-vetting",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,28 +40,8 @@
     "auto": true
   },
   {
-    "headline": "Fiji MP says 'either way' constitution vote will see her lose her job",
-    "url": "https://www.rnz.co.nz/news/pacific/2380081/fiji-mp-says-either-way-constitution-vote-will-see-her-lose-her-job",
-    "tier": "5-rules",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-06",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Most thrilled by Tongan's 'little performance' during NYC marathon - but some called obstruction",
-    "url": "https://www.rnz.co.nz/life/people/most-thrilled-by-kiwi-s-little-performance-during-nyc-marathon-but-some-called-obstruction",
-    "tier": "7-pos-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-06",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Pacific warns of debt pressure as Commonwealth looks to strengthen climate finance",
-    "url": "https://www.rnz.co.nz/news/pacific/2380049/pacific-warns-of-debt-pressure-as-commonwealth-looks-to-strengthen-climate-finance",
+    "headline": "Election day weather turns sour with lightning, heavy rain and thunderstorms",
+    "url": "https://www.rnz.co.nz/news/weather/2397042/election-day-weather-turns-sour-with-lightning-heavy-rain-and-thunderstorms",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -70,32 +50,52 @@
     "auto": true
   },
   {
-    "headline": "Climate advocacy group accuses Energy Minister Simeon Brown of sitting on documents about LNG plans",
-    "url": "https://www.rnz.co.nz/news/environment_climate/2379688/climate-advocacy-group-accuses-energy-minister-simeon-brown-of-sitting-on-documents-about-lng-plans",
+    "headline": "I don’t have my ex-wife or daughter’s details, can I leave them my house? Ask Susan",
+    "url": "https://www.rnz.co.nz/news/business/2396369/i-don-t-have-my-ex-wife-or-daughter-s-details-can-i-leave-them-my-house-ask-susan",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Election live: Labour crawls out of the 20s in final poll before election night",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2368184/election-live-labour-crawls-out-of-the-20s-in-final-poll-before-election-night",
+    "headline": "Porirua farewells Deputy Mayor Kylie Wihapi after sudden death",
+    "url": "https://www.rnz.co.nz/news/regions_wellington/2395383/porirua-farewells-deputy-mayor-kylie-wihapi-after-sudden-death",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Shares in cancer diagnostics company Pacific Edge rise after Medicare coverage of tests",
-    "url": "https://www.rnz.co.nz/news/business/2379489/shares-in-cancer-diagnostics-company-pacific-edge-rise-after-medicare-coverage-of-tests",
+    "headline": "How exposed is your KiwiSaver to market wobbles?",
+    "url": "https://www.rnz.co.nz/news/personal-finance/2388401/how-exposed-is-your-kiwisaver-to-market-wobbles",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Customary landowners welcome Kaiteretere name change as part of Nelson Tenths' case",
+    "url": "https://www.rnz.co.nz/news/regional/2388135/customary-landowners-welcome-kaiteretere-name-change-as-part-of-nelson-tenths-case",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Tonga gets one over Romania in rugby test",
+    "url": "https://www.rnz.co.nz/news/pacific/2395171/tonga-gets-one-over-romania-in-rugby-test",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
     "source": "RNZ",
     "auto": true
   }
