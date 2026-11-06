@@ -1,7 +1,77 @@
 [
   {
-    "headline": "No voting stations at some Auckland hospitals",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2356110/no-voting-stations-at-some-auckland-hospitals",
+    "headline": "Multiple Wellington schools locked down after potential sighting of 'person of interest'",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2374917/multiple-wellington-schools-locked-down-after-potential-sighting-of-person-of-interest",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'Be proud of what you're bringing': Council supplier network opens doors for Pasifika businesses",
+    "url": "https://www.rnz.co.nz/news/pacific/2381335/be-proud-of-what-you-re-bringing-council-supplier-network-opens-doors-for-pasifika-businesses",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "TV producer Alexander Breingan accused of serious fraud, loses appeal to remain overseas",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2380803/tv-producer-alexander-breingan-accused-of-serious-fraud-loses-appeal-to-remain-overseas",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Property listings hit highest October level in 12 years",
+    "url": "https://www.rnz.co.nz/news/business/2380088/property-listings-hit-highest-october-level-in-12-years",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Fiji MP says 'either way' constitution vote will see her lose her job",
+    "url": "https://www.rnz.co.nz/news/pacific/2380081/fiji-mp-says-either-way-constitution-vote-will-see-her-lose-her-job",
+    "tier": "5-rules",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Most thrilled by Tongan's 'little performance' during NYC marathon - but some called obstruction",
+    "url": "https://www.rnz.co.nz/life/people/most-thrilled-by-kiwi-s-little-performance-during-nyc-marathon-but-some-called-obstruction",
+    "tier": "7-pos-loops",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Pacific warns of debt pressure as Commonwealth looks to strengthen climate finance",
+    "url": "https://www.rnz.co.nz/news/pacific/2380049/pacific-warns-of-debt-pressure-as-commonwealth-looks-to-strengthen-climate-finance",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-06",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Climate advocacy group accuses Energy Minister Simeon Brown of sitting on documents about LNG plans",
+    "url": "https://www.rnz.co.nz/news/environment_climate/2379688/climate-advocacy-group-accuses-energy-minister-simeon-brown-of-sitting-on-documents-about-lng-plans",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +80,8 @@
     "auto": true
   },
   {
-    "headline": "Opportunity defends constitutional provision that could mean two board members veto coalition agreement",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2355933/opportunity-defends-constitutional-provision-that-could-mean-two-board-members-veto-coalition-agreement",
+    "headline": "Election live: Labour crawls out of the 20s in final poll before election night",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/2368184/election-live-labour-crawls-out-of-the-20s-in-final-poll-before-election-night",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,82 +90,12 @@
     "auto": true
   },
   {
-    "headline": "'Hardest year we've ever had': Northland charity on gathering Christmas donations",
-    "url": "https://www.rnz.co.nz/news/community/2356283/hardest-year-we-ve-ever-had-northland-charity-on-gathering-christmas-donations",
+    "headline": "Shares in cancer diagnostics company Pacific Edge rise after Medicare coverage of tests",
+    "url": "https://www.rnz.co.nz/news/business/2379489/shares-in-cancer-diagnostics-company-pacific-edge-rise-after-medicare-coverage-of-tests",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-11-05",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Election live: 'A woman's dignity is not a punchline': Former NZ First MP Ria Bond on Michael Laws' comments",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2347755/election-live-a-woman-s-dignity-is-not-a-punchline-former-nz-first-mp-ria-bond-on-michael-laws-comments",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-05",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Bodies yet to be recovered after plane destroyed in crash near Nelson",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2356081/bodies-yet-to-be-recovered-after-plane-destroyed-in-crash-near-nelson",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "St John will delay shut down of specialist paramedic team who help police and firefighters",
-    "url": "https://www.rnz.co.nz/news/health/2355310/st-john-will-delay-shut-down-of-specialist-paramedic-team-who-help-police-and-firefighters",
-    "tier": "9-feedback",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Fiji PM Rabuka downplays El Niño impact: 'Are people dying? No. We can manage'",
-    "url": "https://www.rnz.co.nz/news/pacific/2355926/fiji-pm-rabuka-downplays-el-nino-impact-are-people-dying-no-we-can-manage",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Samoa government urged at UN to address declining media freedom",
-    "url": "https://www.rnz.co.nz/news/pacific/2355925/samoa-government-urged-at-un-to-address-declining-media-freedom",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Full year profit dips to $1.1 billion at BNZ",
-    "url": "https://www.rnz.co.nz/news/business/2355777/full-year-profit-dips-to-1-point-1-billion-at-bnz",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Kohli in the runs as India thrash New Zealand in first ODI",
-    "url": "https://www.rnz.co.nz/news/sport/2334864/kohli-in-the-runs-as-india-thrash-new-zealand-in-first-odi",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-04",
     "source": "RNZ",
     "auto": true
   }
