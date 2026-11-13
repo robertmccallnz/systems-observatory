@@ -1,7 +1,27 @@
 [
   {
-    "headline": "Mississippi electing Scott Colom as senator may be one of the biggest shocks of 2026",
-    "url": "https://www.rnz.co.nz/news/world/2554133/mississippi-electing-scott-colom-as-senator-may-be-one-of-the-biggest-shocks-of-2026",
+    "headline": "'Chicken’ and mushroom takes out top vegan pie award",
+    "url": "https://www.rnz.co.nz/life/food/chicken-and-mushroom-wins-best-vegan-pie",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-13",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Police still seeking key witness in Myers Park attack",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2577268/police-still-seeking-key-witness-in-myers-park-attack",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-13",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "KiwiSaver hardship withdrawals hit record levels, but some could be avoided",
+    "url": "https://www.rnz.co.nz/news/business/2574701/kiwisaver-hardship-withdrawals-hit-record-levels-but-some-could-be-avoided",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Retail NZ hit by email scam",
-    "url": "https://www.rnz.co.nz/news/business/2556405/retail-nz-hit-by-email-scam",
+    "headline": "Why MAPAS still matters after 50 years: 'Bringing everyone to the same starting point'",
+    "url": "https://www.rnz.co.nz/news/pacific/2558347/why-mapas-still-matters-after-50-years-bringing-everyone-to-the-same-starting-point",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +40,8 @@
     "auto": true
   },
   {
-    "headline": "Nvidia reportedly preparing to fire CEO Jensen Huang, amid of second affair",
-    "url": "https://www.rnz.co.nz/news/business/2553062/nvidia-reportedly-preparing-to-fire-ceo-jensen-huang-amid-of-second-affair",
+    "headline": "Tonga's Taumalolo makes Hall of Legends",
+    "url": "https://www.rnz.co.nz/news/pacific/2575950/tonga-s-taumalolo-makes-hall-of-legends",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,8 +50,8 @@
     "auto": true
   },
   {
-    "headline": "No opposition left in Naoero after all MPs join government",
-    "url": "https://www.rnz.co.nz/news/pacific/2556147/no-opposition-left-in-naoero-after-all-mps-join-government",
+    "headline": "Voters in areas with large Pacific populations clear on who should lead country",
+    "url": "https://www.rnz.co.nz/news/pacific/2573521/voters-in-areas-with-large-pacific-populations-clear-on-who-should-lead-country",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -40,8 +60,18 @@
     "auto": true
   },
   {
-    "headline": "King Charles cottons on to Kiwi's eco-friendly bale netting",
-    "url": "https://www.rnz.co.nz/news/country/2551859/king-charles-cottons-on-to-kiwi-s-eco-friendly-bale-netting",
+    "headline": "Weekend weather: Parts of country set for 30C scorcher",
+    "url": "https://www.rnz.co.nz/news/weather/2575905/weekend-weather-parts-of-country-set-for-30c-scorcher",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-12",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Manufacturing sector slows slightly as fuel prices spike",
+    "url": "https://www.rnz.co.nz/news/business/2575808/manufacturing-sector-slows-slightly-as-fuel-prices-spike",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -50,18 +80,8 @@
     "auto": true
   },
   {
-    "headline": "Kiwis fill up the tank, skimp on everything else",
-    "url": "https://www.rnz.co.nz/news/business/2556098/kiwis-fill-up-the-tank-skimp-on-everything-else",
-    "tier": "10-flows",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Kāpiti Coast Airport asks Kāpiti Aero Club to relinquish its lease by end of month",
-    "url": "https://www.rnz.co.nz/news/business/2552965/kapiti-coast-airport-asks-kapiti-aero-club-to-relinquish-its-lease-by-end-of-month",
+    "headline": "Rugby: All Blacks coach Dave Rennie explains why he didn't pick Scott Barrett as captain",
+    "url": "https://www.rnz.co.nz/news/sport/2574336/rugby-all-blacks-coach-dave-rennie-explains-why-he-didn-t-pick-scott-barrett-as-captain",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -70,29 +90,9 @@
     "auto": true
   },
   {
-    "headline": "Lyall Bay group looks to toilet humour in wake of Moa Point failure",
-    "url": "https://www.rnz.co.nz/news/environment/2553995/lyall-bay-group-looks-to-toilet-humour-in-wake-of-moa-point-failure",
+    "headline": "遗憾、反思与公信力的崩塌：大选后各党派的政治得失与信任危机",
+    "url": "https://www.rnz.co.nz/news/chinese/2575297/",
     "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Former health employee Garry Gorham sentenced to home detention over Auckland DHB bribes",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2555160/former-health-employee-garry-gorham-sentenced-to-home-detention-over-auckland-dhb-bribes",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Greens raise concern about immigration rule change",
-    "url": "https://www.rnz.co.nz/news/political/2551152/greens-raise-concern-about-immigration-rule-change",
-    "tier": "5-rules",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
     "date": "2026-11-12",
