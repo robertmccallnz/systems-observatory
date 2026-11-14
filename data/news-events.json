@@ -1,7 +1,7 @@
 [
   {
-    "headline": "Businesses suffering a loss from Microsoft outage could have grounds for insurance claim, lawyer says",
-    "url": "https://www.rnz.co.nz/news/business/2593252/businesses-suffering-a-loss-from-microsoft-outage-could-have-grounds-for-insurance-claim-lawyer-says",
+    "headline": "New study shows what does and doesn't work for ADHD kids",
+    "url": "https://www.rnz.co.nz/news/health/2604813/new-study-shows-what-does-and-doesn-t-work-for-adhd-kids",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +10,18 @@
     "auto": true
   },
   {
-    "headline": "Russia sets cull limits to help control bear population after attacks kill 36 people",
-    "url": "https://www.rnz.co.nz/news/world/2593119/russia-sets-cull-limits-to-help-control-bear-population-after-attacks-kill-36-people",
+    "headline": "Cyber protection of critical infrastructure is 'priority work' but taking at least a year",
+    "url": "https://www.rnz.co.nz/news/political/2605865/cyber-protection-of-critical-infrastructure-is-priority-work-but-taking-at-least-a-year",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-14",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Te Mata Peak closed after person found dead",
+    "url": "https://www.rnz.co.nz/news/community/2607856/te-mata-peak-closed-after-person-found-dead",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,82 +30,72 @@
     "auto": true
   },
   {
-    "headline": "RNZ chief executive Paul Thompson announces early departure from organisation",
-    "url": "https://www.rnz.co.nz/news/business/2588894/rnz-chief-executive-paul-thompson-announces-early-departure-from-organisation",
+    "headline": "'Flood' of weka sightings in Dunedin becomes a trickle",
+    "url": "https://www.rnz.co.nz/news/environment/2607793/flood-of-weka-sightings-in-dunedin-becomes-a-trickle",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "West Auckland mall evacuated after battery fire",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2592512/west-auckland-mall-evacuated-after-battery-fire",
+    "headline": "Diabetes patients battle blame, shame and judgement over medical condition",
+    "url": "https://www.rnz.co.nz/news/health/2607776/diabetes-patients-battle-blame-shame-and-judgement-over-medical-condition",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Wellington police raid nets coins, cars, copper, cannabis and more",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2592335/wellington-police-raid-nets-coins-cars-copper-cannabis-and-more",
+    "headline": "MetService warns of heavy rain, severe gales across South Island",
+    "url": "https://www.rnz.co.nz/news/weather/2607775/metservice-warns-of-heavy-rain-severe-gales-across-south-island",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Wheels up: Air NZ to launch flights between Hamilton and Queenstown in 2027",
-    "url": "https://www.rnz.co.nz/news/business/2592232/wheels-up-air-nz-to-launch-flights-between-hamilton-and-queenstown-in-2027",
+    "headline": "Veteran broadcaster Kim Hill is back in your ears, but there's one thing she hates",
+    "url": "https://www.rnz.co.nz/life/people/veteran-broadcaster-kim-hill-is-back-in-your-ears-but-there-s-one-thing-she-hates",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "'Sheepiness is erupting' in return of Kiwi cult classic Black Sheeps",
-    "url": "https://www.rnz.co.nz/life/screens/movies/sheepiness-is-erupting-in-return-of-kiwi-cult-classic-black-sheeps",
+    "headline": "ERO suspends school hostel after lack of evidence regulations were met",
+    "url": "https://www.rnz.co.nz/news/education/2604434/ero-suspends-school-hostel-after-lack-of-evidence-regulations-were-met",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Whangārei man arrested after 15-hour standoff with police while up a tree",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2591485/whangarei-man-arrested-after-15-hour-standoff-with-police-while-up-a-tree",
+    "headline": "All Blacks stunned as Wales break 73 years of heartbreak in Cardiff",
+    "url": "https://www.rnz.co.nz/news/sport/2603812/all-blacks-stunned-as-wales-break-73-years-of-heartbreak-in-cardiff",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "COP31 hears 1.5°C overshoot not an option for Pacific",
-    "url": "https://www.rnz.co.nz/news/pacific/2591454/cop31-hears-1-point-5-degreesc-overshoot-not-an-option-for-pacific",
-    "tier": "6-info",
+    "headline": "Does New Zealand law need a constitutional change?",
+    "url": "https://www.rnz.co.nz/news/political/2604145/does-new-zealand-law-need-a-constitutional-change",
+    "tier": "5-rules",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Have I made an investing mistake? Ask Susan",
-    "url": "https://www.rnz.co.nz/news/personal-finance/2591248/have-i-made-an-investing-mistake-ask-susan",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "source": "RNZ",
     "auto": true
   }
