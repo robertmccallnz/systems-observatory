@@ -1,7 +1,27 @@
 [
   {
-    "headline": "'Chicken’ and mushroom takes out top vegan pie award",
-    "url": "https://www.rnz.co.nz/life/food/chicken-and-mushroom-wins-best-vegan-pie",
+    "headline": "Businesses suffering a loss from Microsoft outage could have grounds for insurance claim, lawyer says",
+    "url": "https://www.rnz.co.nz/news/business/2593252/businesses-suffering-a-loss-from-microsoft-outage-could-have-grounds-for-insurance-claim-lawyer-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-14",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Russia sets cull limits to help control bear population after attacks kill 36 people",
+    "url": "https://www.rnz.co.nz/news/world/2593119/russia-sets-cull-limits-to-help-control-bear-population-after-attacks-kill-36-people",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-14",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "RNZ chief executive Paul Thompson announces early departure from organisation",
+    "url": "https://www.rnz.co.nz/news/business/2588894/rnz-chief-executive-paul-thompson-announces-early-departure-from-organisation",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +30,8 @@
     "auto": true
   },
   {
-    "headline": "Police still seeking key witness in Myers Park attack",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2577268/police-still-seeking-key-witness-in-myers-park-attack",
+    "headline": "West Auckland mall evacuated after battery fire",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2592512/west-auckland-mall-evacuated-after-battery-fire",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,82 +40,62 @@
     "auto": true
   },
   {
-    "headline": "KiwiSaver hardship withdrawals hit record levels, but some could be avoided",
-    "url": "https://www.rnz.co.nz/news/business/2574701/kiwisaver-hardship-withdrawals-hit-record-levels-but-some-could-be-avoided",
+    "headline": "Wellington police raid nets coins, cars, copper, cannabis and more",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2592335/wellington-police-raid-nets-coins-cars-copper-cannabis-and-more",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Why MAPAS still matters after 50 years: 'Bringing everyone to the same starting point'",
-    "url": "https://www.rnz.co.nz/news/pacific/2558347/why-mapas-still-matters-after-50-years-bringing-everyone-to-the-same-starting-point",
+    "headline": "Wheels up: Air NZ to launch flights between Hamilton and Queenstown in 2027",
+    "url": "https://www.rnz.co.nz/news/business/2592232/wheels-up-air-nz-to-launch-flights-between-hamilton-and-queenstown-in-2027",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Tonga's Taumalolo makes Hall of Legends",
-    "url": "https://www.rnz.co.nz/news/pacific/2575950/tonga-s-taumalolo-makes-hall-of-legends",
+    "headline": "'Sheepiness is erupting' in return of Kiwi cult classic Black Sheeps",
+    "url": "https://www.rnz.co.nz/life/screens/movies/sheepiness-is-erupting-in-return-of-kiwi-cult-classic-black-sheeps",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Voters in areas with large Pacific populations clear on who should lead country",
-    "url": "https://www.rnz.co.nz/news/pacific/2573521/voters-in-areas-with-large-pacific-populations-clear-on-who-should-lead-country",
+    "headline": "Whangārei man arrested after 15-hour standoff with police while up a tree",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2591485/whangarei-man-arrested-after-15-hour-standoff-with-police-while-up-a-tree",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Weekend weather: Parts of country set for 30C scorcher",
-    "url": "https://www.rnz.co.nz/news/weather/2575905/weekend-weather-parts-of-country-set-for-30c-scorcher",
-    "tier": "12-parameters",
+    "headline": "COP31 hears 1.5°C overshoot not an option for Pacific",
+    "url": "https://www.rnz.co.nz/news/pacific/2591454/cop31-hears-1-point-5-degreesc-overshoot-not-an-option-for-pacific",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Manufacturing sector slows slightly as fuel prices spike",
-    "url": "https://www.rnz.co.nz/news/business/2575808/manufacturing-sector-slows-slightly-as-fuel-prices-spike",
+    "headline": "Have I made an investing mistake? Ask Susan",
+    "url": "https://www.rnz.co.nz/news/personal-finance/2591248/have-i-made-an-investing-mistake-ask-susan",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Rugby: All Blacks coach Dave Rennie explains why he didn't pick Scott Barrett as captain",
-    "url": "https://www.rnz.co.nz/news/sport/2574336/rugby-all-blacks-coach-dave-rennie-explains-why-he-didn-t-pick-scott-barrett-as-captain",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "遗憾、反思与公信力的崩塌：大选后各党派的政治得失与信任危机",
-    "url": "https://www.rnz.co.nz/news/chinese/2575297/",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "RNZ",
     "auto": true
   }
