@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated": "2026-11-14T23:40:32Z",
+  "generated": "2026-11-15T23:47:28Z",
   "notes": "Per-LP distributional incidence. Every bears_cost/benefits row must carry a resolvable source_url. Missing rows render as 'pending distributional analysis'. No IDI-linked figures; public aggregate data only.",
   "leverage_points": [
     {
