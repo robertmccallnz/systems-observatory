@@ -1,47 +1,37 @@
 [
   {
-    "headline": "Doco crew let into Tom Phillips' camp before forensics finished",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2702590/doco-crew-let-into-tom-phillips-camp-before-forensics-finished",
+    "headline": "Grand Theft Auto VI takes record haul on first day",
+    "url": "https://www.rnz.co.nz/life/screens/grand-theft-auto-vi-takes-record-haul-on-first-day",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Māori stories recognised at New Zealand Screen Awards",
-    "url": "https://www.rnz.co.nz/news/te-manu-korihi/2708847/maori-stories-recognised-at-new-zealand-screen-awards",
-    "tier": "6-info",
+    "headline": "Live: Black Caps v India first Test, day three",
+    "url": "https://www.rnz.co.nz/news/sport/2718924/live-black-caps-v-india-first-test-day-three",
+    "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Fire alarm fails as smoke spews from central Auckland carpark, explosions heard",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2703237/fire-alarm-fails-as-smoke-spews-from-central-auckland-carpark-explosions-heard",
+    "headline": "Fire hydrants blocked by footpath, bus lane during major Auckland blaze",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2719355/fire-hydrants-blocked-by-footpath-bus-lane-during-major-auckland-blaze",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Courtenay Place 'rotting' as long-time club quits the capital",
-    "url": "https://www.rnz.co.nz/news/business/2695959/courtenay-place-rotting-as-long-time-club-quits-the-capital",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Pacific tuna transshipment needs stronger oversight, conservation group says",
-    "url": "https://www.rnz.co.nz/news/pacific/2708734/pacific-tuna-transshipment-needs-stronger-oversight-conservation-group-says",
+    "headline": "Post-election timing had no bearing on emergency response - Southland mayor",
+    "url": "https://www.rnz.co.nz/news/regions_southland/2719226/post-election-timing-had-no-bearing-on-emergency-response-southland-mayor",
     "tier": "8-neg-loops",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -50,8 +40,8 @@
     "auto": true
   },
   {
-    "headline": "Person dead after bus crashes onto the pavement in Wellington",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2700763/person-dead-after-bus-crashes-onto-the-pavement-in-wellington",
+    "headline": "Stark warning over fossil fuels from Pacific at COP31",
+    "url": "https://www.rnz.co.nz/news/pacific/2709824/stark-warning-over-fossil-fuels-from-pacific-at-cop31",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -60,8 +50,8 @@
     "auto": true
   },
   {
-    "headline": "Body found in search for missing swimmer off Kariotahi Beach",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2708704/body-found-in-search-for-missing-swimmer-off-kariotahi-beach",
+    "headline": "Cook Islands PM says relief supplies on standby as TC Xavier weakens",
+    "url": "https://www.rnz.co.nz/news/pacific/2719268/cook-islands-pm-says-relief-supplies-on-standby-as-tc-xavier-weakens",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -70,8 +60,8 @@
     "auto": true
   },
   {
-    "headline": "Zimbabwean whānau embrace te ao Māori through haka",
-    "url": "https://www.rnz.co.nz/news/te-manu-korihi/2708365/zimbabwean-whanau-embrace-te-ao-maori-through-haka",
+    "headline": "Cyber attacks can happen within minutes thanks to AI",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2719225/cyber-attacks-can-happen-within-minutes-thanks-to-ai",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -80,8 +70,8 @@
     "auto": true
   },
   {
-    "headline": "Truck crash in south Auckland leaves one person critically injured",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2707578/truck-crash-in-south-auckland-leaves-one-person-critically-injured",
+    "headline": "Is my solar credit working as it should? - Ask Susan",
+    "url": "https://www.rnz.co.nz/news/personal-finance/2719224/is-my-solar-credit-working-as-it-should-ask-susan",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -90,8 +80,18 @@
     "auto": true
   },
   {
-    "headline": "Labour distances itself from Jackson's comments about US ambassador",
-    "url": "https://www.rnz.co.nz/news/political/2705299/labour-distances-itself-from-jackson-s-comments-about-us-ambassador",
+    "headline": "Western Taranaki seafood rāhui extended for two years",
+    "url": "https://www.rnz.co.nz/news/environment/2719020/western-taranaki-seafood-rahui-extended-for-two-years",
+    "tier": "11-buffers",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-20",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Person dead after crash between car and truck and trailer",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2718802/person-dead-after-crash-between-car-and-truck-and-trailer",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
