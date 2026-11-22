@@ -1,7 +1,17 @@
 [
   {
-    "headline": "Grand Theft Auto VI takes record haul on first day",
-    "url": "https://www.rnz.co.nz/life/screens/grand-theft-auto-vi-takes-record-haul-on-first-day",
+    "headline": "Crash blocks part of Auckland's Northern Motorway, person critically injured",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2729433/crash-blocks-part-of-auckland-s-northern-motorway-person-critically-injured",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-22",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Nothing special about Black Friday deals - Westpac",
+    "url": "https://www.rnz.co.nz/news/business/2726772/nothing-special-about-black-friday-deals-westpac",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,8 +20,28 @@
     "auto": true
   },
   {
-    "headline": "Live: Black Caps v India first Test, day three",
-    "url": "https://www.rnz.co.nz/news/sport/2718924/live-black-caps-v-india-first-test-day-three",
+    "headline": "Four people injured after house slides off piles while being relocated",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2728240/four-people-injured-after-house-slides-off-piles-while-being-relocated",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Letterbox port poisoning: Renewed push to solve death of Dave Davan",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2727996/letterbox-port-poisoning-renewed-push-to-solve-death-of-dave-davan",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-21",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Black Caps face battle to stay in test against India on day four",
+    "url": "https://www.rnz.co.nz/news/sport/2727693/live-black-caps-v-india-first-test-day-four",
     "tier": "11-buffers",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -20,8 +50,8 @@
     "auto": true
   },
   {
-    "headline": "Fire hydrants blocked by footpath, bus lane during major Auckland blaze",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2719355/fire-hydrants-blocked-by-footpath-bus-lane-during-major-auckland-blaze",
+    "headline": "How world media reacted to All Blacks' loss against England",
+    "url": "https://www.rnz.co.nz/news/sport/2726773/how-world-media-reacted-to-all-blacks-loss-against-england",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -30,72 +60,42 @@
     "auto": true
   },
   {
-    "headline": "Post-election timing had no bearing on emergency response - Southland mayor",
-    "url": "https://www.rnz.co.nz/news/regions_southland/2719226/post-election-timing-had-no-bearing-on-emergency-response-southland-mayor",
-    "tier": "8-neg-loops",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Stark warning over fossil fuels from Pacific at COP31",
-    "url": "https://www.rnz.co.nz/news/pacific/2709824/stark-warning-over-fossil-fuels-from-pacific-at-cop31",
+    "headline": "New Zealander Navajo Stirling knocks out Jiří Procházka at UFC Qatar",
+    "url": "https://www.rnz.co.nz/news/sport/2725762/new-zealander-navajo-stirling-knocks-out-ji-i-prochazka-at-ufc-qatar",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Cook Islands PM says relief supplies on standby as TC Xavier weakens",
-    "url": "https://www.rnz.co.nz/news/pacific/2719268/cook-islands-pm-says-relief-supplies-on-standby-as-tc-xavier-weakens",
+    "headline": "Are New Zealanders sick of politics - or sick of politicians?",
+    "url": "https://www.rnz.co.nz/news/political/2726771/are-new-zealanders-sick-of-politics-or-sick-of-politicians",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Cyber attacks can happen within minutes thanks to AI",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2719225/cyber-attacks-can-happen-within-minutes-thanks-to-ai",
+    "headline": "Everyone on Nassau is safe says Cook Islands PM",
+    "url": "https://www.rnz.co.nz/news/pacific/2726758/everyone-on-nassau-is-safe-says-cook-islands-pm",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Is my solar credit working as it should? - Ask Susan",
-    "url": "https://www.rnz.co.nz/news/personal-finance/2719224/is-my-solar-credit-working-as-it-should-ask-susan",
+    "headline": "Injuries, road closure after crash near Ōhaupō",
+    "url": "https://www.rnz.co.nz/news/emergencies_local/2726616/injuries-road-closure-after-crash-near-ohaupo",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Western Taranaki seafood rāhui extended for two years",
-    "url": "https://www.rnz.co.nz/news/environment/2719020/western-taranaki-seafood-rahui-extended-for-two-years",
-    "tier": "11-buffers",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Person dead after crash between car and truck and trailer",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2718802/person-dead-after-crash-between-car-and-truck-and-trailer",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "source": "RNZ",
     "auto": true
   }
