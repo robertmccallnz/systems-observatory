@@ -1,7 +1,47 @@
 [
   {
-    "headline": "Crash blocks part of Auckland's Northern Motorway, person critically injured",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2729433/crash-blocks-part-of-auckland-s-northern-motorway-person-critically-injured",
+    "headline": "Hōkitika man denied name suppression for historic indecent assault",
+    "url": "https://www.rnz.co.nz/news/crime-and-justice/2749461/hokitika-man-denied-name-suppression-for-historic-indecent-assault",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Tonga Football official says team will get better",
+    "url": "https://www.rnz.co.nz/news/pacific/2749259/tonga-football-official-says-team-will-get-better",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "India hold off spirited Black Sticks to win centenary hockey series",
+    "url": "https://www.rnz.co.nz/news/indonz-featured/2749253/india-hold-off-spirited-black-sticks-to-win-centenary-hockey-series",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "New Zealand would have supported collapsed climate deal, minister says",
+    "url": "https://www.rnz.co.nz/news/political/2748737/new-zealand-would-have-supported-collapsed-climate-deal-minister-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-23",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Fonterra seeks permission to dump millions of litres of raw milk",
+    "url": "https://www.rnz.co.nz/news/country/2737515/fonterra-seeks-permission-to-dump-millions-of-litres-of-raw-milk",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,92 +50,52 @@
     "auto": true
   },
   {
-    "headline": "Nothing special about Black Friday deals - Westpac",
-    "url": "https://www.rnz.co.nz/news/business/2726772/nothing-special-about-black-friday-deals-westpac",
+    "headline": "'Nobody wants to close a pool' - councils struggle with proposed rates cap",
+    "url": "https://www.rnz.co.nz/news/regional/2737525/nobody-wants-to-close-a-pool-councils-struggle-with-proposed-rates-cap",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Four people injured after house slides off piles while being relocated",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2728240/four-people-injured-after-house-slides-off-piles-while-being-relocated",
+    "headline": "Molly Meldrum, former host of Countdown, dies aged 83",
+    "url": "https://www.rnz.co.nz/life/music/molly-meldrum-former-host-of-countdown-dies-aged-83",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Letterbox port poisoning: Renewed push to solve death of Dave Davan",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2727996/letterbox-port-poisoning-renewed-push-to-solve-death-of-dave-davan",
+    "headline": "AI will eliminate many jobs - what should your children study now?",
+    "url": "https://www.rnz.co.nz/life/relationships/family/ai-will-eliminate-many-jobs-what-should-your-children-study-now",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "Black Caps face battle to stay in test against India on day four",
-    "url": "https://www.rnz.co.nz/news/sport/2727693/live-black-caps-v-india-first-test-day-four",
-    "tier": "11-buffers",
+    "headline": "What next after the collapse of global climate talks?",
+    "url": "https://www.rnz.co.nz/news/pacific/2746703/what-next-after-the-collapse-of-global-climate-talks",
+    "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "source": "RNZ",
     "auto": true
   },
   {
-    "headline": "How world media reacted to All Blacks' loss against England",
-    "url": "https://www.rnz.co.nz/news/sport/2726773/how-world-media-reacted-to-all-blacks-loss-against-england",
+    "headline": "'Negotiation in bad faith': Pacific push for stronger climate action fails at UN climate talks",
+    "url": "https://www.rnz.co.nz/news/pacific/2746441/negotiation-in-bad-faith-pacific-push-for-stronger-climate-action-fails-at-un-climate-talks",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "New Zealander Navajo Stirling knocks out Jiří Procházka at UFC Qatar",
-    "url": "https://www.rnz.co.nz/news/sport/2725762/new-zealander-navajo-stirling-knocks-out-ji-i-prochazka-at-ufc-qatar",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Are New Zealanders sick of politics - or sick of politicians?",
-    "url": "https://www.rnz.co.nz/news/political/2726771/are-new-zealanders-sick-of-politics-or-sick-of-politicians",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Everyone on Nassau is safe says Cook Islands PM",
-    "url": "https://www.rnz.co.nz/news/pacific/2726758/everyone-on-nassau-is-safe-says-cook-islands-pm",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Injuries, road closure after crash near Ōhaupō",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2726616/injuries-road-closure-after-crash-near-ohaupo",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "source": "RNZ",
     "auto": true
   }
