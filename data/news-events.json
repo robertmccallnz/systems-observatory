@@ -1,7 +1,87 @@
 [
   {
-    "headline": "Hamilton streets reopen after suspicious item found",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2771811/hamilton-streets-reopen-after-suspicious-item-found",
+    "headline": "Coroner recommends improvements in midwifery training after woman and baby's deaths",
+    "url": "https://www.rnz.co.nz/news/health/2797336/coroner-recommends-improvements-in-midwifery-training-after-woman-and-baby-s-deaths",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Donations cap petition presented to Parliament - but Opportunity absent",
+    "url": "https://www.rnz.co.nz/news/political/2797687/donations-cap-petition-presented-to-parliament-but-opportunity-absent",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Weeks-long recount of party votes possible, pollster says",
+    "url": "https://www.rnz.co.nz/news/politics_election-2026/2795965/weeks-long-recount-of-party-votes-possible-pollster-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Farmers staff set to strike over wage negotiations impasse",
+    "url": "https://www.rnz.co.nz/news/business/2789306/farmers-staff-set-to-strike-over-wage-negotiations-impasse",
+    "tier": "12-parameters",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Designs for Kiwirail's new Cook Strait ferries unveiled",
+    "url": "https://www.rnz.co.nz/news/business/2793694/designs-for-kiwirail-s-new-cook-strait-ferries-unveiled",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'Worth protecting': Federated Farmers angry over RNZ rural reporter cuts",
+    "url": "https://www.rnz.co.nz/news/country/2791214/worth-protecting-federated-farmers-angry-over-rnz-rural-reporter-cuts",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Oceania Rugby suspended from World Rugby Council as Fiji questions regional body's relevance",
+    "url": "https://www.rnz.co.nz/news/pacific/2793021/oceania-rugby-suspended-from-world-rugby-council-as-fiji-questions-regional-body-s-relevance",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Weight-loss drugs could raise risk of fractures, frailty - experts",
+    "url": "https://www.rnz.co.nz/life/wellbeing/weight-loss-drugs-could-raise-risk-of-fractures-frailty-experts",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-26",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "RNZ continuing to manage attempted cyber breach",
+    "url": "https://www.rnz.co.nz/news/business/2791565/rnz-continuing-to-manage-attempted-cyber-breach",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,88 +90,8 @@
     "auto": true
   },
   {
-    "headline": "Man arrested after joining RNZ staff protest",
-    "url": "https://www.rnz.co.nz/news/crime-and-justice/2772085/man-arrested-after-joining-rnz-staff-protest",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Missing Canterbury man found safe and in 'remarkably good health'",
-    "url": "https://www.rnz.co.nz/news/regions_canterbury/2771428/missing-canterbury-man-found-safe-and-in-remarkably-good-health",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Gloriavale Christian School to lose registration after High Court ruling",
-    "url": "https://www.rnz.co.nz/news/education/2772006/gloriavale-christian-school-to-lose-registration-after-high-court-ruling",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Wellington businesses gear up for Black Friday",
-    "url": "https://www.rnz.co.nz/news/business/2772179/wellington-businesses-gear-up-for-black-friday",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "All Black Beauden Barrett reportedly signs deal with Bristol Bears",
-    "url": "https://www.rnz.co.nz/news/sport/2770552/all-black-beauden-barrett-reportedly-signs-deal-with-bristol-bears",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Person critical after serious crash on Auckland's Southern Motorway",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2771981/person-critical-after-serious-crash-on-auckland-s-southern-motorway",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Solomon Islands, Australia sign new treaty to keep foreign military bases out",
-    "url": "https://www.rnz.co.nz/news/pacific/2771868/solomon-islands-australia-sign-new-treaty-to-keep-foreign-military-bases-out",
-    "tier": "2-paradigm",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Body found near Wānaka in search for missing man Shaun Gilbert",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2771622/body-found-near-wanaka-in-search-for-missing-man-shaun-gilbert",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-25",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Call to halt Taranaki data centre plan",
-    "url": "https://www.rnz.co.nz/news/regional/2771548/call-to-halt-taranaki-data-centre-plan",
+    "headline": "Explainer: Why Air New Zealand is cracking down on your carry-on baggage",
+    "url": "https://www.rnz.co.nz/news/business/2790865/explainer-why-air-new-zealand-is-cracking-down-on-your-carry-on-baggage",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
