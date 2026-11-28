@@ -1,7 +1,87 @@
 [
   {
-    "headline": "Live: Election 2026 final results: Election deadlocked as coalition loses majority",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2814808/live-election-2026-final-results-election-deadlocked-as-coalition-loses-majority",
+    "headline": "Motorbike rider left with serious injuries after Canterbury crash",
+    "url": "https://www.rnz.co.nz/news/regional/2854698/motorbike-rider-left-with-serious-injuries-after-canterbury-crash",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "The British are in a sex slump – is this the case for New Zealand?",
+    "url": "https://www.rnz.co.nz/life/relationships/love-and-sex/the-british-are-having-less-sex-is-this-the-case-for-new-zealanders",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Confidence and supply most sensible course for Opportunity, says former United Future leader Peter Dunne",
+    "url": "https://www.rnz.co.nz/news/political/2854273/confidence-and-supply-most-sensible-course-for-opportunity-says-former-united-future-leader-peter-dunne",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Election result raises questions about fairness of electoral process, political scientist says",
+    "url": "https://www.rnz.co.nz/news/political/2853956/election-result-raises-questions-about-fairness-of-electoral-process-political-scientist-says",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Country Life: Young livestock auctioneers put their voices to the test",
+    "url": "https://www.rnz.co.nz/news/country/2853875/country-life-young-livestock-auctioneers-put-their-voices-to-the-test",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Barbara's barbs: 85yo takes scissors to vape advertising",
+    "url": "https://www.rnz.co.nz/news/health/2853478/barbara-s-barbs-85yo-takes-scissors-to-vape-advertising",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "'How's that for culture, baby?': The bigger conversation about culture in sport",
+    "url": "https://www.rnz.co.nz/news/te-manu-korihi/2853175/how-s-that-for-culture-baby-the-bigger-conversation-about-culture-in-sport",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Amount of wasterwater overflow not known after issue at Wellington treatment plant",
+    "url": "https://www.rnz.co.nz/news/regional/2851458/amount-of-wasterwater-overflow-not-known-after-issue-at-wellington-treatment-plant",
+    "tier": "6-info",
+    "impact": "ambiguous",
+    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
+    "date": "2026-11-28",
+    "source": "RNZ",
+    "auto": true
+  },
+  {
+    "headline": "Economy will be largely unaffected by coalition negotiations - economist",
+    "url": "https://www.rnz.co.nz/news/business/2852838/economy-will-be-largely-unaffected-by-coalition-negotiations-economist",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
@@ -10,88 +90,8 @@
     "auto": true
   },
   {
-    "headline": "PNG parliament nears crucial vote on Bougainville's future",
-    "url": "https://www.rnz.co.nz/news/pacific/2825651/png-parliament-nears-crucial-vote-on-bougainville-s-future",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Injuries after train and car crash at Marlborough intersection",
-    "url": "https://www.rnz.co.nz/news/emergencies_local/2825239/injuries-after-train-and-car-crash-at-marlborough-intersection",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Election 2026 final results: Coalition loses majority, another election possible",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2820329/election-2026-final-results-coalition-loses-majority-another-election-possible",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Incoming NZ First MP Taine Randell 'on the gravy train' while awaiting Special Votes",
-    "url": "https://www.rnz.co.nz/news/political/2817707/incoming-nz-first-mp-taine-randell-on-the-gravy-train-while-awaiting-special-votes",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Explainer: How long can coalition talks last for New Zealand's next government?",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2821557/explainer-how-long-can-coalition-talks-last-for-new-zealand-s-next-government",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Live: Black Caps v India - second test, day one",
-    "url": "https://www.rnz.co.nz/news/sport/2811862/live-black-caps-v-india-second-test-day-one",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Explainer: New Zealand may have elected a hung Parliament. What now?",
-    "url": "https://www.rnz.co.nz/news/politics_election-2026/2822185/explainer-new-zealand-may-have-elected-a-hung-parliament-what-now",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "How are shoppers feeling about Black Friday?",
-    "url": "https://www.rnz.co.nz/news/business/2819928/how-are-shoppers-feeling-about-black-friday",
-    "tier": "6-info",
-    "impact": "ambiguous",
-    "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
-    "date": "2026-11-27",
-    "source": "RNZ",
-    "auto": true
-  },
-  {
-    "headline": "Live: All the key electorates, changes and swings after the final result",
-    "url": "https://www.rnz.co.nz/news/election-2026-results/electorates",
+    "headline": "'Not something I would do' - Green Party speaks to new MP Tania Waikato about social media post",
+    "url": "https://www.rnz.co.nz/news/political/2852605/not-something-i-would-do-green-party-speaks-to-new-mp-tania-waikato-about-social-media-post",
     "tier": "6-info",
     "impact": "ambiguous",
     "reasoning": "Auto-mapped via keyword analysis — verify and correct via the annotation form below.",
